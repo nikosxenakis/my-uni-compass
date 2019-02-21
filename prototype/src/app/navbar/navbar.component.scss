@@ -1,0 +1,26 @@
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+   flex: 1 1 auto;
+}
+
+button {
+   margin: 10px;
+}
+
+mat-toolbar .mat-option-text {
+   display: contents;
+}
+
+.en{
+   background:  url("https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg")  center / contain no-repeat;
+   white-space: nowrap
+ 
+ }
+ 
+ 
+ .option2{
+   background:  url("https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg")  center / contain no-repeat;
+   white-space: nowrap;
+   display:inline
+ }

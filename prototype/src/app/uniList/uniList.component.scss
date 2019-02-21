@@ -1,0 +1,41 @@
+@import '../../uni-compass-theme.scss';
+
+.resultsString {
+    text-align: center;
+}
+
+mat-card {
+    margin-bottom: 10px;
+}
+
+.uniList {
+
+    .uniRow {
+        display: table;
+        width: 98%;
+        table-layout: fixed;
+
+        .uniRecord {
+            display: inline;
+            display: table-cell;
+            text-align: center;
+        }
+    }
+
+    .uniHeader {
+        background-color: mat-color($app-primary, 500);
+
+        h4 {
+            color: mat-color($app-primary, 50);
+        }
+    }
+
+    .uniItem {
+        background-color: mat-color($app-primary, 50);
+
+        h4 {
+            color: mat-color($app-primary, 500);
+        }
+    }
+
+}

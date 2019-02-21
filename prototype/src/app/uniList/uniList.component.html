@@ -1,0 +1,27 @@
+<mat-card>
+  <h3 class="resultsString">
+    {{resultsString}}
+  </h3>
+</mat-card>
+
+<mat-card class="uniList">
+
+    <mat-card class="uniHeader uniRow">
+      <h4 class="uniRecord" *ngFor="let uniHeader of universityHeaderList">{{uniHeader}}</h4>
+    </mat-card>
+
+    <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList">
+        <h4 class="uniRecord">{{uniItem.uniName}}</h4>
+        <h4 class="uniRecord">{{uniItem.city}}</h4>
+        <h4 class="uniRecord">{{uniItem.underPrograms}}</h4>
+        <h4 class="uniRecord">{{uniItem.postPrograms}}</h4>
+        <h4 class="uniRecord">{{uniItem.gradRates}}</h4>
+        <h4 class="uniRecord">{{uniItem.employability}}</h4>
+        <h4 class="uniRecord">{{uniItem.lifeQuality}}</h4>
+        <h4 class="uniRecord">{{uniItem.teachingExcellence}}</h4>
+        <h4 class="uniRecord">{{uniItem.actions}}</h4>
+    </mat-card>
+
+</mat-card>
+
+

@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar>
+  <img height="60" src="../favicon.png">
+
+  <span class="example-fill-remaining-space"></span>
+  <button mat-raised-button color="basic">Profile</button>
+  <button mat-raised-button color="basic">Logout</button>
+  <mat-form-field>
+    <mat-select [(value)]="selectedLanguage" [ngClass]="selectedLanguage">
+        <mat-option value="en">Option 1
+          <img with="10" height="10" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg">
+        </mat-option>
+          
+      <!-- <mat-option *ngFor="let language of languageList" [value]="language.value">
+        {{language.viewValue}}
+        <img with="10" height="10" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg">
+
+        <span with="10" height="10" class="lang-sm" lang={{language.value}}></span> 
+      </mat-option> -->
+
+
+    </mat-select>
+  </mat-form-field>
+</mat-toolbar>
