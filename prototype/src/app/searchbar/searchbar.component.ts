@@ -9,7 +9,6 @@ export class SearchbarComponent {
 
   selected = 'en';
   moreHidden = true;
-  resultsString = '123 Universities, 1425 undergraduate and 876 postgraduate programs found';
 
   universityHeaderList = [
     'University Name',

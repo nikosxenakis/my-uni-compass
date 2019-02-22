@@ -1,3 +1,44 @@
+@import '../../uni-compass-theme.scss';
+
 mat-card {
     margin-bottom: 10px;
+}
+
+.filter {
+    margin: 10px;
+    // padding: 10px;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    background-color: mat-color($app-primary, 50);
+    box-shadow: 2px 2px 5px mat-color($app-primary, 50);
+
+    .mat-select-value {
+        color: mat-color($app-primary, 500);
+    }
+
+    .mat-select-arrow-wrapper {
+        color: mat-color($app-primary, 500);
+    }
+
+    .mat-form-field-label {
+        color: mat-color($app-primary, 500);
+    }
+
+    .material-icons {
+        color: mat-color($app-primary, 500);
+        position: relative;
+        // left: 20px;
+        // top: -30px;
+        // visibility: hidden;
+
+        :hover {
+            cursor: pointer;
+        }
+
+    }
+
+    :hover~.material-icons {
+        visibility: hidden; //visible;
+    }
 }

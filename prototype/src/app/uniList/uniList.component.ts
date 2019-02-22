@@ -23,6 +23,8 @@ export class UniListComponent implements OnInit {
     'Actions'
   ];
 
+  resultsString = '123 Universities, 1425 undergraduate and 876 postgraduate programs found';
+
   universityItemList: Array<UniversityItem> = [];
 
   constructor(private http: Http) { }

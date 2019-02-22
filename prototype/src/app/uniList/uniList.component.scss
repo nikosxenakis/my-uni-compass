@@ -33,6 +33,11 @@ mat-card {
     .uniItem {
         background-color: mat-color($app-primary, 50);
 
+        :hover {
+            cursor: pointer;
+            // padding: 10px;
+        }
+
         h4 {
             color: mat-color($app-primary, 500);
         }

@@ -1,14 +1,30 @@
 <mat-card>
 
-  <mat-form-field>
-      <mat-select [(value)]="selected">
-          <mat-option value="en">Option 1
-          </mat-option>
+
+    <div class="filter">
+    <mat-form-field>
+      <mat-select placeholder="Degree Level" disableRipple>
+        <mat-option>None</mat-option>
+        <mat-option value="1">Undergraduate Level</mat-option>
+        <mat-option value="2">Postgraduate Level</mat-option>
       </mat-select>
     </mat-form-field>
+    <i class="material-icons">remove_circle</i>
+    <!-- <i class="material-icons">help</i> -->
+    </div>
 
-  <button mat-raised-button color="primary" (click)="search()" matTooltip="Search for universities">Search</button>
-  <button mat-raised-button color="primary" (click)="more()" matTooltip="Show more filters to add">Add Filters</button>
+      <mat-form-field class="filter">
+          <mat-select [(value)]="selected">
+              <mat-option value="en">Option 1
+              </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+
+      <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="search()" matTooltip="Search for universities">Search</button>
+          <button mat-raised-button color="primary" (click)="more()" matTooltip="Show more filters to add">Add Filters</button>
+      </mat-card-actions>
 
   <div [hidden]="moreHidden">
       <mat-form-field>
