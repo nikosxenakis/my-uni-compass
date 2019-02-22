@@ -1,4 +1,4 @@
-class UniversityItem {
+export class UniversityItem {
     universityId: number;
     universityName: string;
     city: string;

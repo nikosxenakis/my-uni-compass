@@ -56,14 +56,24 @@
             "employability": 0.87,
             "lifeQuality": 0.75,
             "teachingExcellence": 0.78
+        }, {
+            "universityId": 3,
+            "universityName": "University of Edinburgh",
+            "city": "Edinburgh, UK",
+            "undergraduatePrograms": 98,
+            "postgraduatePrograms": 32,
+            "graduationRates": 0.80,
+            "employability": 0.87,
+            "lifeQuality": 0.75,
+            "teachingExcellence": 0.78
         }
     ],
     "favorites": [
-        {"universityId": 1},
-        {"universityId": 2}
+        1,
+        2
     ],
     "saved": [
-        {"universityId": 1},
-        {"universityId": 3}
+        1,
+        3
     ]
 }

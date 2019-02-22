@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output  } from '@angular/core';
+import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
   selector: 'tabbar',
@@ -7,11 +8,11 @@ import { Component, OnInit, EventEmitter, Output  } from '@angular/core';
 })
 export class TabbarComponent {
 
-  @Output() openUniversityEvent = new EventEmitter<number>();
+  @Output() openUniversityEvent = new EventEmitter<UniversityItem>();
 
 
-  onOpenUniversity(universityId: number) {
-    this.openUniversityEvent.emit(universityId);
+  onOpenUniversity(uniItem: UniversityItem) {
+    this.openUniversityEvent.emit(uniItem);
   }
 
 }

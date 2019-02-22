@@ -1,6 +1,7 @@
 import { Component, OnInit, EventEmitter, Output  } from '@angular/core';
 import { Http } from '@angular/http';
 import {map} from 'rxjs/operators';
+import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
   selector: 'courses-list',
