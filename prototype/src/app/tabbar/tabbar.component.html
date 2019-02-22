@@ -1,10 +1,8 @@
 <mat-tab-group mat-align-tabs="center">
-    <mat-tab label="Search">
-  
-      <searchbar></searchbar>
-      <uni-list></uni-list>
-
-    </mat-tab>
-    <mat-tab label="Favorites" [disabled]="true"> Favorites </mat-tab>
-    <mat-tab label="Saved For Later" [disabled]="true"> Saved For Later </mat-tab>
-  </mat-tab-group>
+  <mat-tab label="Search">
+    <searchbar></searchbar>
+    <uni-list (openUniversityEvent)="onOpenUniversity($event)"></uni-list>
+  </mat-tab>
+  <mat-tab label="Favorites" [disabled]="true"> Favorites </mat-tab>
+  <mat-tab label="Saved For Later" [disabled]="true"> Saved For Later </mat-tab>
+</mat-tab-group>

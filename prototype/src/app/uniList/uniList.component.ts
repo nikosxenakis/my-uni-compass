@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Component, OnInit, EventEmitter, Output  } from '@angular/core';
+import { Http } from '@angular/http';
 import {map} from 'rxjs/operators';
 
 @Component({
@@ -8,6 +8,8 @@ import {map} from 'rxjs/operators';
   styleUrls: ['./uniList.component.scss']
 })
 export class UniListComponent implements OnInit {
+
+  @Output() openUniversityEvent = new EventEmitter<number>();
 
   universityHeaderList = [
     'University Name',
@@ -21,35 +23,7 @@ export class UniListComponent implements OnInit {
     'Actions'
   ];
 
-  universityItemList;
-
-  // universityItemList = [
-  //   [
-  //     'University Name',
-  //     'City',
-  //     'Undergraduate Programs',
-  //     'Postgraduate Programs',
-  //     'Graduation Rates',
-  //     'Employability',
-  //     'Life Quality',
-  //     'Teaching Excelence',
-  //     'Actions'
-  //   ]
-  // ];
-
-  // universityItemList = [
-  //   {
-  //     uniName: 'University of Edinburgh',
-  //     city: 'Edinburgh, UK',
-  //     underPrograms: '98',
-  //     postPrograms: '32',
-  //     gradRates: '80%',
-  //     employability: '87%',
-  //     lifeQuality: '75%',
-  //     teachingExcellence: '78%',
-  //     actions: 'actions'
-  //   }
-  // ];
+  universityItemList: Array<UniversityItem> = [];
 
   constructor(private http: Http) { }
 
@@ -63,10 +37,13 @@ export class UniListComponent implements OnInit {
     )
     .subscribe( data => {
       this.universityItemList = data;
+      console.log(this.universityItemList);
     });
 
   }
 
-
+  openUniversity(universityId: number) {
+    this.openUniversityEvent.emit(universityId);
+  }
 
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'navbar',
@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   title = 'my-uni-compass';
+
+  @Input() universityId: number;
 
   languageList = [{
     value: 'en',

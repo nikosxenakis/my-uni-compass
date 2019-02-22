@@ -10,18 +10,20 @@
       <h4 class="uniRecord" *ngFor="let uniHeader of universityHeaderList">{{uniHeader}}</h4>
     </mat-card>
 
-    <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList">
-        <h4 class="uniRecord">{{uniItem.uniName}}</h4>
+    <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem.universityId)">
+        <h4 class="uniRecord">{{uniItem.universityName}}</h4>
         <h4 class="uniRecord">{{uniItem.city}}</h4>
-        <h4 class="uniRecord">{{uniItem.underPrograms}}</h4>
-        <h4 class="uniRecord">{{uniItem.postPrograms}}</h4>
-        <h4 class="uniRecord">{{uniItem.gradRates}}</h4>
+        <h4 class="uniRecord">{{uniItem.undergraduatePrograms}}</h4>
+        <h4 class="uniRecord">{{uniItem.postgraduatePrograms}}</h4>
+        <h4 class="uniRecord">{{uniItem.graduationRates}}</h4>
         <h4 class="uniRecord">{{uniItem.employability}}</h4>
         <h4 class="uniRecord">{{uniItem.lifeQuality}}</h4>
         <h4 class="uniRecord">{{uniItem.teachingExcellence}}</h4>
-        <h4 class="uniRecord">{{uniItem.actions}}</h4>
+        <h4 class="uniRecord">
+          <i class="material-icons">favorite_border</i>
+          <i class="material-icons">favorite</i>
+        </h4>
     </mat-card>
-
 </mat-card>
 
 

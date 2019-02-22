@@ -1,5 +1,5 @@
-<navbar></navbar>
+<navbar [universityId]="universityId"></navbar>
 
-<tabbar></tabbar>
+<tabbar *ngIf="!universityId" (openUniversityEvent)="onOpenUniversity($event)"></tabbar>
 
-<router-outlet></router-outlet>
+<university-details *ngIf="universityId" [(universityId)]="universityId"></university-details>

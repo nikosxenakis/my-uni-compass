@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule, JsonpModule } from '@angular/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 
@@ -17,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TabbarComponent } from './tabbar/tabbar.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { UniListComponent } from './uniList/uniList.component';
+import { UniversityDetailsComponent } from './universityDetails/universityDetails.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +24,13 @@ import { UniListComponent } from './uniList/uniList.component';
     NavbarComponent,
     TabbarComponent,
     SearchbarComponent,
-    UniListComponent
+    UniListComponent,
+    UniversityDetailsComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     JsonpModule,
-    AppRoutingModule,
     MatButtonModule,
     MatToolbarModule,
     MatSelectModule,

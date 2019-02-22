@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  universityId = null;
+
+  onOpenUniversity(universityId: number) {
+    this.universityId = universityId;
+  }
 }
