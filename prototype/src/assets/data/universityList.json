@@ -1,33 +1,69 @@
-[
-    {
-        "universityId": 1,
-        "universityName": "University of Edinburgh",
-        "city": "Edinburgh, UK",
-        "undergraduatePrograms": 98,
-        "postgraduatePrograms": 32,
-        "graduationRates": 0.80,
-        "employability": 0.87,
-        "lifeQuality": 0.75,
-        "teachingExcellence": 0.78
-    }, {
-        "universityId": 2,
-        "universityName": "University of Edinburgh",
-        "city": "Edinburgh, UK",
-        "undergraduatePrograms": 98,
-        "postgraduatePrograms": 32,
-        "graduationRates": 0.80,
-        "employability": 0.87,
-        "lifeQuality": 0.75,
-        "teachingExcellence": 0.78
-    }, {
-        "universityId": 3,
-        "universityName": "University of Edinburgh",
-        "city": "Edinburgh, UK",
-        "undergraduatePrograms": 98,
-        "postgraduatePrograms": 32,
-        "graduationRates": 0.80,
-        "employability": 0.87,
-        "lifeQuality": 0.75,
-        "teachingExcellence": 0.78
-    }
-]
+{
+    "universityList": [
+        {
+            "universityId": 1,
+            "universityName": "University of Edinburgh",
+            "city": "Edinburgh, UK",
+            "undergraduatePrograms": 98,
+            "postgraduatePrograms": 32,
+            "graduationRates": 0.80,
+            "employability": 0.87,
+            "lifeQuality": 0.75,
+            "teachingExcellence": 0.78,
+            "programmes":[
+                {
+                    "name":"Software Engineering",
+                    "domain":"Computer Science",
+                    "type":"UG",
+                    "tuitionFeesDomestic":9000,
+                    "tuitionFeesInternational":18000
+                },
+                {
+                    "name":"HPC & Data Science",
+                    "domain":"Computer Science",
+                    "type":"PG",
+                    "tuitionFeesDomestic":11500,
+                    "tuitionFeesInternational":23000
+                }
+            ],
+            "monthlyLivingExpensesMinimum":{
+                "Rent": 100,
+                "Transport": 100,
+                "Nutrition": 100,
+                "Entertainment": 100
+            },
+    
+            "monthlyLivingExpensesRecommended":{
+                "Rent": 200,
+                "Transport": 200,
+                "Nutrition": 200,
+                "Entertainment": 200
+            },
+    
+            "ratios":{
+                "maleFemale": 0.5,
+                "ugPg": 0.5,
+                "domesticInternationalStudents": 0.5,
+                "staffStudent": 0.5
+            }
+        }, {
+            "universityId": 2,
+            "universityName": "University of Edinburgh",
+            "city": "Edinburgh, UK",
+            "undergraduatePrograms": 98,
+            "postgraduatePrograms": 32,
+            "graduationRates": 0.80,
+            "employability": 0.87,
+            "lifeQuality": 0.75,
+            "teachingExcellence": 0.78
+        }
+    ],
+    "favorites": [
+        {"universityId": 1},
+        {"universityId": 2}
+    ],
+    "saved": [
+        {"universityId": 1},
+        {"universityId": 3}
+    ]
+}
