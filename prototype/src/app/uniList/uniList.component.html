@@ -6,8 +6,14 @@
 
 <mat-card class="uniList">
 
+
+
     <mat-card class="uniHeader uniRow">
-      <h4 class="uniRecord" *ngFor="let uniHeader of universityHeaderList">{{uniHeader}}</h4>
+        <mat-grid-list cols="9" rowHeight="7:1">
+            <mat-grid-tile *ngFor="let uniHeader of universityHeaderList">
+                <h4 class="uniRecord">{{uniHeader}}</h4>
+            </mat-grid-tile>
+          </mat-grid-list>
     </mat-card>
 
     <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem)">
