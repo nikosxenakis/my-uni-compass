@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, AfterViewInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import { FormGroup, FormControl } from '@angular/forms';
   templateUrl: './searchbar.component.html',
   styleUrls: ['./searchbar.component.scss']
 })
-export class SearchbarComponent {
+export class SearchbarComponent implements AfterViewInit {
 
   @Output() searchEvent = new EventEmitter<any>();
 
@@ -36,6 +36,7 @@ export class SearchbarComponent {
 
   form = new FormGroup({
     degreeLevel: new FormControl(this.degreeLevelList[0]),
+    country: new FormControl(this.countryList[0]),
     teachingExcellenceMin: new FormControl(0),
     teachingExcellenceMax: new FormControl(100)
   });
@@ -56,14 +57,17 @@ export class SearchbarComponent {
   ];
 
   elementsVisibility = {
-    degreeLevel: true
+    degreeLevel: true,
+    country: true,
+    teachingExcellence: true
   };
 
-  search(form: any) {
-    console.log(form);
-    // propagate the results
-    this.searchEvent.emit(form);
+  ngAfterViewInit() {
+    this.moveElement('teachingExcellence', 'remove');
+  }
 
+  search(form: any) {
+    this.searchEvent.emit(form);
   }
   more() {
     this.moreHidden = !this.moreHidden;
