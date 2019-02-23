@@ -14,15 +14,15 @@ export class UniListComponent implements OnInit {
   @Output() openUniversityEvent = new EventEmitter<UniversityItem>();
 
   universityHeaderList = [
-    'University Name',
-    'City',
-    'Undergraduate Programs',
-    'Postgraduate Programs',
-    'Graduation Rates',
-    'Employability',
-    'Life Quality',
-    'Teaching Excelence',
-    'Actions'
+    {name: 'University Name', colspan: '17'},
+    {name: 'City', colspan: '18'},
+    {name: 'Undergraduate Programs', colspan: '10'},
+    {name: 'Postgraduate Programs', colspan: '10'},
+    {name: 'Graduation Rates', colspan: '10'},
+    {name: 'Employability', colspan: '10'},
+    {name: 'Life Quality', colspan: '10'},
+    {name: 'Teaching Excelence', colspan: '10'},
+    {name: 'Actions', colspan: '5'}
   ];
 
   resultsString = 'No results found';
