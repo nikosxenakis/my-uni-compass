@@ -1,16 +1,63 @@
 <mat-card>
 
+  <form #myForm="ngForm" [formGroup]="form" (ngSubmit)="search(myForm.value)">
 
-    <div class="filter">
+    <div id="searchBarForm">
+
+        <div class="filter rangeFilter" id="teachingExcellence">
+            <span class="labelWrapper">
+              <h6>Teaching Excellence</h6>
+            </span>
+            <span class="contentWrapper">
+              <h6 class="contentItem">From</h6>
+              <mat-form-field class="contentItem">
+                <input type="number" min="0" max={{myForm.value.teachingExcellenceMax}} matInput formControlName="teachingExcellenceMin">
+              </mat-form-field>
+              <h6 class="contentItem">To</h6>
+              <mat-form-field class="contentItem">
+                <input type="number" min={{myForm.value.teachingExcellenceMin}} max="100" matInput formControlName="teachingExcellenceMax">
+              </mat-form-field>
+              <h6 class="contentItem">%</h6>
+            </span>
+          </div>
+      
+      
+          <div class="filter" id="degreeLevel">
+            <mat-form-field>
+              <mat-select [disabled]="!elementsVisibility.degreeLevel" placeholder="Degree Level" disableRipple formControlName="degreeLevel">
+                <mat-option *ngFor="let degreeLevel of degreeLevelList" [value]="degreeLevel">{{ degreeLevel }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <i *ngIf="elementsVisibility.degreeLevel" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('degreeLevel','remove')">remove_circle</i>
+            <i *ngIf="!elementsVisibility.degreeLevel" class="material-icons addRemoveFilter addFilter" (click)="moveElement('degreeLevel','add')">add_circle</i>
+            <i class="material-icons helpFilter">help</i>
+          </div>
+
+    </div>
+
+
+    <mat-card-actions>
+      <button type="submit" mat-raised-button color="primary" matTooltip="Search for universities">Search</button>
+      <button type="button" mat-raised-button color="primary" (click)="more()" matTooltip="Show more filters to add">Add Filters</button>
+    </mat-card-actions>
+
+  </form>
+
+  <div [hidden]="moreHidden" id="hiddenFilters">
+      <mat-divider></mat-divider>
+
+  </div>
+
+  <!-- <div class="filter">
     <mat-form-field>
       <mat-select placeholder="Degree Level" disableRipple>
         <mat-option>None</mat-option>
-        <mat-option value="1">Undergraduate Level</mat-option>
-        <mat-option value="2">Postgraduate Level</mat-option>
+        <mat-option value="undergraduate">Undergraduate</mat-option>
+        <mat-option value="postgraduate">Postgraduate</mat-option>
       </mat-select>
     </mat-form-field>
-    <i class="material-icons removeFilter">remove_circle</i>
-    <!-- <i class="material-icons">help</i> -->
+    <i class="material-icons removeFilter" (click)="removeElement()">remove_circle</i>
+    <i class="material-icons">help</i>
     </div>
 
       <mat-form-field class="filter">
@@ -20,18 +67,5 @@
           </mat-select>
         </mat-form-field>
 
-
-      <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="search()" matTooltip="Search for universities">Search</button>
-          <button mat-raised-button color="primary" (click)="more()" matTooltip="Show more filters to add">Add Filters</button>
-      </mat-card-actions>
-
-  <div [hidden]="moreHidden">
-      <mat-form-field>
-          <mat-select [(value)]="selected">
-              <mat-option value="en">Option 1
-              </mat-option>
-          </mat-select>
-        </mat-form-field>
-  </div>
+  -->
 </mat-card>
