@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,8 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./searchbar.component.scss']
 })
 export class SearchbarComponent {
+
+  @Output() searchEvent = new EventEmitter<any>();
 
   degreeLevelList = [
     'All',
@@ -60,6 +62,8 @@ export class SearchbarComponent {
   search(form: any) {
     console.log(form);
     // propagate the results
+    this.searchEvent.emit(form);
+
   }
   more() {
     this.moreHidden = !this.moreHidden;
@@ -68,6 +72,7 @@ export class SearchbarComponent {
   moveElement(elementId: string, action: string) {
     console.log(action, ': ', elementId);
     const target = document.getElementById(elementId);
+    this.resetField(elementId);
 
     if (action === 'remove') {
       document.getElementById('hiddenFilters').appendChild(target);
@@ -78,4 +83,11 @@ export class SearchbarComponent {
     this.elementsVisibility[elementId] = !this.elementsVisibility[elementId];
   }
 
+  resetField(elementId: string) {
+
+    if (elementId === 'degreeLevel') {
+      this.form.controls[elementId].setValue(this.degreeLevelList[0]);
+    }
+
+  }
 }
