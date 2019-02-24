@@ -1,10 +1,12 @@
-<mat-tab-group mat-align-tabs="center">
+<mat-tab-group mat-align-tabs="center" class="appTab" [color]="black">
   <mat-tab label="Search">
-    <searchbar (searchEvent)="search($event)"></searchbar>
-    <uni-list (openUniversityEvent)="onOpenUniversity($event)"
-      [universityItemList]="universityItemList" [universityItemFavoritesList]="universityItemFavoritesList"
-      [universityItemSavedList]="universityItemSavedList" [resultsString]="resultsString"
-    ></uni-list>
+    <div class="searchTabContainer">
+      <searchbar (searchEvent)="search($event)"></searchbar>
+      <uni-list (openUniversityEvent)="onOpenUniversity($event)"
+        [universityItemList]="universityItemList" [universityItemFavoritesList]="universityItemFavoritesList"
+        [universityItemSavedList]="universityItemSavedList" [resultsString]="resultsString"
+      ></uni-list>
+    </div>
   </mat-tab>
   <mat-tab label="Favorites" [disabled]="true"> Favorites </mat-tab>
   <mat-tab label="Saved For Later" [disabled]="true"> Saved For Later </mat-tab>

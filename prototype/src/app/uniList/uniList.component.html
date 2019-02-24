@@ -49,6 +49,11 @@
       </mat-grid-list>
 
     </mat-card>
+
+    <mat-paginator [length]="universityItemList.length" [pageSize]="10" [pageSizeOptions]="pageSizeOptions"
+              (page)="pageEvent = $event">
+  </mat-paginator>
+
 </mat-card>
 
 

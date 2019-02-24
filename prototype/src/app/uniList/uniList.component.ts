@@ -13,7 +13,7 @@ export class UniListComponent implements OnInit {
   @Input() universityItemSavedList: Array<number>;
   @Input() resultsString: string;
   @Output() openUniversityEvent = new EventEmitter<UniversityItem>();
-
+  pageSizeOptions: number[] = [5, 10, 25, 100];
   universityHeaderList = [
     {name: 'University Name', colspan: '17'},
     {name: 'City', colspan: '18'},

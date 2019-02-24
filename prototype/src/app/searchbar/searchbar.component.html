@@ -26,22 +26,118 @@
         <i class="material-icons helpFilter" matTooltip="Select the available degree level in the university">help</i>
       </div>
 
+      <div class="filter" id="year">
+        <mat-form-field>
+          <mat-select [disabled]="!elementsVisibility.year" placeholder="Year" disableRipple formControlName="year">
+            <mat-option *ngFor="let year of yearList" [value]="year">{{ year }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <i *ngIf="elementsVisibility.year" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('year','remove')" matTooltip="click to remove this filter">remove_circle</i>
+        <i *ngIf="!elementsVisibility.year" class="material-icons addRemoveFilter addFilter" (click)="moveElement('year','add')" matTooltip="click to add this filter">add_circle</i>
+        <i class="material-icons helpFilter" matTooltip="Select a specific year to search">help</i>
+      </div>
+
+      <div class="filter" id="domain">
+        <mat-form-field>
+          <mat-select [disabled]="!elementsVisibility.domain" placeholder="Domain" disableRipple formControlName="domain">
+            <mat-option *ngFor="let domain of domainList" [value]="domain">{{ domain }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <i *ngIf="elementsVisibility.domain" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('domain','remove')" matTooltip="click to remove this filter">remove_circle</i>
+        <i *ngIf="!elementsVisibility.domain" class="material-icons addRemoveFilter addFilter" (click)="moveElement('domain','add')" matTooltip="click to add this filter">add_circle</i>
+        <i class="material-icons helpFilter" matTooltip="Select a specific domain to search">help</i>
+      </div>
+
       <div class="filter rangeFilter" id="teachingExcellence">
-          <span class="labelWrapper">
-            <h6>Teaching Excellence</h6>
-          </span>
-          <span class="contentWrapper">
-            <h6 class="contentItem">From</h6>
-            <mat-form-field class="contentItem">
-              <input type="number" min="0" max={{myForm.value.teachingExcellenceMax}} matInput formControlName="teachingExcellenceMin">
-            </mat-form-field>
-            <h6 class="contentItem">To</h6>
-            <mat-form-field class="contentItem">
-              <input type="number" min={{myForm.value.teachingExcellenceMin}} max="100" matInput formControlName="teachingExcellenceMax">
-            </mat-form-field>
-            <h6 class="contentItem">%</h6>
-          </span>
-        </div>
+        <span class="labelWrapper">
+          <h6>Teaching Excellence</h6>
+        </span>
+        <span class="contentWrapper">
+          <h6 class="contentItem">From</h6>
+          <mat-form-field class="contentItem">
+            <input [readonly]="!elementsVisibility.teachingExcellence" type="number" min="0" max={{myForm.value.teachingExcellenceMax}} matInput formControlName="teachingExcellenceMin">
+          </mat-form-field>
+          <h6 class="contentItem">To</h6>
+          <mat-form-field class="contentItem">
+            <input [readonly]="!elementsVisibility.teachingExcellence" type="number" min={{myForm.value.teachingExcellenceMin}} max="100" matInput formControlName="teachingExcellenceMax">
+          </mat-form-field>
+          <h6 class="contentItem">%</h6>
+        </span>
+        <i *ngIf="elementsVisibility.teachingExcellence" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('teachingExcellence','remove')" matTooltip="click to remove this filter">remove_circle</i>
+        <i *ngIf="!elementsVisibility.teachingExcellence" class="material-icons addRemoveFilter addFilter" (click)="moveElement('teachingExcellence','add')" matTooltip="click to add this filter">add_circle</i>
+        <i class="material-icons helpFilter" matTooltip="Select range of values for the teaching excellence in the university">help</i>
+      </div>
+
+      <div class="filter rangeFilter" id="lifeQuality">
+        <span class="labelWrapper">
+          <h6>Quality of Life</h6>
+        </span>
+        <span class="contentWrapper">
+          <h6 class="contentItem">From</h6>
+          <mat-form-field class="contentItem">
+            <input [readonly]="!elementsVisibility.lifeQuality" type="number" min="0" max={{myForm.value.lifeQualityMax}} matInput formControlName="lifeQualityMin">
+          </mat-form-field>
+          <h6 class="contentItem">To</h6>
+          <mat-form-field class="contentItem">
+            <input [readonly]="!elementsVisibility.lifeQuality" type="number" min={{myForm.value.lifeQualityMin}} max="100" matInput formControlName="lifeQualityMax">
+          </mat-form-field>
+          <h6 class="contentItem">%</h6>
+        </span>
+        <i *ngIf="elementsVisibility.lifeQuality" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('lifeQuality','remove')" matTooltip="click to remove this filter">remove_circle</i>
+        <i *ngIf="!elementsVisibility.lifeQuality" class="material-icons addRemoveFilter addFilter" (click)="moveElement('lifeQuality','add')" matTooltip="click to add this filter">add_circle</i>
+        <i class="material-icons helpFilter" matTooltip="Select range of values for the quality of life in the university">help</i>
+      </div>
+
+      <div class="filter rangeFilter" id="employability">
+        <span class="labelWrapper">
+          <h6>Employability</h6>
+        </span>
+        <span class="contentWrapper">
+          <h6 class="contentItem">From</h6>
+          <mat-form-field class="contentItem">
+            <input [readonly]="!elementsVisibility.employability" type="number" min="0" max={{myForm.value.employabilityMax}} matInput formControlName="employabilityMin">
+          </mat-form-field>
+          <h6 class="contentItem">To</h6>
+          <mat-form-field class="contentItem">
+            <input [readonly]="!elementsVisibility.employability" type="number" min={{myForm.value.employabilityMin}} max="100" matInput formControlName="employabilityMax">
+          </mat-form-field>
+          <h6 class="contentItem">%</h6>
+        </span>
+        <i *ngIf="elementsVisibility.employability" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('employability','remove')" matTooltip="click to remove this filter">remove_circle</i>
+        <i *ngIf="!elementsVisibility.employability" class="material-icons addRemoveFilter addFilter" (click)="moveElement('employability','add')" matTooltip="click to add this filter">add_circle</i>
+        <i class="material-icons helpFilter" matTooltip="Select range of values of the employability rates in the university">help</i>
+      </div>
+
+      <div class="filter rangeFilter" id="graduationRates">
+        <span class="labelWrapper">
+          <h6>Graduation Rates</h6>
+        </span>
+        <span class="contentWrapper">
+          <h6 class="contentItem">From</h6>
+          <mat-form-field class="contentItem">
+            <input [readonly]="!elementsVisibility.graduationRates" type="number" min="0" max={{myForm.value.graduationRatesMax}} matInput formControlName="graduationRatesMin">
+          </mat-form-field>
+          <h6 class="contentItem">To</h6>
+          <mat-form-field class="contentItem">
+            <input [readonly]="!elementsVisibility.graduationRates" type="number" min={{myForm.value.graduationRatesMin}} max="100" matInput formControlName="graduationRatesMax">
+          </mat-form-field>
+          <h6 class="contentItem">%</h6>
+        </span>
+        <i *ngIf="elementsVisibility.graduationRates" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('graduationRates','remove')" matTooltip="click to remove this filter">remove_circle</i>
+        <i *ngIf="!elementsVisibility.graduationRates" class="material-icons addRemoveFilter addFilter" (click)="moveElement('graduationRates','add')" matTooltip="click to add this filter">add_circle</i>
+        <i class="material-icons helpFilter" matTooltip="Select range of values for the graduation rates in the university">help</i>
+      </div>
+
+      <div class="filter" id="domain">
+        <mat-form-field>
+          <mat-select [disabled]="!elementsVisibility.domain" placeholder="Domain" disableRipple formControlName="domain">
+            <mat-option *ngFor="let domain of domainList" [value]="domain">{{ domain }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <i *ngIf="elementsVisibility.domain" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('domain','remove')" matTooltip="click to remove this filter">remove_circle</i>
+        <i *ngIf="!elementsVisibility.domain" class="material-icons addRemoveFilter addFilter" (click)="moveElement('domain','add')" matTooltip="click to add this filter">add_circle</i>
+        <i class="material-icons helpFilter" matTooltip="Select a specific domain to search">help</i>
+      </div>
 
     </div>
 

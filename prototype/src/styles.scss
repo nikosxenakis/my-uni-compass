@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 // @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './uni-compass-theme.scss';
 
 body { 
   font-family: Roboto, Arial, sans-serif;
+  background-color: mat-color($app-primary, 50);
   margin: 0;
 }
 

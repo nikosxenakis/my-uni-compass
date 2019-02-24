@@ -1,13 +1,22 @@
-mat-tab-group {
-   .mat-tab-header {
-       .mat-tab-label-container {
+@import '../../uni-compass-theme.scss';
 
-           .mat-tab-labels {
-               .mat-tab-label {
-                   // width: 33%;
-                   // background-color: red;
-               }
-           }
-       }
-   }
+.appTab {
+    .mat-tab-header {
+        // .mat-tab-label-container {
+        //     background-color: mat-color($app-primary, 400);
+        // }
+
+        // .mat-tab-label-container {
+        //     .mat-tab-labels {
+            // .mat-tab-label {
+            //     width: 33%;
+            //     background-color: red;
+            // }
+        //     }
+        // }
+    }
+
+    .searchTabContainer {
+        margin: 10px;
+    }
 }
