@@ -24,7 +24,27 @@
                 "tuition_fees_domestic":11500,
                 "tuition_fees_international":23000
             }
-        ]
+        ],
+        "monthlyLivingExpensesMinimum":{
+            "rent": 100,
+            "transport": 100,
+            "food": 100,
+            "entertainment": 100
+        },
+
+        "monthlyLivingExpensesRecommended":{
+            "rent": 200,
+            "transport": 200,
+            "food": 200,
+            "entertainment": 200
+        },
+
+        "ratios":{
+            "maleFemale": 0.5,
+            "ugPg": 0.5,
+            "domesticInternationalStudents": 0.5,
+            "staffStudent": 0.5
+        }
     }, {
         "universityId": 2,
         "universityName": "University of Edinburgh",

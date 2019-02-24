@@ -1,21 +1,59 @@
 <mat-card>
 
-  <mat-form-field>
-      <mat-select [(value)]="selected">
-          <mat-option value="en">Option 1
-          </mat-option>
-      </mat-select>
-    </mat-form-field>
+  <form #myForm="ngForm" [formGroup]="form" (ngSubmit)="search(myForm.value)">
 
-  <button mat-raised-button color="primary" (click)="search()" matTooltip="Search for universities">Search</button>
-  <button mat-raised-button color="primary" (click)="more()" matTooltip="Show more filters to add">Add Filters</button>
+    <div id="searchBarForm">
 
-  <div [hidden]="moreHidden">
-      <mat-form-field>
-          <mat-select [(value)]="selected">
-              <mat-option value="en">Option 1
-              </mat-option>
+      <div class="filter" id="degreeLevel">
+        <mat-form-field>
+          <mat-select [disabled]="!elementsVisibility.degreeLevel" placeholder="Degree Level" disableRipple formControlName="degreeLevel">
+            <mat-option *ngFor="let degreeLevel of degreeLevelList" [value]="degreeLevel">{{ degreeLevel }}</mat-option>
           </mat-select>
         </mat-form-field>
+        <i *ngIf="elementsVisibility.degreeLevel" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('degreeLevel','remove')" matTooltip="click to remove this filter">remove_circle</i>
+        <i *ngIf="!elementsVisibility.degreeLevel" class="material-icons addRemoveFilter addFilter" (click)="moveElement('degreeLevel','add')" matTooltip="click to add this filter">add_circle</i>
+        <i class="material-icons helpFilter" matTooltip="Select the available degree level in the university">help</i>
+      </div>
+
+      <div class="filter" id="country">
+        <mat-form-field>
+          <mat-select [disabled]="!elementsVisibility.country" placeholder="Country" disableRipple formControlName="country">
+            <mat-option *ngFor="let country of countryList" [value]="country">{{ country }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <i *ngIf="elementsVisibility.country" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('country','remove')" matTooltip="click to remove this filter">remove_circle</i>
+        <i *ngIf="!elementsVisibility.country" class="material-icons addRemoveFilter addFilter" (click)="moveElement('country','add')" matTooltip="click to add this filter">add_circle</i>
+        <i class="material-icons helpFilter" matTooltip="Select the available degree level in the university">help</i>
+      </div>
+
+      <div class="filter rangeFilter" id="teachingExcellence">
+          <span class="labelWrapper">
+            <h6>Teaching Excellence</h6>
+          </span>
+          <span class="contentWrapper">
+            <h6 class="contentItem">From</h6>
+            <mat-form-field class="contentItem">
+              <input type="number" min="0" max={{myForm.value.teachingExcellenceMax}} matInput formControlName="teachingExcellenceMin">
+            </mat-form-field>
+            <h6 class="contentItem">To</h6>
+            <mat-form-field class="contentItem">
+              <input type="number" min={{myForm.value.teachingExcellenceMin}} max="100" matInput formControlName="teachingExcellenceMax">
+            </mat-form-field>
+            <h6 class="contentItem">%</h6>
+          </span>
+        </div>
+
+    </div>
+
+    <mat-card-actions>
+      <button type="submit" mat-raised-button color="primary" matTooltip="Search for universities">Search</button>
+      <button type="button" mat-raised-button color="primary" (click)="more()" matTooltip="Show more filters to add">Add Filters</button>
+    </mat-card-actions>
+
+  </form>
+
+  <div [hidden]="moreHidden" id="hiddenFilters">
+    <mat-divider></mat-divider>
   </div>
+
 </mat-card>

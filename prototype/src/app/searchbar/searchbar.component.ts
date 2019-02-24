@@ -1,15 +1,48 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'searchbar',
   templateUrl: './searchbar.component.html',
   styleUrls: ['./searchbar.component.scss']
 })
-export class SearchbarComponent {
+export class SearchbarComponent implements AfterViewInit {
 
-  selected = 'en';
+  @Output() searchEvent = new EventEmitter<any>();
+
+  degreeLevelList = [
+    'All',
+    'Undergraduate',
+    'Postgraduate'
+  ];
+
+  countryList = [
+    'All',
+    'United Kingdom'
+  ];
+
+  yearList = [
+    'All',
+    '2018',
+    '2017',
+    '2016',
+    '2015'
+  ];
+
+  domainList = [
+    'All',
+    'Computer Science'
+  ];
+
+  form = new FormGroup({
+    degreeLevel: new FormControl(this.degreeLevelList[0]),
+    country: new FormControl(this.countryList[0]),
+    teachingExcellenceMin: new FormControl(0),
+    teachingExcellenceMax: new FormControl(100)
+  });
+
+
   moreHidden = true;
-  resultsString = '123 Universities, 1425 undergraduate and 876 postgraduate programs found';
 
   universityHeaderList = [
     'University Name',
@@ -22,8 +55,43 @@ export class SearchbarComponent {
     'Teaching Excelence',
     'Actions'
   ];
-  search() {}
+
+  elementsVisibility = {
+    degreeLevel: true,
+    country: true,
+    teachingExcellence: true
+  };
+
+  ngAfterViewInit() {
+    this.moveElement('teachingExcellence', 'remove');
+  }
+
+  search(form: any) {
+    this.searchEvent.emit(form);
+  }
   more() {
     this.moreHidden = !this.moreHidden;
+  }
+
+  moveElement(elementId: string, action: string) {
+    console.log(action, ': ', elementId);
+    const target = document.getElementById(elementId);
+    this.resetField(elementId);
+
+    if (action === 'remove') {
+      document.getElementById('hiddenFilters').appendChild(target);
+    } else {
+      document.getElementById('searchBarForm').appendChild(target);
+    }
+
+    this.elementsVisibility[elementId] = !this.elementsVisibility[elementId];
+  }
+
+  resetField(elementId: string) {
+
+    if (elementId === 'degreeLevel') {
+      this.form.controls[elementId].setValue(this.degreeLevelList[0]);
+    }
+
   }
 }

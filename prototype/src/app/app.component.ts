@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  universityId = null;
+  uniItem: UniversityItem = null;
 
-  onOpenUniversity(universityId: number) {
-    this.universityId = universityId;
+  onOpenUniversity(uniItem: UniversityItem) {
+    this.uniItem = uniItem;
   }
 }

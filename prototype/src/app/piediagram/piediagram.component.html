@@ -1,0 +1,13 @@
+<mat-card class="chart">
+    <canvas
+        baseChart
+        [chartType]="'pie'"
+        [datasets]="pieChartData"
+        [labels]="pieChartLabels"
+        [options]="pieChartOptions"
+        [legend]="true"
+        [colors]="pieChartColor"
+        (chartClick)="onChartClick($event)">
+    </canvas>
+</mat-card>
+

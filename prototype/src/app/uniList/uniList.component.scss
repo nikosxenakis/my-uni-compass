@@ -2,6 +2,7 @@
 
 .resultsString {
     text-align: center;
+    color: mat-color($app-primary, 600);
 }
 
 mat-card {
@@ -33,8 +34,17 @@ mat-card {
     .uniItem {
         background-color: mat-color($app-primary, 50);
 
-        h4 {
+        :hover {
+            cursor: pointer;
+            // padding: 10px;
+        }
+
+        h4, i {
             color: mat-color($app-primary, 500);
+        }
+
+        .material-icons {
+            
         }
     }
 

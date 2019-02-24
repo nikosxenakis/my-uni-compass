@@ -1,6 +1,6 @@
-import { Component, OnInit, EventEmitter, Output  } from '@angular/core';
-import { Http } from '@angular/http';
-import {map} from 'rxjs/operators';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import {MatSnackBar} from '@angular/material';
+import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
   selector: 'uni-list',
@@ -8,42 +8,62 @@ import {map} from 'rxjs/operators';
   styleUrls: ['./uniList.component.scss']
 })
 export class UniListComponent implements OnInit {
-
-  @Output() openUniversityEvent = new EventEmitter<number>();
+  @Input() universityItemList: Array<UniversityItem>;
+  @Input() universityItemFavoritesList: Array<number>;
+  @Input() universityItemSavedList: Array<number>;
+  @Input() resultsString: string;
+  @Output() openUniversityEvent = new EventEmitter<UniversityItem>();
 
   universityHeaderList = [
-    'University Name',
-    'City',
-    'Undergraduate Programs',
-    'Postgraduate Programs',
-    'Graduation Rates',
-    'Employability',
-    'Life Quality',
-    'Teaching Excelence',
-    'Actions'
+    {name: 'University Name', colspan: '17'},
+    {name: 'City', colspan: '18'},
+    {name: 'Undergraduate Programs', colspan: '10'},
+    {name: 'Postgraduate Programs', colspan: '10'},
+    {name: 'Graduation Rates', colspan: '10'},
+    {name: 'Employability', colspan: '10'},
+    {name: 'Life Quality', colspan: '10'},
+    {name: 'Teaching Excelence', colspan: '10'},
+    {name: 'Actions', colspan: '5'}
   ];
 
-  universityItemList: Array<UniversityItem> = [];
-
-  constructor(private http: Http) { }
+  constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit() {
+  }
 
-    this.http.get('./assets/data/universityList.json')
-    .pipe(
-      map( response => {
-        return response.json();
-      })
-    )
-    .subscribe( data => {
-      this.universityItemList = data;
-      console.log(this.universityItemList);
+  openUniversity(uniItem: UniversityItem) {
+    this.openUniversityEvent.emit(uniItem);
+  }
+
+  addToFavorites(uniItem: UniversityItem) {
+    this.universityItemFavoritesList.push(uniItem.universityId);
+    this.openDialog(uniItem.universityName + ' added to the favorites');
+  }
+
+  addToSaved(uniItem: UniversityItem) {
+    this.universityItemSavedList.push(uniItem.universityId);
+    this.openDialog(uniItem.universityName + ' added to the saved for later');
+  }
+
+  removeFromFavorites(uniItem: UniversityItem) {
+    this.universityItemFavoritesList = this.universityItemFavoritesList.filter(
+      obj => obj !== uniItem.universityId
+    );
+    this.openDialog(uniItem.universityName + ' removed from the favorites');
+  }
+
+  removeFromSaved(uniItem: UniversityItem) {
+    this.universityItemSavedList = this.universityItemSavedList.filter(
+      obj => obj !== uniItem.universityId
+    );
+    this.openDialog(uniItem.universityName + ' removed from the saved for later');
+  }
+
+  openDialog(msg: string) {
+    event.stopPropagation();
+
+    this.snackBar.open(msg, 'Close', {
+      duration: 2000,
     });
-
   }
-
-  openUniversity(universityId: number) {
-    this.openUniversityEvent.emit(universityId);
-  }
-
 }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
   selector: 'university-details',
@@ -7,14 +8,14 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class UniversityDetailsComponent implements OnInit {
 
-  @Input() universityId: number;
-  @Output() universityIdChange = new EventEmitter<number>();
+  @Input() uniItem: UniversityItem;
+  @Output() uniItemChange = new EventEmitter<UniversityItem>();
 
   ngOnInit() {
-    console.log(this.universityId);
+    console.log(this.uniItem);
   }
   goBack() {
-    this.universityIdChange.emit(null);
+    this.uniItemChange.emit(null);
   }
 
 }

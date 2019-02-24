@@ -1,4 +1,4 @@
-class UniversityItem {
+export class UniversityItem {
     universityId: number;
     universityName: string;
     city: string;
@@ -8,4 +8,8 @@ class UniversityItem {
     employability: number;
     lifeQuality: number;
     teachingExcellence: number;
+    programmes: any;
+    monthlyLivingExpensesMinimum: any;
+    monthlyLivingExpensesRecommended: any;
+    ratios: any;
 }

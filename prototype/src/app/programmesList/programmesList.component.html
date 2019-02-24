@@ -7,15 +7,34 @@
 <mat-card class="programmesList">
 
     <mat-card class="programmesHeader programmesRow">
-        <h4 class="programmesRecord" *ngFor="let programmesHeader of programmesHeaderList">{{programmesHeader}}</h4>
+
+      <mat-grid-list cols="130" rowHeight="40px">
+          <mat-grid-tile [colspan]="25" *ngFor="let programmesHeader of programmesHeaderList">
+              <h4 class="programmesRecord">{{programmesHeader}}</h4>
+          </mat-grid-tile>
+        </mat-grid-list>
+
     </mat-card>
 
-    <mat-card class="programmeItem programmeRow" *ngFor="let programmeItem of programmesItemList">
-      <h4 class="programmesRecord">{{programmeItem.name}}</h4>
-      <h4 class="programmesRecord">{{programmeItem.domain}}</h4>
-      <h4 class="programmesRecord">{{programmeItem.type}}</h4>
-      <h4 class="programmesRecord">{{programmeItem.tuitionFeesDomestic}}</h4>
-      <h4 class="programmesRecord">{{programmeItem.tuitionFeesInternational}}</h4>
+    <mat-card class="programmeItem programmeRow">
+      <mat-grid-list cols="130" rowHeight="45px" *ngFor="let programmeItem of programmesItemList">
+        <mat-grid-tile [colspan]="25">
+          <h4 class="programmesRecord">{{programmeItem.name}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="25">
+          <h4 class="programmesRecord">{{programmeItem.domain}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="25">
+          <h4 class="programmesRecord">{{programmeItem.type}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="25">
+          <h4 class="programmesRecord">{{programmeItem.tuitionFeesDomestic}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="25">
+          <h4 class="programmesRecord">{{programmeItem.tuitionFeesInternational}}</h4>
+        </mat-grid-tile>
+      </mat-grid-list>
+
     </mat-card>
 
 </mat-card>

@@ -7,22 +7,47 @@
 <mat-card class="uniList">
 
     <mat-card class="uniHeader uniRow">
-      <h4 class="uniRecord" *ngFor="let uniHeader of universityHeaderList">{{uniHeader}}</h4>
+        <mat-grid-list cols="100" rowHeight="40px">
+            <mat-grid-tile [colspan]="uniHeader.colspan" *ngFor="let uniHeader of universityHeaderList">
+                <h4 class="uniRecord">{{uniHeader.name}}</h4>
+            </mat-grid-tile>
+          </mat-grid-list>
     </mat-card>
 
-    <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem.universityId)">
-        <h4 class="uniRecord">{{uniItem.universityName}}</h4>
-        <h4 class="uniRecord">{{uniItem.city}}</h4>
-        <h4 class="uniRecord">{{uniItem.undergraduatePrograms}}</h4>
-        <h4 class="uniRecord">{{uniItem.postgraduatePrograms}}</h4>
-        <h4 class="uniRecord">{{uniItem.graduationRates}}</h4>
-        <h4 class="uniRecord">{{uniItem.employability}}</h4>
-        <h4 class="uniRecord">{{uniItem.lifeQuality}}</h4>
-        <h4 class="uniRecord">{{uniItem.teachingExcellence}}</h4>
-        <h4 class="uniRecord">
-          <i class="material-icons">favorite_border</i>
-          <i class="material-icons">favorite</i>
-        </h4>
+    <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem)">
+      <mat-grid-list cols="100" rowHeight="30px">
+        <mat-grid-tile [colspan]="universityHeaderList[0].colspan">
+          <h4 class="uniRecord">{{uniItem.universityName}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="universityHeaderList[1].colspan">
+          <h4 class="uniRecord">{{uniItem.city}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="universityHeaderList[2].colspan">
+          <h4 class="uniRecord">{{uniItem.undergraduatePrograms}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="universityHeaderList[3].colspan">
+          <h4 class="uniRecord">{{uniItem.postgraduatePrograms}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="universityHeaderList[4].colspan">
+          <h4 class="uniRecord">{{uniItem.graduationRates}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="universityHeaderList[5].colspan">
+          <h4 class="uniRecord">{{uniItem.employability}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="universityHeaderList[6].colspan">
+          <h4 class="uniRecord">{{uniItem.lifeQuality}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="universityHeaderList[7].colspan">
+          <h4 class="uniRecord">{{uniItem.teachingExcellence}}</h4>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="universityHeaderList[8].colspan">
+          <i *ngIf="!universityItemFavoritesList.includes(uniItem.universityId)" (click)="addToFavorites(uniItem)" class="material-icons">favorite_border</i>
+          <i *ngIf="universityItemFavoritesList.includes(uniItem.universityId)" (click)="removeFromFavorites(uniItem)" class="material-icons">favorite</i>
+          <i *ngIf="!universityItemSavedList.includes(uniItem.universityId)" (click)="addToSaved(uniItem)" class="material-icons">bookmark_border</i>
+          <i *ngIf="universityItemSavedList.includes(uniItem.universityId)" (click)="removeFromSaved(uniItem)" class="material-icons">bookmark</i>
+        </mat-grid-tile>
+      </mat-grid-list>
+
     </mat-card>
 </mat-card>
 

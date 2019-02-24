@@ -1,6 +1,7 @@
-import { Component, OnInit, EventEmitter, Output  } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input  } from '@angular/core';
 import { Http } from '@angular/http';
 import { map } from 'rxjs/operators';
+import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
   selector: 'programmes-list',
@@ -10,6 +11,7 @@ import { map } from 'rxjs/operators';
 
 export class ProgrammesListComponent implements OnInit {
 
+  @Input() uniItem: UniversityItem;
   @Output() openProgrammesEvent = new EventEmitter<string>();
 
   programmesHeaderList = [
@@ -26,16 +28,8 @@ export class ProgrammesListComponent implements OnInit {
 
   ngOnInit() {
 
-    this.http.get('./assets/data/universityList.json')
-    .pipe(
-      map( response => {
-        return response.json();
-      })
-    )
-    .subscribe( data => {
-      this.programmesItemList = data[0].programmes;
-      console.log(this.programmesItemList);
-    });
+    this.programmesItemList = this.uniItem.programmes;
+
 
   }
 
