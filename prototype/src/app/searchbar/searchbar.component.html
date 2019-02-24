@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card class="searchBarCard">
 
   <form #myForm="ngForm" [formGroup]="form" (ngSubmit)="search(myForm.value)">
 
@@ -128,22 +128,11 @@
         <i class="material-icons helpFilter" matTooltip="Select range of values for the graduation rates in the university">help</i>
       </div>
 
-      <div class="filter" id="domain">
-        <mat-form-field>
-          <mat-select [disabled]="!elementsVisibility.domain" placeholder="Domain" disableRipple formControlName="domain">
-            <mat-option *ngFor="let domain of domainList" [value]="domain">{{ domain }}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <i *ngIf="elementsVisibility.domain" class="material-icons addRemoveFilter removeFilter" (click)="moveElement('domain','remove')" matTooltip="click to remove this filter">remove_circle</i>
-        <i *ngIf="!elementsVisibility.domain" class="material-icons addRemoveFilter addFilter" (click)="moveElement('domain','add')" matTooltip="click to add this filter">add_circle</i>
-        <i class="material-icons helpFilter" matTooltip="Select a specific domain to search">help</i>
-      </div>
-
     </div>
 
     <mat-card-actions>
       <button type="submit" mat-raised-button color="primary" matTooltip="Search for universities">Search</button>
-      <button type="button" mat-raised-button color="primary" (click)="more()" matTooltip="Show more filters to add">Add Filters</button>
+      <button type="button" mat-raised-button color="primary" (click)="more()" matTooltip="Show more filters to add">{{addFilterLabel}}</button>
     </mat-card-actions>
 
   </form>

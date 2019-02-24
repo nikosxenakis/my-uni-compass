@@ -10,6 +10,7 @@ export class SearchbarComponent implements AfterViewInit {
 
   @Output() searchEvent = new EventEmitter<any>();
 
+  addFilterLabel = 'Add filters';
   degreeLevelList = [
     'All',
     'Undergraduate',
@@ -64,17 +65,20 @@ export class SearchbarComponent implements AfterViewInit {
     'Actions'
   ];
 
-  elementsVisibility = {
-    degreeLevel: true,
-    country: true,
-    year: true,
-    domain: true,
-    teachingExcellence: true,
-    lifeQuality: true,
-    employability: true,
-    graduationRates: true
-  };
+  elementsVisibility: any;
 
+  constructor() {
+    this.elementsVisibility = {
+      degreeLevel: true,
+      country: true,
+      year: true,
+      domain: true,
+      teachingExcellence: true,
+      lifeQuality: true,
+      employability: true,
+      graduationRates: true
+    };
+  }
   ngAfterViewInit() {
     this.moveElement('teachingExcellence', 'remove');
     this.moveElement('lifeQuality', 'remove');
@@ -88,6 +92,7 @@ export class SearchbarComponent implements AfterViewInit {
   }
   more() {
     this.moreHidden = !this.moreHidden;
+    this.addFilterLabel = this.moreHidden ? 'Add filters' : 'Hide filters';
   }
 
   moveElement(elementId: string, action: string) {

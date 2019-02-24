@@ -29,7 +29,7 @@
               "src/styles.scss",
               "src/uni-compass-theme.scss"
             ],
-            "scripts": ["../node_modules/chart.js/dist/Chart.min.js"],
+            "scripts": ["node_modules/chart.js/dist/Chart.min.js"],
             "es5BrowserSupport": true
           },
           "configurations": {

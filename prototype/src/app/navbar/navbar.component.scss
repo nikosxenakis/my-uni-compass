@@ -18,13 +18,16 @@ button {
    }
 }
 
-.en{
-   background:  url("https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg")  center / contain no-repeat;
-   white-space: nowrap
-
+.mat-form-field {
+   width: 70px;
 }
-.option2{
-   background:  url("https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg")  center / contain no-repeat;
-   white-space: nowrap;
-   display:inline
+
+.en{
+   background:  url("../../assets/images/en.png") center / contain no-repeat;
+   white-space: nowrap
+}
+
+.de{
+   background:  url("../../assets/images/de.png") center / contain no-repeat;
+   white-space: nowrap
 }

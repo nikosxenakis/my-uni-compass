@@ -7,18 +7,12 @@
   <button mat-raised-button color="basic">Logout</button>
   <mat-form-field>
     <mat-select [(value)]="selectedLanguage" [ngClass]="selectedLanguage">
-        <mat-option value="en">Option 1
-          <img with="10" height="10" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg">
+        <mat-option value="en">
+          <img with="10" height="20" src="assets/images/en.png">
         </mat-option>
-          
-      <!-- <mat-option *ngFor="let language of languageList" [value]="language.value">
-        {{language.viewValue}}
-        <img with="10" height="10" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg">
-
-        <span with="10" height="10" class="lang-sm" lang={{language.value}}></span> 
-      </mat-option> -->
-
-
+        <mat-option value="de">
+            <img with="10" height="15" src="assets/images/de.png">
+          </mat-option>
     </mat-select>
   </mat-form-field>
 </mat-toolbar>

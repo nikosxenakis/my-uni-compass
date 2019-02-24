@@ -15,11 +15,9 @@ export class NavbarComponent {
     value: 'en',
     viewValue: 'English'
   }, {
-    value: 'gr',
-    viewValue: 'Greek'
+    value: 'de',
+    viewValue: 'German'
   }];
-
-  // selectedLanguage = this.languageList[0];
 
   selectedLanguage = 'en';
 
