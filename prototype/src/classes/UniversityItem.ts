@@ -8,4 +8,8 @@ export class UniversityItem {
     employability: number;
     lifeQuality: number;
     teachingExcellence: number;
+    programmes: any;
+    monthlyLivingExpensesMinimum: any;
+    monthlyLivingExpensesRecommended: any;
+    ratios: any;
 }

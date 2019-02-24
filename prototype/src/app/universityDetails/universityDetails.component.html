@@ -1,2 +1,20 @@
 <h1>universityDetails: {{uniItem.universityId}}</h1>
 <button mat-raised-button color="basic" (click)="goBack()">Back</button>
+<programmes-list [uniItem]="uniItem" (openProgrammesEvent)="onOpenProgramme($event)"></programmes-list>
+
+<div class="rightBlock">
+
+    <div class="ratioPies">
+        <pie-diagram class="ratios1" [uniItem]="uniItem"></pie-diagram>
+        <pie-diagram class="ratios2" [uniItem]="uniItem"></pie-diagram>
+    </div>
+            
+    <div class="livingExpensesPies">
+        <pie-diagram class="livingExpensesMinimum" [uniItem]="uniItem"></pie-diagram> 
+        <pie-diagram class="livingExpensesRecommended" [uniItem]="uniItem"></pie-diagram> 
+    </div>
+
+</div>
+
+        
+    

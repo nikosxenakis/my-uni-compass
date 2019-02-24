@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TabbarComponent } from './tabbar/tabbar.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { UniListComponent } from './uniList/uniList.component';
+import { PieDiagramComponent } from './piediagram/piediagram.component';
+import { ProgrammesListComponent } from './programmesList/programmesList.component';
 import { UniversityDetailsComponent } from './universityDetails/universityDetails.component';
 
 import {MatTabsModule} from '@angular/material/tabs';
@@ -23,6 +25,8 @@ import {MatDividerModule} from '@angular/material/divider';
 import { MatInputModule } from '@angular/material';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
+import { ChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +34,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     TabbarComponent,
     SearchbarComponent,
     UniListComponent,
+    ProgrammesListComponent,
+    PieDiagramComponent,
     UniversityDetailsComponent
   ],
   imports: [
@@ -48,7 +54,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatGridListModule,
     MatDividerModule,
     MatInputModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

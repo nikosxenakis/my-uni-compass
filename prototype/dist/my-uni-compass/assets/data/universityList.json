@@ -1,0 +1,33 @@
+[
+    {
+        "universityId": 1,
+        "universityName": "University of Edinburgh",
+        "city": "Edinburgh, UK",
+        "undergraduatePrograms": 98,
+        "postgraduatePrograms": 32,
+        "graduationRates": 0.80,
+        "employability": 0.87,
+        "lifeQuality": 0.75,
+        "teachingExcellence": 0.78
+    }, {
+        "universityId": 2,
+        "universityName": "University of Edinburgh",
+        "city": "Edinburgh, UK",
+        "undergraduatePrograms": 98,
+        "postgraduatePrograms": 32,
+        "graduationRates": 0.80,
+        "employability": 0.87,
+        "lifeQuality": 0.75,
+        "teachingExcellence": 0.78
+    }, {
+        "universityId": 3,
+        "universityName": "University of Edinburgh",
+        "city": "Edinburgh, UK",
+        "undergraduatePrograms": 98,
+        "postgraduatePrograms": 32,
+        "graduationRates": 0.80,
+        "employability": 0.87,
+        "lifeQuality": 0.75,
+        "teachingExcellence": 0.78
+    }
+]

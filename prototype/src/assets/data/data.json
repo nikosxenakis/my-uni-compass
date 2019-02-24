@@ -27,17 +27,17 @@
                 }
             ],
             "monthlyLivingExpensesMinimum":{
-                "Rent": 100,
-                "Transport": 100,
-                "Nutrition": 100,
-                "Entertainment": 100
+                "rent": 100,
+                "transport": 100,
+                "food": 100,
+                "entertainment": 100
             },
     
             "monthlyLivingExpensesRecommended":{
-                "Rent": 200,
-                "Transport": 200,
-                "Nutrition": 200,
-                "Entertainment": 200
+                "rent": 200,
+                "transport": 200,
+                "food": 200,
+                "entertainment": 200
             },
     
             "ratios":{
