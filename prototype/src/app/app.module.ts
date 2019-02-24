@@ -16,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TabbarComponent } from './tabbar/tabbar.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { UniListComponent } from './uniList/uniList.component';
+import { ProgrammesListComponent } from './programmesList/programmesList.component';
 import { UniversityDetailsComponent } from './universityDetails/universityDetails.component';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { UniversityDetailsComponent } from './universityDetails/universityDetail
     TabbarComponent,
     SearchbarComponent,
     UniListComponent,
+    ProgrammesListComponent,
     UniversityDetailsComponent
   ],
   imports: [

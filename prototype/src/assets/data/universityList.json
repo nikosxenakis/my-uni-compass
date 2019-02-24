@@ -8,7 +8,23 @@
         "graduationRates": 0.80,
         "employability": 0.87,
         "lifeQuality": 0.75,
-        "teachingExcellence": 0.78
+        "teachingExcellence": 0.78,
+        "programmes":[
+            {
+                "programme":"Software Engineering",
+                "domain":"Computer Science",
+                "type":"UG",
+                "tuition_fees_domestic":9000,
+                "tuition_fees_international":18000
+            },
+            {
+                "programme":"HPC & Data Science",
+                "domain":"Computer Science",
+                "type":"PG",
+                "tuition_fees_domestic":11500,
+                "tuition_fees_international":23000
+            }
+        ]
     }, {
         "universityId": 2,
         "universityName": "University of Edinburgh",
@@ -18,7 +34,24 @@
         "graduationRates": 0.80,
         "employability": 0.87,
         "lifeQuality": 0.75,
-        "teachingExcellence": 0.78
+        "teachingExcellence": 0.78,
+        "programmes":[
+            {
+                "programme":"Software Engineering",
+                "domain":"Computer Science",
+                "type":"UG",
+                "tuition_fees_domestic":9000,
+                "tuition_fees_international":18000
+            },
+            {
+                "programme":"HPC & Data Science",
+                "domain":"Computer Science",
+                "type":"PG",
+                "tuition_fees_domestic":11500,
+                "tuition_fees_international":23000
+            }
+        ]
+
     }, {
         "universityId": 3,
         "universityName": "University of Edinburgh",
@@ -28,6 +61,22 @@
         "graduationRates": 0.80,
         "employability": 0.87,
         "lifeQuality": 0.75,
-        "teachingExcellence": 0.78
+        "teachingExcellence": 0.78,
+        "programmes":[
+            {
+                "programme":"Software Engineering",
+                "domain":"Computer Science",
+                "type":"UG",
+                "tuition_fees_domestic":9000,
+                "tuition_fees_international":18000
+            },
+            {
+                "programme":"HPC & Data Science",
+                "domain":"Computer Science",
+                "type":"PG",
+                "tuition_fees_domestic":11500,
+                "tuition_fees_international":23000
+            }
+        ]
     }
 ]

@@ -18,3 +18,4 @@ export class UniversityDetailsComponent implements OnInit {
   }
 
 }
+

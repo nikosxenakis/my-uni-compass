@@ -1,0 +1,21 @@
+<mat-card>
+  <h3 class="resultsString">
+    {{resultsString}}
+  </h3>
+</mat-card>
+
+<mat-card class="programmesList">
+
+    <mat-card class="programmesHeader programmesRow">
+        <h4 class="programmesRecord" *ngFor="let programmesHeader of programmesHeaderList">{{programmesHeader}}</h4>
+    </mat-card>
+
+    <mat-card class="programmeItem programmeRow" *ngFor="let programmeItem of programmesItemList">
+      <h4 class="programmesRecord">{{programmeItem.name}}</h4>
+      <h4 class="programmesRecord">{{programmeItem.domain}}</h4>
+      <h4 class="programmesRecord">{{programmeItem.type}}</h4>
+      <h4 class="programmesRecord">{{programmeItem.tuitionFeesDomestic}}</h4>
+      <h4 class="programmesRecord">{{programmeItem.tuitionFeesInternational}}</h4>
+    </mat-card>
+
+</mat-card>
