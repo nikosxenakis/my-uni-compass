@@ -26,6 +26,7 @@
                     "tuitionFeesInternational":23000
                 }
             ],
+
             "monthlyLivingExpensesMinimum":{
                 "rent": 500,
                 "transport": 100,

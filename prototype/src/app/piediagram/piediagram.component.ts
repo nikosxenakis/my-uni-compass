@@ -1,6 +1,5 @@
 import { Component, OnInit, EventEmitter, Output, Input  } from '@angular/core';
 import { Http } from '@angular/http';
-import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
   selector: 'pie-diagram',
@@ -11,6 +10,7 @@ import { UniversityItem } from 'src/classes/UniversityItem';
 export class PieDiagramComponent {
 
     @Input() data: any;
+    @Input() title: string;
 
     constructor(private http: Http) { }
 
@@ -54,7 +54,7 @@ export class PieDiagramComponent {
     }
 
     onChartClick(event) {
-        console.log(event);
+        console.log(this.title);
     }
 
 }

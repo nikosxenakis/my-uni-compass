@@ -10,6 +10,7 @@ import { TabbarComponent } from './tabbar/tabbar.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { UniListComponent } from './uniList/uniList.component';
 import { PieDiagramComponent } from './piediagram/piediagram.component';
+import { BarDiagramComponent } from './bardiagram/bardiagram.component';
 import { ProgrammesListComponent } from './programmesList/programmesList.component';
 import { UniversityDetailsComponent } from './universityDetails/universityDetails.component';
 
@@ -36,6 +37,7 @@ import { ChartsModule } from 'ng2-charts';
     UniListComponent,
     ProgrammesListComponent,
     PieDiagramComponent,
+    BarDiagramComponent,
     UniversityDetailsComponent
   ],
   imports: [

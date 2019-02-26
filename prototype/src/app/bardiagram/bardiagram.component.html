@@ -1,0 +1,14 @@
+<div class="chart">
+    <h3 class="barChartTitle">{{title}}</h3>
+    <canvas class="bars"
+        baseChart
+        [chartType]="'bar'"
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="true"
+        [colors]="barChartColor"
+        (chartClick)="onChartClick($event)">
+    </canvas>
+</div>
+

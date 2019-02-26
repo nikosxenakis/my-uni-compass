@@ -29,7 +29,6 @@ export class ProgrammesListComponent implements OnInit {
 
     this.programmesItemList = this.uniItem.programmes;
 
-
   }
 
   onOpenProgramme(programme: string) {

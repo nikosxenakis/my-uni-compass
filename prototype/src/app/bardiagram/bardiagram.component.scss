@@ -1,6 +1,6 @@
 @import '../../uni-compass-theme.scss';
 
-.pieChartTitle{
+.barChartTitle{
     padding-top: 5px;
     text-align:center;
 }
@@ -8,6 +8,6 @@
 .chart{
     background-color: mat-color($app-primary, 100);
 }
-.pie {
+.bars {
     padding-bottom: 20%;
 }

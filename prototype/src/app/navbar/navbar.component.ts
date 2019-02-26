@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
@@ -10,6 +10,7 @@ export class NavbarComponent {
   title = 'my-uni-compass';
 
   @Input() uniItem: UniversityItem;
+  @Output() uniItemChange = new EventEmitter<UniversityItem>();
 
   languageList = [{
     value: 'en',
@@ -20,5 +21,9 @@ export class NavbarComponent {
   }];
 
   selectedLanguage = 'en';
+
+  goBack(){
+    this.uniItemChange.emit(null);
+  }
 
 }

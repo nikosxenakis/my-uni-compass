@@ -1,21 +1,62 @@
+.leftBlock{
+    position: absolute;
+    float:left;
+    width: 50%;
+    padding-left: 5px;
+
+    .header {
+
+        float:left;
+        width: 50%;
+
+        h1 {
+            float: left;
+            width: 100%;
+        }  
+
+        .logo {
+            float:left;
+            width: 60%; 
+            height: 60%; 
+        }    
+
+    }
+
+    .ratings {
+        float: right;
+        width: 49%;
+    }
+    
+    .searchbar {
+        height: 420px;
+        width: 50%;
+
+        .domain{
+            float:right;
+        }
+
+        .form-control {
+            width: 75%;
+            height: 10%;
+        }
+    }
+
+}
+
 .rightBlock{
-    float:right;
-    width: 55%;
-}
 
-.leftPies {
-    width: 42%;
     float:right;
-    padding: 2px;
-}
+    width: 50%;
+    padding-right: 5px;
 
-.rightPies {
-    width: 42%; 
-    float:right;
-    padding: 2px;
-}
+    .leftPies {
+        width: 49%;
+        float:right;
+    }
+    
+    .rightPies {
+        width: 49%; 
+        float:right;
+    }
 
-programmes-list{
-    float: left;
-    width: 45%;
 }

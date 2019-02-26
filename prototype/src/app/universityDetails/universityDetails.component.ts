@@ -9,13 +9,9 @@ import { UniversityItem } from 'src/classes/UniversityItem';
 export class UniversityDetailsComponent implements OnInit {
 
   @Input() uniItem: UniversityItem;
-  @Output() uniItemChange = new EventEmitter<UniversityItem>();
 
   ngOnInit() {
     console.log(this.uniItem);
-  }
-  goBack() {
-    this.uniItemChange.emit(null);
   }
 
 }

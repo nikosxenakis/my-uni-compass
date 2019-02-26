@@ -1,17 +1,53 @@
-<h1>universityDetails: {{uniItem.universityId}}</h1>
-<button mat-raised-button color="basic" (click)="goBack()">Back</button>
-<programmes-list [uniItem]="uniItem" (openProgrammesEvent)="onOpenProgramme($event)"></programmes-list>
+<div class="leftBlock">
 
+    <div>
+
+        <div class="header">
+            <img src="../assets/images/logoEdinburgh.png" class="logo">
+            <h1 class="title">{{uniItem.universityName}} Details</h1>
+        </div>
+
+        <div class="ratings">
+            <bar-diagram [data]="[uniItem.graduationRates,
+                                  uniItem.employability,
+                                  uniItem.lifeQuality,
+                                  uniItem.teachingExcellence]"
+                 [legendlabels]="['Graduation Rates',
+                                  'Employability',
+                                  'Life Quality',
+                                  'Teaching Excellence']"
+                         [title]="'Ratings'">
+            </bar-diagram> 
+        </div>
+        
+        <div class ="searchbar">
+            <h3>List of Programmes</h3>
+            <h3>Select Domain: </h3>
+            <button mat-raised-button color="basic" class="domain">Domain</button>
+            <input class="form-control" type="search" id="search1" aria-label="Search" mdbInput>
+            <button mat-raised-button color="basic">Search</button>
+        </div>    
+
+    </div>
+
+    <div class="programmesList">
+        <programmes-list [uniItem]="uniItem" (openProgrammesEvent)="onOpenProgramme($event)"></programmes-list>
+    </div>
+    
+</div>
+    
 <div class="rightBlock">
 
     <div class="leftPies">
-        <pie-diagram class="ratios1" [data]="uniItem.ratios[0]"></pie-diagram> 
-        <pie-diagram class="livingExpensesRecommended" [data]="uniItem.monthlyLivingExpensesRecommended"></pie-diagram>
+        <pie-diagram [data]="uniItem.ratios[0]" [title]="'Metrics Two'"></pie-diagram> 
+        <pie-diagram [data]="uniItem.monthlyLivingExpensesRecommended" [title]="'Recommended Living Expenses'"></pie-diagram>
     </div>
             
     <div class="rightPies">
-        <pie-diagram class="ratios2" [data]="uniItem.ratios[1]"></pie-diagram> 
-        <pie-diagram class="livingExpensesMinimum" [data]="uniItem.monthlyLivingExpensesMinimum"></pie-diagram>
+        <pie-diagram [data]="uniItem.ratios[1]" [title]="'Metrics One'"></pie-diagram> 
+        <pie-diagram [data]="uniItem.monthlyLivingExpensesMinimum" [title]="'Minimum Living Expenses'"></pie-diagram>
     </div>
 
-</div>
+</div>    
+
+
