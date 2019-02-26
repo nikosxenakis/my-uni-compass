@@ -27,25 +27,37 @@
                 }
             ],
             "monthlyLivingExpensesMinimum":{
-                "rent": 100,
+                "rent": 500,
                 "transport": 100,
                 "food": 100,
                 "entertainment": 100
             },
     
             "monthlyLivingExpensesRecommended":{
-                "rent": 200,
-                "transport": 200,
-                "food": 200,
-                "entertainment": 200
+                "rent": 600,
+                "transport": 100,
+                "food": 150,
+                "entertainment": 170
             },
     
-            "ratios":{
-                "maleFemale": 0.5,
-                "ugPg": 0.5,
-                "domesticInternationalStudents": 0.5,
-                "staffStudent": 0.5
-            }
+            "ratios":[
+                {
+                "male": 50,
+                "female": 50              
+                },
+                {
+                "undergraduate": 60,
+                "postgraduate": 40              
+                },
+                {
+                "homeStudents": 70,
+                "internationalStudents": 30              
+                },
+                {
+                    "staff": 400,
+                    "student": 4000   
+                }
+            ]
         }, {
             "universityId": 2,
             "universityName": "University of Crete",

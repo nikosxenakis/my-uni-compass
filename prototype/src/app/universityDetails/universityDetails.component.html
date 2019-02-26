@@ -4,17 +4,14 @@
 
 <div class="rightBlock">
 
-    <div class="ratioPies">
-        <pie-diagram class="ratios1" [uniItem]="uniItem"></pie-diagram>
-        <pie-diagram class="ratios2" [uniItem]="uniItem"></pie-diagram>
+    <div class="leftPies">
+        <pie-diagram class="ratios1" [data]="uniItem.ratios[0]"></pie-diagram> 
+        <pie-diagram class="livingExpensesRecommended" [data]="uniItem.monthlyLivingExpensesRecommended"></pie-diagram>
     </div>
             
-    <div class="livingExpensesPies">
-        <pie-diagram class="livingExpensesMinimum" [uniItem]="uniItem"></pie-diagram> 
-        <pie-diagram class="livingExpensesRecommended" [uniItem]="uniItem"></pie-diagram> 
+    <div class="rightPies">
+        <pie-diagram class="ratios2" [data]="uniItem.ratios[1]"></pie-diagram> 
+        <pie-diagram class="livingExpensesMinimum" [data]="uniItem.monthlyLivingExpensesMinimum"></pie-diagram>
     </div>
 
 </div>
-
-        
-    

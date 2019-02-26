@@ -1,5 +1,6 @@
-<mat-card class="chart">
-    <canvas
+<div class="chart">
+    <h3 class="pieChartTitle">Title</h3>
+    <canvas class="pie"
         baseChart
         [chartType]="'pie'"
         [datasets]="pieChartData"
@@ -9,5 +10,5 @@
         [colors]="pieChartColor"
         (chartClick)="onChartClick($event)">
     </canvas>
-</mat-card>
+</div>
 

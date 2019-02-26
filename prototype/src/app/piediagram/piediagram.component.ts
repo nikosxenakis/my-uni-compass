@@ -5,11 +5,12 @@ import { UniversityItem } from 'src/classes/UniversityItem';
 @Component({
   selector: 'pie-diagram',
   templateUrl: './piediagram.component.html',
+  styleUrls: ['./piediagram.component.scss']
 })
 
 export class PieDiagramComponent {
 
-    @Input() uniItem: UniversityItem;
+    @Input() data: any;
 
     constructor(private http: Http) { }
 
@@ -17,7 +18,7 @@ export class PieDiagramComponent {
         responsive: true
     }
 
-    pieChartLabels =  ['Rent', 'Transport', 'Food', 'Entertainment'];
+    pieChartLabels =  [];
   
     pieChartColor:any = [
         {
@@ -37,16 +38,19 @@ export class PieDiagramComponent {
     ];
   
     ngOnInit () {
-        this.http.get('./assets/data/data.json').subscribe(
-            data => {
-                this.pieChartData = [
-                    this.uniItem.monthlyLivingExpensesMinimum.rent,
-                    this.uniItem.monthlyLivingExpensesMinimum.transport,
-                    this.uniItem.monthlyLivingExpensesMinimum.food,
-                    this.uniItem.monthlyLivingExpensesMinimum.entertainment
-                ]   
+
+        var temp = []
+        for(var key in this.data){
+            temp.push(this.data[key]);
+            this.pieChartLabels.push(key);
+        }
+
+        this.pieChartData = [
+            { 
+                data: temp
             }
-        );
+        ];
+             
     }
 
     onChartClick(event) {

@@ -1,6 +1,5 @@
 import { Component, OnInit, EventEmitter, Output, Input  } from '@angular/core';
 import { Http } from '@angular/http';
-import { map } from 'rxjs/operators';
 import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
