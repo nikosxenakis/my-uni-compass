@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule, JsonpModule } from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,6 +15,7 @@ import { BarDiagramComponent } from './bardiagram/bardiagram.component';
 import { ProgrammesListComponent } from './programmesList/programmesList.component';
 import { UniversityDetailsComponent } from './universityDetails/universityDetails.component';
 
+import {MatMenuModule} from '@angular/material/menu';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -45,6 +47,7 @@ import { ChartsModule } from 'ng2-charts';
     HttpModule,
     JsonpModule,
     ReactiveFormsModule,
+    FlexLayoutModule,
     MatButtonModule,
     MatToolbarModule,
     MatSelectModule,
@@ -52,6 +55,7 @@ import { ChartsModule } from 'ng2-charts';
     MatTabsModule,
     MatCardModule,
     MatTooltipModule,
+    MatMenuModule,
     MatSnackBarModule,
     MatGridListModule,
     MatDividerModule,

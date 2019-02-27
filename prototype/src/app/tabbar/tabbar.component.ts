@@ -54,6 +54,8 @@ export class TabbarComponent {
 
   filterUniversityList(inputUniversityList: Array<UniversityItem>, searchForm: any) {
 
+    console.log(searchForm);
+
     this.universityItemList = [];
     const indexToRemove = [];
 
@@ -67,8 +69,8 @@ export class TabbarComponent {
       if (searchForm.degreeLevel === 'Undergraduate' && element.undergraduatePrograms === 0 ||
           searchForm.degreeLevel === 'Postgraduate' && element.postgraduatePrograms === 0 ||
           (searchForm.country !== element.city && searchForm.country !== 'All' ) ||
-          searchForm.teachingExcellenceMin > element.teachingExcellence * 100 ||
-          searchForm.teachingExcellenceMax < element.teachingExcellence * 100 ||
+          searchForm.teachingExcellenceMin > element.teachingExcellence ||
+          searchForm.teachingExcellenceMax < element.teachingExcellence ||
           searchForm.lifeQualityMin > element.lifeQuality * 100 ||
           searchForm.lifeQualityMax < element.lifeQuality * 100 ||
           searchForm.graduationRatesMin > element.graduationRates * 100 ||

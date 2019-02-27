@@ -23,6 +23,11 @@ export class ProgrammesListComponent implements OnInit {
 
   programmesItemList: Array<ProgrammeItem> = [];
 
+  domainList = [
+    'All',
+    'Computer Science'
+  ];
+
   constructor(private http: Http) { }
 
   ngOnInit() {

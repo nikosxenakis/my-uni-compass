@@ -10,7 +10,7 @@ export class SearchbarComponent implements AfterViewInit {
 
   @Output() searchEvent = new EventEmitter<any>();
 
-  addFilterLabel = 'Add filters';
+  addFilterLabel = 'More filters';
   degreeLevelList = [
     'All',
     'Undergraduate',
@@ -92,7 +92,7 @@ export class SearchbarComponent implements AfterViewInit {
   }
   more() {
     this.moreHidden = !this.moreHidden;
-    this.addFilterLabel = this.moreHidden ? 'Add filters' : 'Hide filters';
+    this.addFilterLabel = this.moreHidden ? 'More filters' : 'Hide filters';
   }
 
   moveElement(elementId: string, action: string) {

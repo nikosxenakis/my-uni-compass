@@ -1,62 +1,56 @@
-.leftBlock{
-    position: absolute;
-    float:left;
-    width: 50%;
-    padding-left: 5px;
+@import '../../uni-compass-theme.scss';
 
-    .header {
+.container {
+    overflow: overlay;
+    background-image: url("../../assets/images/backgroundWhite.jpg");
 
-        float:left;
-        width: 50%;
+    .mat-card {
+        margin: 10px;
+    }
 
-        h1 {
-            float: left;
-            width: 100%;
-        }  
-
+    .logoWrapper {
+        text-align: center;
         .logo {
-            float:left;
-            width: 60%; 
-            height: 60%; 
-        }    
-
-    }
-
-    .ratings {
-        float: right;
-        width: 49%;
-    }
-    
-    .searchbar {
-        height: 420px;
-        width: 50%;
-
-        .domain{
-            float:right;
-        }
-
-        .form-control {
-            width: 75%;
-            height: 10%;
+            width: 200px; 
         }
     }
 
-}
 
-.rightBlock{
+    // .block_level1 {
+    //     width: 100%;
+    //     height: 100%;
 
-    float:right;
-    width: 50%;
-    padding-right: 5px;
+    //     .mat-grid-list {
+    //         height: 100%;
 
-    .leftPies {
-        width: 49%;
-        float:right;
-    }
+    //         .block_level2 {
+    //             width: 100%;
+    //             height: 100%;
+    //             padding: 10px;
+
+    //             .mat-grid-list {
+    //                 height: 100%;
+    //             }
     
-    .rightPies {
-        width: 49%; 
-        float:right;
-    }
+    //             .title {
+    //                 text-align: center;
+    //                 // width: 100%;
+    //             }
+        
+    //             .logo {
+    //                 text-align: center;
+    //                 width: 200px; 
+    //                 // height: 200px; 
+    //             }
+    //         }
 
+    //     }
+    // }
+
+    .chartTitle {
+        margin: 0px;
+        padding: 15px;
+        text-align:center;
+        color: mat-color($app-primary, 500);
+    }
 }

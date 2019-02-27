@@ -13,4 +13,8 @@ export class AppComponent {
   onOpenUniversity(uniItem: UniversityItem) {
     this.uniItem = uniItem;
   }
+
+  onCloseUniversity() {
+    this.uniItem = null;
+  }
 }

@@ -12,8 +12,8 @@
     display: inline-block;
     position: relative;
     text-align: left;
-    background-color: mat-color($app-primary, 50);
-    box-shadow: 2px 2px 5px mat-color($app-primary, 50);
+    // background-color: mat-color($app-primary, 50);
+    // box-shadow: 2px 2px 5px mat-color($app-primary, 50);
 
     .mat-select-value {
         color: mat-color($app-primary, 500);
@@ -38,12 +38,12 @@
     }
 
     .addRemoveFilter {
-        left: 160px;
+        left: 137px;
         top: -4px;
     }
 
     .helpFilter {
-        left: 137px;
+        left: 160px;
         top: -4px;
     }
 }

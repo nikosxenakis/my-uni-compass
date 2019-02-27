@@ -6,12 +6,27 @@
 
 <mat-card class="uniList">
 
+    <!-- <div class="container" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
+        <div fxFlex="100%" fxFlex-lg="100%" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
+        </div>
+    </div> -->
+
     <mat-card class="uniHeader uniRow">
         <mat-grid-list cols="100" rowHeight="40px">
             <mat-grid-tile [colspan]="uniHeader.colspan" *ngFor="let uniHeader of universityHeaderList">
                 <h4 class="uniRecord">{{uniHeader.name}}</h4>
             </mat-grid-tile>
           </mat-grid-list>
+    </mat-card>
+
+    <mat-card class="uniItem uniRow" *ngIf="universityItemList.length == 0">
+      <mat-grid-list cols="100" rowHeight="30px">
+          <mat-grid-tile [colspan]="100">
+            <h3 class="resultsString">
+                No Results
+              </h3>
+          </mat-grid-tile>
+        </mat-grid-list>
     </mat-card>
 
     <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem)">
@@ -29,16 +44,16 @@
           <h4 class="uniRecord">{{uniItem.postgraduatePrograms}}</h4>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="universityHeaderList[4].colspan">
-          <h4 class="uniRecord">{{uniItem.graduationRates}}</h4>
+          <h4 class="uniRecord">{{uniItem.graduationRates*100 | number:'2.1'}} %</h4>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="universityHeaderList[5].colspan">
-          <h4 class="uniRecord">{{uniItem.employability}}</h4>
+          <h4 class="uniRecord">{{uniItem.employability*100 | number:'2.1'}} %</h4>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="universityHeaderList[6].colspan">
-          <h4 class="uniRecord">{{uniItem.lifeQuality}}</h4>
+          <h4 class="uniRecord">{{uniItem.lifeQuality*100 | number:'2.1'}} %</h4>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="universityHeaderList[7].colspan">
-          <h4 class="uniRecord">{{uniItem.teachingExcellence}}</h4>
+          <h4 class="uniRecord">{{uniItem.teachingExcellence | number:'2.1'}} %</h4>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="universityHeaderList[8].colspan">
           <i *ngIf="!universityItemFavoritesList.includes(uniItem.universityId)" (click)="addToFavorites(uniItem)" class="material-icons">favorite_border</i>

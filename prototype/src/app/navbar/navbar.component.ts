@@ -10,7 +10,7 @@ export class NavbarComponent {
   title = 'my-uni-compass';
 
   @Input() uniItem: UniversityItem;
-  @Output() uniItemChange = new EventEmitter<UniversityItem>();
+  @Output() backEvent = new EventEmitter<null>();
 
   languageList = [{
     value: 'en',
@@ -22,8 +22,8 @@ export class NavbarComponent {
 
   selectedLanguage = 'en';
 
-  goBack(){
-    this.uniItemChange.emit(null);
+  goBack() {
+    this.backEvent.emit(null);
   }
 
 }

@@ -1,53 +1,54 @@
-<div class="leftBlock">
+<div class="container" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
 
-    <div>
-
-        <div class="header">
+    <div fxFlex="100%" fxFlex-lg="100%" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
+        <div class="logoWrapper">
             <img src="../assets/images/logoEdinburgh.png" class="logo">
-            <h1 class="title">{{uniItem.universityName}} Details</h1>
         </div>
-
-        <div class="ratings">
-            <bar-diagram [data]="[uniItem.graduationRates,
-                                  uniItem.employability,
-                                  uniItem.lifeQuality,
-                                  uniItem.teachingExcellence]"
-                 [legendlabels]="['Graduation Rates',
-                                  'Employability',
-                                  'Life Quality',
-                                  'Teaching Excellence']"
-                         [title]="'Ratings'">
-            </bar-diagram> 
-        </div>
-        
-        <div class ="searchbar">
-            <h3>List of Programmes</h3>
-            <h3>Select Domain: </h3>
-            <button mat-raised-button color="basic" class="domain">Domain</button>
-            <input class="form-control" type="search" id="search1" aria-label="Search" mdbInput>
-            <button mat-raised-button color="basic">Search</button>
-        </div>    
-
     </div>
 
-    <div class="programmesList">
-        <programmes-list [uniItem]="uniItem" (openProgrammesEvent)="onOpenProgramme($event)"></programmes-list>
-    </div>
-    
+    <div fxFlex="50%" fxFlex-lg="50%" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
+            <mat-card>
+                <bar-diagram [data]="[uniItem.graduationRates,
+                    uniItem.employability,
+                    uniItem.lifeQuality,
+                    uniItem.teachingExcellence]"
+                    [legendlabels]="['Graduation Rates',
+                    'Employability',
+                    'Life Quality',
+                    'Teaching Excellence']"
+                    [title]="'Ratings'">
+                </bar-diagram> 
+            </mat-card>
+        </div>
+
+        <div fxFlex="50%" fxFlex-lg="50%" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
+                <mat-card>
+                    <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
+                    
+                        <h2 *ngIf="uniItem.monthlyLivingExpensesRecommended" fxFlex="100%" class="chartTitle">Living Expenses</h2>
+                        <div *ngIf="uniItem.monthlyLivingExpensesRecommended" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
+                                <pie-diagram [data]="uniItem.monthlyLivingExpensesRecommended" [title]="'Recommended Living Expenses'"></pie-diagram>
+                            </div>
+                        <div *ngIf="uniItem.monthlyLivingExpensesMinimum" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
+                                <pie-diagram [data]="uniItem.monthlyLivingExpensesMinimum" [title]="'Minimum Living Expenses'"></pie-diagram>
+                            </div>
+
+                        <h2 *ngIf="uniItem.ratios" fxFlex="100%" class="chartTitle">Ratios</h2>
+                        <div *ngIf="uniItem.ratios" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
+                                <pie-diagram [data]="uniItem.ratios[0]" [title]="'Male/Female Ratio'"></pie-diagram> 
+                            </div>
+                            <div *ngIf="uniItem.ratios" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
+                                <pie-diagram [data]="uniItem.ratios[1]" [title]="'UG/PG Ratio'"></pie-diagram> 
+                            </div>
+                    </div>
+                </mat-card>
+            </div>
+
+            <div *ngIf="uniItem.programmes" fxFlex="100%" fxFlex-lg="100%" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
+                    <mat-card>
+                            <h2 class="chartTitle">Programmes</h2>
+                            <programmes-list [uniItem]="uniItem" (openProgrammesEvent)="onOpenProgramme($event)"></programmes-list>                            
+                    </mat-card>
+                </div>
+                
 </div>
-    
-<div class="rightBlock">
-
-    <div class="leftPies">
-        <pie-diagram [data]="uniItem.ratios[0]" [title]="'Metrics Two'"></pie-diagram> 
-        <pie-diagram [data]="uniItem.monthlyLivingExpensesRecommended" [title]="'Recommended Living Expenses'"></pie-diagram>
-    </div>
-            
-    <div class="rightPies">
-        <pie-diagram [data]="uniItem.ratios[1]" [title]="'Metrics One'"></pie-diagram> 
-        <pie-diagram [data]="uniItem.monthlyLivingExpensesMinimum" [title]="'Minimum Living Expenses'"></pie-diagram>
-    </div>
-
-</div>    
-
-

@@ -1,13 +1,15 @@
 @import '../../uni-compass-theme.scss';
 
-.pieChartTitle{
-    padding-top: 5px;
+.pieChartTitle {
+    margin: 0px;
+    padding: 15px;
     text-align:center;
+    color: mat-color($app-primary, 500);
 }
 
 .chart{
-    background-color: mat-color($app-primary, 100);
+    // background-color: mat-color($app-primary, 100);
 }
 .pie {
-    padding-bottom: 20%;
+    padding-bottom: 15px;
 }
