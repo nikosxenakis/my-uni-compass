@@ -1,0 +1,622 @@
+{
+    "universityList": [
+        {
+            "universityId": 0,
+            "universityName": "University of Edinburgh",
+            "city": "Edinburgh, UK",
+            "undergraduatePrograms": 98,
+            "postgraduatePrograms": 32,
+            "graduationRates": 0.80,
+            "employability": 0.87,
+            "lifeQuality": 0.75,
+            "teachingExcellence": 0.78,
+            "programmes":[
+                {
+                    "name":"Software Engineering",
+                    "domain":"Computer Science",
+                    "type":"UG",
+                    "tuitionFeesDomestic":9000,
+                    "tuitionFeesInternational":18000
+                },
+                {
+                    "name":"HPC & Data Science",
+                    "domain":"Computer Science",
+                    "type":"PG",
+                    "tuitionFeesDomestic":11500,
+                    "tuitionFeesInternational":23000
+                }
+            ],
+
+            "monthlyLivingExpensesMinimum":{
+                "rent": 500,
+                "transport": 100,
+                "food": 100,
+                "entertainment": 100
+            },
+    
+            "monthlyLivingExpensesRecommended":{
+                "rent": 600,
+                "transport": 100,
+                "food": 150,
+                "entertainment": 170
+            },
+    
+            "ratios":[
+                {
+                "male": 50,
+                "female": 50              
+                },
+                {
+                "undergraduate": 60,
+                "postgraduate": 40              
+                },
+                {
+                "homeStudents": 70,
+                "internationalStudents": 30              
+                },
+                {
+                    "staff": 400,
+                    "student": 4000   
+                }
+            ]
+        },
+        {
+            "universityId": 1,
+            "universityName": "University of Oxford",
+            "city": "Oxford",
+            "undergraduatePrograms": 3942,
+            "postgraduatePrograms": 366,
+            "graduationRates": 0.985,
+            "employability": 0.85,
+            "lifeQuality": 0.8456756274,
+            "teachingExcellence": 86.5
+          },
+          {
+            "universityId": 2,
+            "universityName": "University of Cambridge",
+            "city": "Cambridge",
+            "undergraduatePrograms": 107,
+            "postgraduatePrograms": 356,
+            "graduationRates": 0.986,
+            "employability": 0.873,
+            "lifeQuality": 0.9050471948,
+            "teachingExcellence": 88.2
+          },
+          {
+            "universityId": 3,
+            "universityName": "Imperial College London",
+            "city": "London",
+            "undergraduatePrograms": 83,
+            "postgraduatePrograms": 233,
+            "graduationRates": 0.966,
+            "employability": 0.905,
+            "lifeQuality": 0.849625886,
+            "teachingExcellence": 83.3
+          },
+          {
+            "universityId": 4,
+            "universityName": "University College London",
+            "city": "London",
+            "undergraduatePrograms": 453,
+            "postgraduatePrograms": 1273,
+            "graduationRates": 0.94,
+            "employability": 0.82,
+            "lifeQuality": 0.8161388461,
+            "teachingExcellence": 78.1
+          },
+          {
+            "universityId": 5,
+            "universityName": "London School of Economics and Political Science",
+            "city": "London",
+            "undergraduatePrograms": 42,
+            "postgraduatePrograms": 292,
+            "graduationRates": 0.96,
+            "employability": 0.871,
+            "lifeQuality": 0.831358449,
+            "teachingExcellence": 69.8
+          },
+          {
+            "universityId": 6,
+            "universityName": "University of Edinburgh",
+            "city": "Edinburgh",
+            "undergraduatePrograms": 447,
+            "postgraduatePrograms": 1354,
+            "graduationRates": 0.92,
+            "employability": 0.749,
+            "lifeQuality": 0.792472267,
+            "teachingExcellence": 68.6
+          },
+          {
+            "universityId": 7,
+            "universityName": "King’s College London",
+            "city": "London",
+            "undergraduatePrograms": 156,
+            "postgraduatePrograms": 1073,
+            "graduationRates": 0.874,
+            "employability": 0.841,
+            "lifeQuality": 0.7356408177,
+            "teachingExcellence": 64.5
+          },
+          {
+            "universityId": 8,
+            "universityName": "University of Manchester",
+            "city": "Manchester",
+            "undergraduatePrograms": 417,
+            "postgraduatePrograms": 551,
+            "graduationRates": 0.931,
+            "employability": 0.824,
+            "lifeQuality": 0.7731872531,
+            "teachingExcellence": 58.4
+          },
+          {
+            "universityId": 9,
+            "universityName": "University of Bristol",
+            "city": "Bristol",
+            "undergraduatePrograms": 272,
+            "postgraduatePrograms": 477,
+            "graduationRates": 0.956,
+            "employability": 0.802,
+            "lifeQuality": 0.73048398,
+            "teachingExcellence": 47.6
+          },
+          {
+            "universityId": 10,
+            "universityName": "Durham University",
+            "city": "Durham",
+            "undergraduatePrograms": 2208,
+            "postgraduatePrograms": 276,
+            "graduationRates": 0.961,
+            "employability": 0.84,
+            "lifeQuality": 0.8336072441,
+            "teachingExcellence": 47.9
+          },
+          {
+            "universityId": 11,
+            "universityName": "University of Glasgow",
+            "city": "Glasgow",
+            "undergraduatePrograms": 728,
+            "postgraduatePrograms": 988,
+            "graduationRates": 0.886,
+            "employability": 0.833,
+            "lifeQuality": 0.7556032544,
+            "teachingExcellence": 41.6
+          },
+          {
+            "universityId": 12,
+            "universityName": "University of Warwick",
+            "city": "West Midlands",
+            "undergraduatePrograms": 221,
+            "postgraduatePrograms": 174,
+            "graduationRates": 0.962,
+            "employability": 0.806,
+            "lifeQuality": 0.8936231433,
+            "teachingExcellence": 47.4
+          },
+          {
+            "universityId": 13,
+            "universityName": "University of St Andrews",
+            "city": "St Andrews",
+            "undergraduatePrograms": 968,
+            "postgraduatePrograms": 158,
+            "graduationRates": 0.96,
+            "employability": 0.816,
+            "lifeQuality": 0.70229034,
+            "teachingExcellence": 49.7
+          },
+          {
+            "universityId": 14,
+            "universityName": "University of Exeter",
+            "city": "Exeter",
+            "undergraduatePrograms": 419,
+            "postgraduatePrograms": 623,
+            "graduationRates": 0.955,
+            "employability": 0.841,
+            "lifeQuality": 0.9528182784,
+            "teachingExcellence": 39.4
+          },
+          {
+            "universityId": 15,
+            "universityName": "University of Sheffield",
+            "city": "Sheffield",
+            "undergraduatePrograms": 333,
+            "postgraduatePrograms": 344,
+            "graduationRates": 0.93,
+            "employability": 0.825,
+            "lifeQuality": 0.7989362771,
+            "teachingExcellence": 42.4
+          },
+          {
+            "universityId": 16,
+            "universityName": "Queen Mary University of London",
+            "city": "London",
+            "undergraduatePrograms": 344,
+            "postgraduatePrograms": 408,
+            "graduationRates": 0.92,
+            "employability": 0.737,
+            "lifeQuality": 0.7506452676,
+            "teachingExcellence": 34.1
+          },
+          {
+            "universityId": 17,
+            "universityName": "University of Southampton",
+            "city": "Southampton",
+            "undergraduatePrograms": 406,
+            "postgraduatePrograms": 435,
+            "graduationRates": 0.923,
+            "employability": 0.801,
+            "lifeQuality": 0.9505623121,
+            "teachingExcellence": 39.8
+          },
+          {
+            "universityId": 18,
+            "universityName": "University of Birmingham",
+            "city": "Birmingham",
+            "undergraduatePrograms": 257,
+            "postgraduatePrograms": 1128,
+            "graduationRates": 0.946,
+            "employability": 0.859,
+            "lifeQuality": 0.8735309407,
+            "teachingExcellence": 39.4
+          },
+          {
+            "universityId": 19,
+            "universityName": "Royal Holloway, University of London",
+            "city": "London",
+            "undergraduatePrograms": 254,
+            "postgraduatePrograms": 167,
+            "graduationRates": 0.93,
+            "employability": 0.718,
+            "lifeQuality": 0.9822201722,
+            "teachingExcellence": 35.1
+          },
+          {
+            "universityId": 20,
+            "universityName": "Lancaster University",
+            "city": "Lancaster",
+            "undergraduatePrograms": 373,
+            "postgraduatePrograms": 347,
+            "graduationRates": 0.926,
+            "employability": 0.85,
+            "lifeQuality": 0.7393055612,
+            "teachingExcellence": 34
+          },
+          {
+            "universityId": 21,
+            "universityName": "University of York",
+            "city": "York",
+            "undergraduatePrograms": 252,
+            "postgraduatePrograms": 481,
+            "graduationRates": 0.925,
+            "employability": 0.811,
+            "lifeQuality": 0.942259537,
+            "teachingExcellence": 41.9
+          },
+          {
+            "universityId": 22,
+            "universityName": "University of Leeds",
+            "city": "Leeds",
+            "undergraduatePrograms": 846,
+            "postgraduatePrograms": 533,
+            "graduationRates": 0.925,
+            "employability": 0.811,
+            "lifeQuality": 0.9436673675,
+            "teachingExcellence": 43.7
+          },
+          {
+            "universityId": 23,
+            "universityName": "University of Sussex",
+            "city": "East Sussex",
+            "undergraduatePrograms": 204,
+            "postgraduatePrograms": 478,
+            "graduationRates": 0.916,
+            "employability": 0.802,
+            "lifeQuality": 0.7704138481,
+            "teachingExcellence": 33.4
+          },
+          {
+            "universityId": 24,
+            "universityName": "University of Nottingham",
+            "city": "Nottingham",
+            "undergraduatePrograms": 325,
+            "postgraduatePrograms": 726,
+            "graduationRates": 0.934,
+            "employability": 0.833,
+            "lifeQuality": 0.712780371,
+            "teachingExcellence": 40.3
+          },
+          {
+            "universityId": 25,
+            "universityName": "University of East Anglia",
+            "city": "Norwich",
+            "undergraduatePrograms": 241,
+            "postgraduatePrograms": 212,
+            "graduationRates": 0.905,
+            "employability": 0.774,
+            "lifeQuality": 0.9015451894,
+            "teachingExcellence": 31.9
+          },
+          {
+            "universityId": 26,
+            "universityName": "University of Liverpool",
+            "city": "Liverpool",
+            "undergraduatePrograms": 1713,
+            "postgraduatePrograms": 663,
+            "graduationRates": 0.905,
+            "employability": 0.785,
+            "lifeQuality": 0.9032769053,
+            "teachingExcellence": 32.8
+          },
+          {
+            "universityId": 27,
+            "universityName": "University of Reading",
+            "city": "Reading",
+            "undergraduatePrograms": 271,
+            "postgraduatePrograms": 316,
+            "graduationRates": 0.921,
+            "employability": 0.752,
+            "lifeQuality": 0.7437754562,
+            "teachingExcellence": 39.3
+          },
+          {
+            "universityId": 28,
+            "universityName": "University of Leicester",
+            "city": "Leicester",
+            "undergraduatePrograms": 167,
+            "postgraduatePrograms": 214,
+            "graduationRates": 0.926,
+            "employability": 0.756,
+            "lifeQuality": 0.907049451,
+            "teachingExcellence": 32.1
+          },
+          {
+            "universityId": 29,
+            "universityName": "University of Aberdeen",
+            "city": "Aberdeen",
+            "undergraduatePrograms": 391,
+            "postgraduatePrograms": 446,
+            "graduationRates": 0.896,
+            "employability": 0.77,
+            "lifeQuality": 0.8106085067,
+            "teachingExcellence": 29.7
+          },
+          {
+            "universityId": 30,
+            "universityName": "Cardiff University",
+            "city": "Cardiff",
+            "undergraduatePrograms": 377,
+            "postgraduatePrograms": 438,
+            "graduationRates": 0.923,
+            "employability": 0.792,
+            "lifeQuality": 0.7578581686,
+            "teachingExcellence": 30.9
+          },
+          {
+            "universityId": 31,
+            "universityName": "University of Dundee",
+            "city": "Dundee",
+            "undergraduatePrograms": 221,
+            "postgraduatePrograms": 251,
+            "graduationRates": 0.87,
+            "employability": 0.853,
+            "lifeQuality": 0.9324517931,
+            "teachingExcellence": 25.6
+          },
+          {
+            "universityId": 32,
+            "universityName": "Newcastle University",
+            "city": "Newcastle upon Tyne",
+            "undergraduatePrograms": 238,
+            "postgraduatePrograms": 762,
+            "graduationRates": 0.948,
+            "employability": 0.815,
+            "lifeQuality": 0.9029787792,
+            "teachingExcellence": 30.9
+          },
+          {
+            "universityId": 33,
+            "universityName": "St George’s, University of London",
+            "city": "London",
+            "undergraduatePrograms": 11,
+            "postgraduatePrograms": 31,
+            "graduationRates": 0.927,
+            "employability": 0.936,
+            "lifeQuality": 0.7915457428,
+            "teachingExcellence": 25.6
+          },
+          {
+            "universityId": 34,
+            "universityName": "Queen’s University Belfast",
+            "city": "Belfast",
+            "undergraduatePrograms": 226,
+            "postgraduatePrograms": 316,
+            "graduationRates": 0.912,
+            "employability": 0.8,
+            "lifeQuality": 0.8723353665,
+            "teachingExcellence": 34.1
+          },
+          {
+            "universityId": 35,
+            "universityName": "Birkbeck, University of London",
+            "city": "London",
+            "undergraduatePrograms": 257,
+            "postgraduatePrograms": 595,
+            "graduationRates": 0.642,
+            "employability": 0.724,
+            "lifeQuality": 0.8945147775,
+            "teachingExcellence": 33.5
+          },
+          {
+            "universityId": 36,
+            "universityName": "Royal Veterinary College",
+            "city": "London",
+            "undergraduatePrograms": 16,
+            "postgraduatePrograms": 13,
+            "graduationRates": 0.854,
+            "employability": 0.73,
+            "lifeQuality": 0.8747054071,
+            "teachingExcellence": 26
+          },
+          {
+            "universityId": 37,
+            "universityName": "University of Bath",
+            "city": "Bath",
+            "undergraduatePrograms": 201,
+            "postgraduatePrograms": 227,
+            "graduationRates": 0.951,
+            "employability": 0.852,
+            "lifeQuality": 0.8833101596,
+            "teachingExcellence": 28.9
+          },
+          {
+            "universityId": 38,
+            "universityName": "University of Surrey",
+            "city": "Guildford",
+            "undergraduatePrograms": 271,
+            "postgraduatePrograms": 276,
+            "graduationRates": 0.905,
+            "employability": 0.764,
+            "lifeQuality": 0.9239913469,
+            "teachingExcellence": 31.7
+          },
+          {
+            "universityId": 39,
+            "universityName": "Aberystwyth University",
+            "city": "Aberystwyth",
+            "undergraduatePrograms": 311,
+            "postgraduatePrograms": 137,
+            "graduationRates": 0.832,
+            "employability": 0.74,
+            "lifeQuality": 0.913906698,
+            "teachingExcellence": 21.6
+          },
+          {
+            "universityId": 40,
+            "universityName": "Bangor University",
+            "city": "Bangor",
+            "undergraduatePrograms": 435,
+            "postgraduatePrograms": 427,
+            "graduationRates": 0.882,
+            "employability": 0.687,
+            "lifeQuality": 0.8950001043,
+            "teachingExcellence": 22.6
+          },
+          {
+            "universityId": 41,
+            "universityName": "University of Essex",
+            "city": "Colchester",
+            "undergraduatePrograms": 646,
+            "postgraduatePrograms": 508,
+            "graduationRates": 0.861,
+            "employability": 0.793,
+            "lifeQuality": 0.9643627,
+            "teachingExcellence": 33.9
+          },
+          {
+            "universityId": 42,
+            "universityName": "University of Kent",
+            "city": "Canterbury",
+            "undergraduatePrograms": 332,
+            "postgraduatePrograms": 635,
+            "graduationRates": 0.883,
+            "employability": 0.824,
+            "lifeQuality": 0.7478750042,
+            "teachingExcellence": 24.6
+          },
+          {
+            "universityId": 43,
+            "universityName": "Plymouth University",
+            "city": "Plymouth",
+            "undergraduatePrograms": 338,
+            "postgraduatePrograms": 163,
+            "graduationRates": 0.851,
+            "employability": 0.713,
+            "lifeQuality": 0.9423146592,
+            "teachingExcellence": 19.3
+          },
+          {
+            "universityId": 44,
+            "universityName": "Loughborough University",
+            "city": "Loughborough",
+            "undergraduatePrograms": 294,
+            "postgraduatePrograms": 229,
+            "graduationRates": 0.923,
+            "employability": 0.822,
+            "lifeQuality": 0.7119357175,
+            "teachingExcellence": 31.2
+          },
+          {
+            "universityId": 45,
+            "universityName": "University of Stirling",
+            "city": "Stirling",
+            "undergraduatePrograms": 195,
+            "postgraduatePrograms": 150,
+            "graduationRates": 0.855,
+            "employability": 0.739,
+            "lifeQuality": 0.9051512852,
+            "teachingExcellence": 22.6
+          },
+          {
+            "universityId": 46,
+            "universityName": "Swansea University",
+            "city": "Swansea",
+            "undergraduatePrograms": 376,
+            "postgraduatePrograms": 663,
+            "graduationRates": 0.901,
+            "employability": 0.822,
+            "lifeQuality": 0.7752901686,
+            "teachingExcellence": 22.2
+          },
+          {
+            "universityId": 47,
+            "universityName": "Bournemouth University",
+            "city": "Poole",
+            "undergraduatePrograms": 151,
+            "postgraduatePrograms": 256,
+            "graduationRates": 0.841,
+            "employability": 0.696,
+            "lifeQuality": 0.8034282124,
+            "teachingExcellence": 32
+          },
+          {
+            "universityId": 48,
+            "universityName": "Brunel University London",
+            "city": "London",
+            "undergraduatePrograms": 240,
+            "postgraduatePrograms": 299,
+            "graduationRates": 0.871,
+            "employability": 0.728,
+            "lifeQuality": 0.7767166881,
+            "teachingExcellence": 24.8
+          },
+          {
+            "universityId": 49,
+            "universityName": "City University London",
+            "city": "London",
+            "undergraduatePrograms": 100,
+            "postgraduatePrograms": 230,
+            "graduationRates": 0.872,
+            "employability": 0.685,
+            "lifeQuality": 0.8649175391,
+            "teachingExcellence": 23.5
+          },
+          {
+            "universityId": 50,
+            "universityName": "Heriot-Watt University",
+            "city": "Edinburgh",
+            "undergraduatePrograms": 145,
+            "postgraduatePrograms": 727,
+            "graduationRates": 0.846,
+            "employability": 0.766,
+            "lifeQuality": 0.7049382831,
+            "teachingExcellence": 23.4
+          }
+    ],
+    "favorites": [
+        1,
+        2
+    ],
+    "saved": [
+        1,
+        3
+    ]
+}

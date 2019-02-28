@@ -147,4 +147,8 @@ export class UniListComponent implements OnInit {
   sort() {
     this.isAsc = !this.isAsc;
   }
+
+  pageEvent(event: any) {
+
+  }
 }

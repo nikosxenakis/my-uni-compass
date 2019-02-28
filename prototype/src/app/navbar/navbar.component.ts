@@ -4,7 +4,7 @@ import { UniversityItem } from 'src/classes/UniversityItem';
 @Component({
   selector: 'navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss', './../../assets/styles/languages.min.css']
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
   title = 'my-uni-compass';
