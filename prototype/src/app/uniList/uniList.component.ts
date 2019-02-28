@@ -13,17 +13,94 @@ export class UniListComponent implements OnInit {
   @Input() universityItemSavedList: Array<number>;
   @Input() resultsString: string;
   @Output() openUniversityEvent = new EventEmitter<UniversityItem>();
+
+  isAsc = true;
+
   pageSizeOptions: number[] = [5, 10, 25, 100];
+
   universityHeaderList = [
-    {name: 'University Name', colspan: '17'},
-    {name: 'City', colspan: '18'},
-    {name: 'Undergraduate Programs', colspan: '10'},
-    {name: 'Postgraduate Programs', colspan: '10'},
-    {name: 'Graduation Rates', colspan: '10'},
-    {name: 'Employability', colspan: '10'},
-    {name: 'Life Quality', colspan: '10'},
-    {name: 'Teaching Excelence', colspan: '10'},
-    {name: 'Actions', colspan: '5'}
+    {
+      name: 'University Name',
+      colspanSm: '100',
+      colspanMd: '50',
+      colspanLg: '50',
+      colspan: '17',
+      showSm: 'true',
+      showMd: 'true',
+      showLg: 'true'
+    }, {
+      name: 'City',
+      colspanSm: '0',
+      colspanMd: '30',
+      colspanLg: '30',
+      colspan: '17',
+      showSm: 'false',
+      showMd: 'true',
+      showLg: 'true'
+    }, {
+      name: 'Undergraduate Programs',
+      colspanSm: '0',
+      colspanMd: '0',
+      colspanLg: '0',
+      colspan: '0',
+      showSm: 'false',
+      showMd: 'false',
+      showLg: 'false'
+    }, {
+      name: 'Postgraduate Programs',
+      colspanSm: '0',
+      colspanMd: '0',
+      colspanLg: '0',
+      colspan: '0',
+      showSm: 'false',
+      showMd: 'false',
+      showLg: 'false'
+    }, {
+      name: 'Graduation Rates',
+      colspanSm: '0',
+      colspanMd: '0',
+      colspanLg: '0',
+      colspan: '0',
+      showSm: 'false',
+      showMd: 'false',
+      showLg: 'false'
+    }, {
+      name: 'Employability',
+      colspanSm: '0',
+      colspanMd: '0',
+      colspanLg: '0',
+      colspan: '0',
+      showSm: 'false',
+      showMd: 'false',
+      showLg: 'false'
+    }, {
+      name: 'Life Quality',
+      colspanSm: '0',
+      colspanMd: '0',
+      colspanLg: '0',
+      colspan: '0',
+      showSm: 'false',
+      showMd: 'false',
+      showLg: 'false'
+    }, {
+      name: 'Teaching Excelence',
+      colspanSm: '0',
+      colspanMd: '0',
+      colspanLg: '0',
+      colspan: '0',
+      showSm: 'false',
+      showMd: 'false',
+      showLg: 'false'
+    }, {
+      name: 'Actions',
+      colspanSm: '0',
+      colspanMd: '20',
+      colspanLg: '20',
+      colspan: '10',
+      showSm: 'false',
+      showMd: 'true',
+      showLg: 'true'
+    }
   ];
 
   constructor(private snackBar: MatSnackBar) { }
@@ -65,5 +142,9 @@ export class UniListComponent implements OnInit {
     this.snackBar.open(msg, 'Close', {
       duration: 2000,
     });
+  }
+
+  sort() {
+    this.isAsc = !this.isAsc;
   }
 }

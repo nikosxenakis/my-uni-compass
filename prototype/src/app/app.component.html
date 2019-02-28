@@ -1,5 +1,2 @@
-<navbar [uniItem]="uniItem" (backEvent)="onCloseUniversity($event)"></navbar>
+<navbar></navbar>
 
-<tabbar *ngIf="!uniItem" (openUniversityEvent)="onOpenUniversity($event)"></tabbar>
-
-<university-details *ngIf="uniItem" [(uniItem)]="uniItem"></university-details>

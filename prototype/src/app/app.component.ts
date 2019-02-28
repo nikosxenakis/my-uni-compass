@@ -8,13 +8,4 @@ import { UniversityItem } from 'src/classes/UniversityItem';
 })
 export class AppComponent {
 
-  uniItem: UniversityItem = null;
-
-  onOpenUniversity(uniItem: UniversityItem) {
-    this.uniItem = uniItem;
-  }
-
-  onCloseUniversity() {
-    this.uniItem = null;
-  }
 }

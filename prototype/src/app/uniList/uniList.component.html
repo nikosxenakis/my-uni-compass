@@ -6,18 +6,31 @@
 
 <mat-card class="uniList">
 
-    <!-- <div class="container" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
-        <div fxFlex="100%" fxFlex-lg="100%" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
+  <mat-card class="uniHeader uniRow" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
+    <div fxFlex.lt-sm="{{uniHeader.colspanSm}}%" fxFlex.md="{{uniHeader.colspanMd}}%"
+    fxFlex.lt-lg="{{uniHeader.colspanLg}}%" fxFlex="{{uniHeader.colspan}}%"
+    fxShow.lt-sm="{{uniHeader.showSm}}" fxShow.lt-md="{{uniHeader.showMd}}"
+    fxShow.lt-lg="{{uniHeader.showLg}}" fxShow="true"
+    *ngFor="let uniHeader of universityHeaderList" style="display: inline-flex;">
+        <h4 class="uniRecord">{{uniHeader.name}}</h4>
+        <div class="sortIconWrapper" *ngIf="uniHeader.name !== 'Actions'">
+          <i *ngIf="isAsc" (click)="sort()" class="sortIcon material-icons">arrow_upward</i>
+          <i *ngIf="!isAsc" (click)="sort()" class="sortIcon material-icons">arrow_downward</i>
         </div>
-    </div> -->
+    </div>
+  </mat-card>
 
-    <mat-card class="uniHeader uniRow">
+    <!-- <mat-card class="uniHeader uniRow">
         <mat-grid-list cols="100" rowHeight="40px">
             <mat-grid-tile [colspan]="uniHeader.colspan" *ngFor="let uniHeader of universityHeaderList">
                 <h4 class="uniRecord">{{uniHeader.name}}</h4>
+                <div class="sortIconWrapper" *ngIf="uniHeader.name !== 'Actions'">
+                  <i *ngIf="isAsc" (click)="sort()" class="sortIcon material-icons">arrow_upward</i>
+                  <i *ngIf="!isAsc" (click)="sort()" class="sortIcon material-icons">arrow_downward</i>
+                </div>
             </mat-grid-tile>
           </mat-grid-list>
-    </mat-card>
+    </mat-card> -->
 
     <mat-card class="uniItem uniRow" *ngIf="universityItemList.length == 0">
       <mat-grid-list cols="100" rowHeight="30px">
@@ -29,7 +42,69 @@
         </mat-grid-list>
     </mat-card>
 
-    <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem)">
+    <mat-card class="uniItem uniRow" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start"
+    *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem)">
+        <div fxFlex.lt-sm="{{universityHeaderList[0].colspanSm}}%" fxFlex.md="{{universityHeaderList[0].colspanMd}}%"
+        fxFlex.lt-lg="{{universityHeaderList[0].colspanLg}}%" fxFlex="{{universityHeaderList[0].colspan}}%"
+        fxShow.lt-sm="{{universityHeaderList[0].showSm}}" fxShow.lt-md="{{universityHeaderList[0].showMd}}"
+        fxShow.lt-lg="{{universityHeaderList[0].showLg}}" fxShow="true">
+            <h4 class="uniRecord">{{uniItem.universityName}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{universityHeaderList[1].colspanSm}}%" fxFlex.md="{{universityHeaderList[1].colspanMd}}%"
+        fxFlex.lt-lg="{{universityHeaderList[1].colspanLg}}%" fxFlex="{{universityHeaderList[1].colspan}}%"
+        fxShow.lt-sm="{{universityHeaderList[1].showSm}}" fxShow.lt-md="{{universityHeaderList[1].showMd}}"
+        fxShow.lt-lg="{{universityHeaderList[1].showLg}}" fxShow="true">
+            <h4 class="uniRecord">{{uniItem.city}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{universityHeaderList[2].colspanSm}}%" fxFlex.md="{{universityHeaderList[2].colspanMd}}%"
+        fxFlex.lt-lg="{{universityHeaderList[2].colspanLg}}%" fxFlex="{{universityHeaderList[2].colspan}}%"
+        fxShow.lt-sm="{{universityHeaderList[2].showSm}}" fxShow.lt-md="{{universityHeaderList[2].showMd}}"
+        fxShow.lt-lg="{{universityHeaderList[2].showLg}}" fxShow="true">
+            <h4 class="uniRecord">{{uniItem.undergraduatePrograms}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{universityHeaderList[3].colspanSm}}%" fxFlex.md="{{universityHeaderList[3].colspanMd}}%"
+        fxFlex.lt-lg="{{universityHeaderList[3].colspanLg}}%" fxFlex="{{universityHeaderList[3].colspan}}%"
+        fxShow.lt-sm="{{universityHeaderList[3].showSm}}" fxShow.lt-md="{{universityHeaderList[3].showMd}}"
+        fxShow.lt-lg="{{universityHeaderList[3].showLg}}" fxShow="true">
+            <h4 class="uniRecord">{{uniItem.postgraduatePrograms}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{universityHeaderList[4].colspanSm}}%" fxFlex.md="{{universityHeaderList[4].colspanMd}}%"
+        fxFlex.lt-lg="{{universityHeaderList[4].colspanLg}}%" fxFlex="{{universityHeaderList[4].colspan}}%"
+        fxShow.lt-sm="{{universityHeaderList[4].showSm}}" fxShow.lt-md="{{universityHeaderList[4].showMd}}"
+        fxShow.lt-lg="{{universityHeaderList[4].showLg}}" fxShow="true">
+            <h4 class="uniRecord">{{uniItem.graduationRates*100 | number:'2.1'}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{universityHeaderList[5].colspanSm}}%" fxFlex.md="{{universityHeaderList[5].colspanMd}}%"
+        fxFlex.lt-lg="{{universityHeaderList[5].colspanLg}}%" fxFlex="{{universityHeaderList[5].colspan}}%"
+        fxShow.lt-sm="{{universityHeaderList[5].showSm}}" fxShow.lt-md="{{universityHeaderList[5].showMd}}"
+        fxShow.lt-lg="{{universityHeaderList[5].showLg}}" fxShow="true">
+            <h4 class="uniRecord">{{uniItem.employability*100 | number:'2.1'}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{universityHeaderList[6].colspanSm}}%" fxFlex.md="{{universityHeaderList[6].colspanMd}}%"
+        fxFlex.lt-lg="{{universityHeaderList[6].colspanLg}}%" fxFlex="{{universityHeaderList[6].colspan}}%"
+        fxShow.lt-sm="{{universityHeaderList[6].showSm}}" fxShow.lt-md="{{universityHeaderList[6].showMd}}"
+        fxShow.lt-lg="{{universityHeaderList[6].showLg}}" fxShow="true">
+            <h4 class="uniRecord">{{uniItem.lifeQuality*100 | number:'2.1'}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{universityHeaderList[7].colspanSm}}%" fxFlex.md="{{universityHeaderList[7].colspanMd}}%"
+        fxFlex.lt-lg="{{universityHeaderList[7].colspanLg}}%" fxFlex="{{universityHeaderList[7].colspan}}%"
+        fxShow.lt-sm="{{universityHeaderList[7].showSm}}" fxShow.lt-md="{{universityHeaderList[7].showMd}}"
+        fxShow.lt-lg="{{universityHeaderList[7].showLg}}" fxShow="true">
+            <h4 class="uniRecord">{{uniItem.teachingExcellence | number:'2.1'}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{universityHeaderList[8].colspanSm}}%" fxFlex.md="{{universityHeaderList[8].colspanMd}}%"
+        fxFlex.lt-lg="{{universityHeaderList[8].colspanLg}}%" fxFlex="{{universityHeaderList[8].colspan}}%"
+        fxShow.lt-sm="{{universityHeaderList[8].showSm}}" fxShow.lt-md="{{universityHeaderList[8].showMd}}"
+        fxShow.lt-lg="{{universityHeaderList[8].showLg}}" fxShow="true" style="text-align: center">
+          <i *ngIf="!universityItemFavoritesList.includes(uniItem.universityId)" (click)="addToFavorites(uniItem)" class="material-icons">favorite_border</i>
+          <i *ngIf="universityItemFavoritesList.includes(uniItem.universityId)" (click)="removeFromFavorites(uniItem)" class="material-icons">favorite</i>
+          <i *ngIf="!universityItemSavedList.includes(uniItem.universityId)" (click)="addToSaved(uniItem)" class="material-icons">bookmark_border</i>
+          <i *ngIf="universityItemSavedList.includes(uniItem.universityId)" (click)="removeFromSaved(uniItem)" class="material-icons">bookmark</i>
+        </div>
+      </mat-card>
+
+
+    <!-- <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem)">
       <mat-grid-list cols="100" rowHeight="30px">
         <mat-grid-tile [colspan]="universityHeaderList[0].colspan">
           <h4 class="uniRecord">{{uniItem.universityName}}</h4>
@@ -63,7 +138,7 @@
         </mat-grid-tile>
       </mat-grid-list>
 
-    </mat-card>
+    </mat-card> -->
 
     <mat-paginator [length]="universityItemList.length" [pageSize]="10" [pageSizeOptions]="pageSizeOptions"
               (page)="pageEvent = $event">

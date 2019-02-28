@@ -12,22 +12,36 @@ mat-card {
 .uniList {
 
     .uniRow {
-        display: table;
-        width: 98%;
-        table-layout: fixed;
+        // display: table;
+        // width: 98%;
+        // table-layout: fixed;
 
         .uniRecord {
-            display: inline;
-            display: table-cell;
+            // display: inline;
+            // display: table-cell;
             text-align: center;
+            margin: 0px;
         }
     }
 
     .uniHeader {
         background-color: mat-color($app-primary, 500);
 
+        div:hover .sortIconWrapper {
+            visibility: visible;
+        }
+
         h4 {
             color: mat-color($app-primary, 50);
+            margin: 0px;
+            width: 100%;
+        }
+
+        .sortIconWrapper {
+            visibility: hidden;
+            .sortIcon {
+                color: mat-color($app-primary, 50);
+            }
         }
     }
 
