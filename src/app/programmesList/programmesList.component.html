@@ -1,24 +1,5 @@
 <mat-card class="programmesList">
 
-    <!-- <div class="searchBarCard">
-
-        <div class="filter" id="domainDetails">
-          <mat-form-field>
-            <mat-select placeholder="Domain" disableRipple>
-              <mat-option *ngFor="let domain of domainList" [value]="domain">{{ domain }}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="filter" id="directSearchDetails">
-          <mat-form-field>
-            <input matInput placeholder="Direct Search" value="">
-          </mat-form-field>
-        </div>
-
-        <button type="submit" mat-raised-button color="primary" matTooltip="Search for programmes">Search</button>
-
-    </div> -->
     <mat-card class="searchBarCard">
 
             <div class="filter" id="domainDetails">
@@ -39,34 +20,52 @@
 
     </mat-card>
 
-    <mat-card class="programmesHeader programmesRow">
-        <mat-grid-list cols="125" rowHeight="40px">
-            <mat-grid-tile [colspan]="25" *ngFor="let programmesHeader of programmesHeaderList">
-                <h4 class="programmesRecord">{{programmesHeader}}</h4>
-            </mat-grid-tile>
-          </mat-grid-list>
+    <mat-card class="programmesHeader programmesRow" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
+      <div fxFlex.lt-sm="{{programmesHeader.colspanSm}}%" fxFlex.md="{{programmesHeader.colspanMd}}%"
+      fxFlex.lt-lg="{{programmesHeader.colspanLg}}%" fxFlex="{{programmesHeader.colspan}}%"
+      fxShow.lt-sm="{{programmesHeader.showSm}}" fxShow.lt-md="{{programmesHeader.showMd}}"
+      fxShow.lt-lg="{{programmesHeader.showLg}}" fxShow="true"
+      *ngFor="let programmesHeader of programmesHeaderList" style="display: inline-flex;">
+          <h4 class="programmesRecord">{{programmesHeader.name}}</h4>
+          <div class="sortIconWrapper" *ngIf="programmesHeader.name !== 'Actions'">
+            <i *ngIf="isAsc" (click)="sort()" class="sortIcon material-icons">arrow_upward</i>
+            <i *ngIf="!isAsc" (click)="sort()" class="sortIcon material-icons">arrow_downward</i>
+          </div>
+      </div>
     </mat-card>
 
-
-    <mat-card class="programmesItem programmesRow" *ngFor="let programmeItem of programmesItemList">
-      <mat-grid-list cols="125" rowHeight="40px">
-        <mat-grid-tile [colspan]="25">
-          <h4 class="programmesRecord">{{programmeItem.name}}</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="25">
-          <h4 class="programmesRecord">{{programmeItem.domain}}</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="25">
-          <h4 class="programmesRecord">{{programmeItem.type}}</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="25">
-          <h4 class="programmesRecord">{{programmeItem.tuitionFeesDomestic}}</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="25">
-          <h4 class="programmesRecord">{{programmeItem.tuitionFeesInternational}}</h4>
-        </mat-grid-tile>
-      </mat-grid-list>
-
+    <mat-card class="programmesItem programmesRow" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start"
+    *ngFor="let programmeItem of programmesItemList" (click)="openUniversity(uniItem)">
+        <div fxFlex.lt-sm="{{programmesHeaderList[0].colspanSm}}%" fxFlex.md="{{programmesHeaderList[0].colspanMd}}%"
+        fxFlex.lt-lg="{{programmesHeaderList[0].colspanLg}}%" fxFlex="{{programmesHeaderList[0].colspan}}%"
+        fxShow.lt-sm="{{programmesHeaderList[0].showSm}}" fxShow.lt-md="{{programmesHeaderList[0].showMd}}"
+        fxShow.lt-lg="{{programmesHeaderList[0].showLg}}" fxShow="true">
+            <h4 class="programmesRecord">{{programmeItem.name}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{programmesHeaderList[1].colspanSm}}%" fxFlex.md="{{programmesHeaderList[1].colspanMd}}%"
+        fxFlex.lt-lg="{{programmesHeaderList[1].colspanLg}}%" fxFlex="{{programmesHeaderList[1].colspan}}%"
+        fxShow.lt-sm="{{programmesHeaderList[1].showSm}}" fxShow.lt-md="{{programmesHeaderList[1].showMd}}"
+        fxShow.lt-lg="{{programmesHeaderList[1].showLg}}" fxShow="true">
+            <h4 class="programmesRecord">{{programmeItem.domain}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{programmesHeaderList[2].colspanSm}}%" fxFlex.md="{{programmesHeaderList[2].colspanMd}}%"
+        fxFlex.lt-lg="{{programmesHeaderList[2].colspanLg}}%" fxFlex="{{programmesHeaderList[2].colspan}}%"
+        fxShow.lt-sm="{{programmesHeaderList[2].showSm}}" fxShow.lt-md="{{programmesHeaderList[2].showMd}}"
+        fxShow.lt-lg="{{programmesHeaderList[2].showLg}}" fxShow="true">
+            <h4 class="programmesRecord">{{programmeItem.type}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{programmesHeaderList[3].colspanSm}}%" fxFlex.md="{{programmesHeaderList[3].colspanMd}}%"
+        fxFlex.lt-lg="{{programmesHeaderList[3].colspanLg}}%" fxFlex="{{programmesHeaderList[3].colspan}}%"
+        fxShow.lt-sm="{{programmesHeaderList[3].showSm}}" fxShow.lt-md="{{programmesHeaderList[3].showMd}}"
+        fxShow.lt-lg="{{programmesHeaderList[3].showLg}}" fxShow="true">
+            <h4 class="programmesRecord">{{programmeItem.tuitionFeesDomestic}}</h4>
+        </div>
+        <div fxFlex.lt-sm="{{programmesHeaderList[4].colspanSm}}%" fxFlex.md="{{programmesHeaderList[4].colspanMd}}%"
+        fxFlex.lt-lg="{{programmesHeaderList[4].colspanLg}}%" fxFlex="{{programmesHeaderList[4].colspan}}%"
+        fxShow.lt-sm="{{programmesHeaderList[4].showSm}}" fxShow.lt-md="{{programmesHeaderList[4].showMd}}"
+        fxShow.lt-lg="{{programmesHeaderList[4].showLg}}" fxShow="true">
+            <h4 class="programmesRecord">{{programmeItem.tuitionFeesInternational}}</h4>
+        </div>
     </mat-card>
 
 </mat-card>

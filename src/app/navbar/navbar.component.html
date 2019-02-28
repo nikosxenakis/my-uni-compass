@@ -20,7 +20,7 @@
   </mat-form-field>
 </mat-toolbar> -->
 
-<div style="height: 80vh;">
+<div>
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
@@ -52,7 +52,7 @@
   <mat-sidenav-container fxFlexFill>
     <mat-sidenav #sidenav>
       <mat-nav-list>
-        <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+        <a (click)="sidenav.toggle()" mat-list-item>Close</a>
         <a href="#" mat-list-item>Profile</a>
         <a href="#" mat-list-item>Logout</a>
         <mat-form-field>

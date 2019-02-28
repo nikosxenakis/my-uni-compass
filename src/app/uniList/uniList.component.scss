@@ -12,13 +12,8 @@ mat-card {
 .uniList {
 
     .uniRow {
-        // display: table;
-        // width: 98%;
-        // table-layout: fixed;
 
         .uniRecord {
-            // display: inline;
-            // display: table-cell;
             text-align: center;
             margin: 0px;
         }
@@ -50,7 +45,6 @@ mat-card {
 
         :hover {
             cursor: pointer;
-            // padding: 10px;
         }
 
         h4, i {

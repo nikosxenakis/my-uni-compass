@@ -20,18 +20,6 @@
     </div>
   </mat-card>
 
-    <!-- <mat-card class="uniHeader uniRow">
-        <mat-grid-list cols="100" rowHeight="40px">
-            <mat-grid-tile [colspan]="uniHeader.colspan" *ngFor="let uniHeader of universityHeaderList">
-                <h4 class="uniRecord">{{uniHeader.name}}</h4>
-                <div class="sortIconWrapper" *ngIf="uniHeader.name !== 'Actions'">
-                  <i *ngIf="isAsc" (click)="sort()" class="sortIcon material-icons">arrow_upward</i>
-                  <i *ngIf="!isAsc" (click)="sort()" class="sortIcon material-icons">arrow_downward</i>
-                </div>
-            </mat-grid-tile>
-          </mat-grid-list>
-    </mat-card> -->
-
     <mat-card class="uniItem uniRow" *ngIf="universityItemList.length == 0">
       <mat-grid-list cols="100" rowHeight="30px">
           <mat-grid-tile [colspan]="100">
@@ -102,43 +90,6 @@
           <i *ngIf="universityItemSavedList.includes(uniItem.universityId)" (click)="removeFromSaved(uniItem)" class="material-icons">bookmark</i>
         </div>
       </mat-card>
-
-
-    <!-- <mat-card class="uniItem uniRow" *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem)">
-      <mat-grid-list cols="100" rowHeight="30px">
-        <mat-grid-tile [colspan]="universityHeaderList[0].colspan">
-          <h4 class="uniRecord">{{uniItem.universityName}}</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="universityHeaderList[1].colspan">
-          <h4 class="uniRecord">{{uniItem.city}}</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="universityHeaderList[2].colspan">
-          <h4 class="uniRecord">{{uniItem.undergraduatePrograms}}</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="universityHeaderList[3].colspan">
-          <h4 class="uniRecord">{{uniItem.postgraduatePrograms}}</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="universityHeaderList[4].colspan">
-          <h4 class="uniRecord">{{uniItem.graduationRates*100 | number:'2.1'}} %</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="universityHeaderList[5].colspan">
-          <h4 class="uniRecord">{{uniItem.employability*100 | number:'2.1'}} %</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="universityHeaderList[6].colspan">
-          <h4 class="uniRecord">{{uniItem.lifeQuality*100 | number:'2.1'}} %</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="universityHeaderList[7].colspan">
-          <h4 class="uniRecord">{{uniItem.teachingExcellence | number:'2.1'}} %</h4>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="universityHeaderList[8].colspan">
-          <i *ngIf="!universityItemFavoritesList.includes(uniItem.universityId)" (click)="addToFavorites(uniItem)" class="material-icons">favorite_border</i>
-          <i *ngIf="universityItemFavoritesList.includes(uniItem.universityId)" (click)="removeFromFavorites(uniItem)" class="material-icons">favorite</i>
-          <i *ngIf="!universityItemSavedList.includes(uniItem.universityId)" (click)="addToSaved(uniItem)" class="material-icons">bookmark_border</i>
-          <i *ngIf="universityItemSavedList.includes(uniItem.universityId)" (click)="removeFromSaved(uniItem)" class="material-icons">bookmark</i>
-        </mat-grid-tile>
-      </mat-grid-list>
-
-    </mat-card> -->
 
     <mat-paginator [length]="universityItemList.length" [pageSize]="10" [pageSizeOptions]="pageSizeOptions"
               (page)="pageEvent = $event">

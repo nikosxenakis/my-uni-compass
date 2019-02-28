@@ -14,11 +14,52 @@ export class ProgrammesListComponent implements OnInit {
   @Output() openProgrammesEvent = new EventEmitter<string>();
 
   programmesHeaderList = [
-    'Programme',
-    'Domain',
-    'Type',
-    'Tuition Fees UK/EU',
-    'Tuition Fees International'
+    {
+      name: 'Programme',
+      colspanSm: '100',
+      colspanMd: '20',
+      colspanLg: '50',
+      colspan: '20',
+      showSm: 'true',
+      showMd: 'true',
+      showLg: 'true'
+    }, {
+      name: 'Domain',
+      colspanSm: '0',
+      colspanMd: '20',
+      colspanLg: '50',
+      colspan: '20',
+      showSm: 'false',
+      showMd: 'true',
+      showLg: 'true'
+    }, {
+      name: 'Type',
+      colspanSm: '0',
+      colspanMd: '0',
+      colspanLg: '20',
+      colspan: '20',
+      showSm: 'false',
+      showMd: 'false',
+      showLg: 'false'
+    }, {
+      name: 'Tuition Fees UK/EU',
+      colspanSm: '0',
+      colspanMd: '0',
+      colspanLg: '20',
+      colspan: '20',
+      showSm: 'false',
+      showMd: 'false',
+      showLg: 'true'
+    }, {
+      name: 'Tuition Fees International',
+      colspanSm: '0',
+      colspanMd: '0',
+      colspanLg: '20',
+      colspan: '20',
+      showSm: 'false',
+      showMd: 'false',
+      showLg: 'true'
+    }
   ];
 
   programmesItemList: Array<ProgrammeItem> = [];

@@ -1,71 +1,106 @@
 @import '../../uni-compass-theme.scss';
 
+// .programmesList {
+
+//     overflow: scroll;
+//     height: 90%;
+
+//     .searchBarCard {
+//         margin-bottom: 10px;
+//         padding: 10px;
+//     }
+    
+//     .filter {
+//         margin: 10px;
+//         width: 180px;
+//         height: 60px;
+//         display: inline-block;
+//         position: relative;
+//         text-align: left;
+//     }
+    
+//         mat-card-actions {
+//             text-align: right;
+//             margin: 10px;
+//         }
+
+//     .programmesRow {
+//         width: 96%;
+//         table-layout: fixed;
+//         margin: 10px;
+
+//         .programmesRecord {
+//             display: inline;
+//             display: table-cell;
+//             text-align: center;
+//         }
+//     }
+
+//     .programmesHeader {
+//         background-color: mat-color($app-primary, 500);
+
+//         h4 {
+//             color: mat-color($app-primary, 50);
+//         }
+//     }
+
+//     .programmesItem {
+//         background-color: mat-color($app-primary, 50);
+
+//         h4 {
+//             color: mat-color($app-primary, 500);
+//         }
+//     }
+
+// }
+
+
+mat-card {
+    margin-bottom: 10px;
+}
+
 .programmesList {
 
-    overflow: scroll;
-    height: 90%;
-
-    .searchBarCard {
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-    
-    .filter {
-        margin: 10px;
-        width: 180px;
-        height: 60px;
-        display: inline-block;
-        position: relative;
-        text-align: left;
-        // background-color: mat-color($app-primary, 50);
-        // box-shadow: 2px 2px 5px mat-color($app-primary, 50);
-    }
-
-    // top: 520px;
-    // position: relative;
-
-    // .searchbar {
-    //     .filter {
-    //         display: inline-block;
-    //         margin: 10px;
-    //     }
-    
-        mat-card-actions {
-            text-align: right;
-            margin: 10px;
-        }
-    // }
-    
-    // .mat-card {
-    //     margin-bottom: 10px;
-    // }
-
     .programmesRow {
-        width: 96%;
-        table-layout: fixed;
-        margin: 10px;
 
         .programmesRecord {
-            display: inline;
-            display: table-cell;
             text-align: center;
+            margin: 0px;
         }
     }
 
     .programmesHeader {
         background-color: mat-color($app-primary, 500);
 
+        div:hover .sortIconWrapper {
+            visibility: visible;
+        }
+
         h4 {
             color: mat-color($app-primary, 50);
+            margin: 0px;
+            width: 100%;
+        }
+
+        .sortIconWrapper {
+            visibility: hidden;
+            .sortIcon {
+                color: mat-color($app-primary, 50);
+            }
         }
     }
 
     .programmesItem {
         background-color: mat-color($app-primary, 50);
 
-        h4 {
+        :hover {
+            cursor: pointer;
+        }
+
+        h4, i {
             color: mat-color($app-primary, 500);
         }
+
     }
 
 }
