@@ -149,6 +149,6 @@ export class UniListComponent implements OnInit {
   }
 
   pageEvent(event: any) {
-
+    console.log(this.universityItemList.length, ' page changed');
   }
 }

@@ -2,21 +2,21 @@
 
     <mat-card class="searchBarCard">
 
-            <div class="filter" id="domainDetails">
-              <mat-form-field>
-                <mat-select placeholder="Domain" disableRipple>
-                  <mat-option *ngFor="let domain of domainList" [value]="domain">{{ domain }}</mat-option>
-                </mat-select>
-              </mat-form-field>
-            </div>
-    
-            <div class="filter" id="directSearchDetails">
-              <mat-form-field>
-                <input matInput placeholder="Direct Search" value="">
-              </mat-form-field>
-            </div>
-    
-            <button type="submit" mat-raised-button color="primary" matTooltip="Search for programmes">Search</button>
+      <div class="filter" id="domainDetails">
+        <mat-form-field>
+          <mat-select placeholder="Domain" disableRipple>
+            <mat-option *ngFor="let domain of domainList" [value]="domain">{{ domain }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="filter" id="directSearchDetails">
+        <mat-form-field>
+          <input matInput placeholder="Direct Search" value="">
+        </mat-form-field>
+      </div>
+
+      <button type="submit" mat-raised-button color="primary" matTooltip="Search for programmes">Search</button>
 
     </mat-card>
 
@@ -35,7 +35,7 @@
     </mat-card>
 
     <mat-card class="programmesItem programmesRow" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start"
-    *ngFor="let programmeItem of programmesItemList" (click)="openUniversity(uniItem)">
+    *ngFor="let programmeItem of programmesItemList" (click)="openProgramme(programmeItem)">
         <div fxFlex.lt-sm="{{programmesHeaderList[0].colspanSm}}%" fxFlex.md="{{programmesHeaderList[0].colspanMd}}%"
         fxFlex.lt-lg="{{programmesHeaderList[0].colspanLg}}%" fxFlex="{{programmesHeaderList[0].colspan}}%"
         fxShow.lt-sm="{{programmesHeaderList[0].showSm}}" fxShow.lt-md="{{programmesHeaderList[0].showMd}}"

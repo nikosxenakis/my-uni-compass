@@ -59,6 +59,19 @@ mat-card {
     margin-bottom: 10px;
 }
 
+.filter {
+    margin: 10px;
+    width: 180px;
+    height: 60px;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+#searchBarCard {
+    text-align: center
+}
+
 .programmesList {
 
     .programmesRow {

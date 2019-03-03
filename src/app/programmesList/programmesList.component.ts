@@ -72,13 +72,11 @@ export class ProgrammesListComponent implements OnInit {
   constructor(private http: Http) { }
 
   ngOnInit() {
-
     this.programmesItemList = this.uniItem.programmes;
-
   }
 
-  onOpenProgramme(programme: string) {
-    this.openProgrammesEvent.emit(programme);
+  openProgramme(programmeItem: any) {
+    window.location.href = programmeItem.url;
   }
 
 }
