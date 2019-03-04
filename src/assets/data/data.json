@@ -1004,46 +1004,6 @@
 			"lifeQuality": 0.9050471948,
 			"teachingExcellence": 88.2,
 			"programmes": [{
-					"name": "Business Administration",
-					"domain": "Business",
-					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 15700,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Economics",
-					"domain": "Business",
-					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 15600,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Accounting",
-					"domain": "Business",
-					"type": "UG",
-					"tuitionFeesDomestic": 9300,
-					"tuitionFeesInternational": 16300,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Finance and Management",
-					"domain": "Business",
-					"type": "UG",
-					"tuitionFeesDomestic": 9100,
-					"tuitionFeesInternational": 15500,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Business Analytics",
-					"domain": "Business",
-					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 16400,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
 					"name": "Biology",
 					"domain": "Natural Sciences",
 					"type": "UG",
@@ -1485,41 +1445,6 @@
 					"tuitionFeesDomestic": 9400,
 					"tuitionFeesInternational": 16000,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Business Administration",
-					"domain": "Business",
-					"type": "PG",
-					"tuitionFeesDomestic": 12200,
-					"tuitionFeesInternational": 20200
-				},
-				{
-					"name": "Economics",
-					"domain": "Business",
-					"type": "PG",
-					"tuitionFeesDomestic": 11900,
-					"tuitionFeesInternational": 20000
-				},
-				{
-					"name": "Accounting",
-					"domain": "Business",
-					"type": "PG",
-					"tuitionFeesDomestic": 12000,
-					"tuitionFeesInternational": 19700
-				},
-				{
-					"name": "Finance and Management",
-					"domain": "Business",
-					"type": "PG",
-					"tuitionFeesDomestic": 11900,
-					"tuitionFeesInternational": 20200
-				},
-				{
-					"name": "Business Analytics",
-					"domain": "Business",
-					"type": "PG",
-					"tuitionFeesDomestic": 12000,
-					"tuitionFeesInternational": 19900
 				},
 				{
 					"name": "Biology",

@@ -1,14 +1,16 @@
-import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input, OnChanges } from '@angular/core';
 import {MatSnackBar} from '@angular/material';
 import { UniversityItem } from 'src/classes/UniversityItem';
+import {PageEvent} from '@angular/material';
 
 @Component({
   selector: 'uni-list',
   templateUrl: './uniList.component.html',
   styleUrls: ['./uniList.component.scss']
 })
-export class UniListComponent implements OnInit {
+export class UniListComponent implements OnInit, OnChanges {
   @Input() universityItemList: Array<UniversityItem>;
+  @Input() universityItemViewList: Array<UniversityItem>;
   @Input() universityItemFavoritesList: Array<number>;
   @Input() universityItemSavedList: Array<number>;
   @Input() resultsString: string;
@@ -16,7 +18,7 @@ export class UniListComponent implements OnInit {
 
   isAsc = true;
 
-  pageSizeOptions: number[] = [5, 10, 25, 100];
+  pageSizeOptions: number[] = [5, 10, 15, 20];
 
   universityHeaderList = [
     {
@@ -102,6 +104,7 @@ export class UniListComponent implements OnInit {
       showLg: 'true'
     }
   ];
+  pageEvent: PageEvent;
 
   constructor(private snackBar: MatSnackBar) { }
 
@@ -148,7 +151,23 @@ export class UniListComponent implements OnInit {
     this.isAsc = !this.isAsc;
   }
 
-  pageEvent(event: any) {
-    console.log(this.universityItemList.length, ' page changed');
+  ngOnChanges(model: any) {
+    console.log(model);
+    this.updateView({
+      pageIndex: 0,
+      pageSize: 10
+    });
+  }
+
+  updateView(event: any) {
+    console.log(event);
+
+    this.universityItemViewList = [];
+
+    for (let i = event.pageIndex * event.pageSize; i < (event.pageIndex + 1 ) * event.pageSize; i++) {
+      if (i < this.universityItemList.length) {
+        this.universityItemViewList.push(this.universityItemList[i]);
+      }
+    }
   }
 }

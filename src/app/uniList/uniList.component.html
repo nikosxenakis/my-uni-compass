@@ -31,7 +31,7 @@
     </mat-card>
 
     <mat-card class="uniItem uniRow" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start"
-    *ngFor="let uniItem of universityItemList" (click)="openUniversity(uniItem)">
+    *ngFor="let uniItem of universityItemViewList" (click)="openUniversity(uniItem)">
         <div fxFlex.lt-sm="{{universityHeaderList[0].colspanSm}}%" fxFlex.md="{{universityHeaderList[0].colspanMd}}%"
         fxFlex.lt-lg="{{universityHeaderList[0].colspanLg}}%" fxFlex="{{universityHeaderList[0].colspan}}%"
         fxShow.lt-sm="{{universityHeaderList[0].showSm}}" fxShow.lt-md="{{universityHeaderList[0].showMd}}"
@@ -60,25 +60,25 @@
         fxFlex.lt-lg="{{universityHeaderList[4].colspanLg}}%" fxFlex="{{universityHeaderList[4].colspan}}%"
         fxShow.lt-sm="{{universityHeaderList[4].showSm}}" fxShow.lt-md="{{universityHeaderList[4].showMd}}"
         fxShow.lt-lg="{{universityHeaderList[4].showLg}}" fxShow="true">
-            <h4 class="uniRecord">{{uniItem.graduationRates*100 | number:'2.1'}}</h4>
+            <h4 class="uniRecord">{{uniItem.graduationRates*100 | number:'2.1'}}%</h4>
         </div>
         <div fxFlex.lt-sm="{{universityHeaderList[5].colspanSm}}%" fxFlex.md="{{universityHeaderList[5].colspanMd}}%"
         fxFlex.lt-lg="{{universityHeaderList[5].colspanLg}}%" fxFlex="{{universityHeaderList[5].colspan}}%"
         fxShow.lt-sm="{{universityHeaderList[5].showSm}}" fxShow.lt-md="{{universityHeaderList[5].showMd}}"
         fxShow.lt-lg="{{universityHeaderList[5].showLg}}" fxShow="true">
-            <h4 class="uniRecord">{{uniItem.employability*100 | number:'2.1'}}</h4>
+            <h4 class="uniRecord">{{uniItem.employability*100 | number:'2.1'}}%</h4>
         </div>
         <div fxFlex.lt-sm="{{universityHeaderList[6].colspanSm}}%" fxFlex.md="{{universityHeaderList[6].colspanMd}}%"
         fxFlex.lt-lg="{{universityHeaderList[6].colspanLg}}%" fxFlex="{{universityHeaderList[6].colspan}}%"
         fxShow.lt-sm="{{universityHeaderList[6].showSm}}" fxShow.lt-md="{{universityHeaderList[6].showMd}}"
         fxShow.lt-lg="{{universityHeaderList[6].showLg}}" fxShow="true">
-            <h4 class="uniRecord">{{uniItem.lifeQuality*100 | number:'2.1'}}</h4>
+            <h4 class="uniRecord">{{uniItem.lifeQuality*100 | number:'2.1'}}%</h4>
         </div>
         <div fxFlex.lt-sm="{{universityHeaderList[7].colspanSm}}%" fxFlex.md="{{universityHeaderList[7].colspanMd}}%"
         fxFlex.lt-lg="{{universityHeaderList[7].colspanLg}}%" fxFlex="{{universityHeaderList[7].colspan}}%"
         fxShow.lt-sm="{{universityHeaderList[7].showSm}}" fxShow.lt-md="{{universityHeaderList[7].showMd}}"
         fxShow.lt-lg="{{universityHeaderList[7].showLg}}" fxShow="true">
-            <h4 class="uniRecord">{{uniItem.teachingExcellence | number:'2.1'}}</h4>
+            <h4 class="uniRecord">{{uniItem.teachingExcellence | number:'2.1'}}%</h4>
         </div>
         <div fxFlex.lt-sm="{{universityHeaderList[8].colspanSm}}%" fxFlex.md="{{universityHeaderList[8].colspanMd}}%"
         fxFlex.lt-lg="{{universityHeaderList[8].colspanLg}}%" fxFlex="{{universityHeaderList[8].colspan}}%"
@@ -91,8 +91,8 @@
         </div>
       </mat-card>
 
-    <mat-paginator [length]="10" [pageSize]="10" [pageSizeOptions]="pageSizeOptions"
-              (page)="pageEvent = $event">
+    <mat-paginator [length]="universityItemList.length" [pageSize]="10" [pageSizeOptions]="pageSizeOptions"
+              (page)="pageEvent = updateView($event)" [showFirstLastButtons]="true">
   </mat-paginator>
 
 </mat-card>

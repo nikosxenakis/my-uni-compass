@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output  } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { UniversityItem } from 'src/classes/UniversityItem';
 import { Http } from '@angular/http';
 import {map} from 'rxjs/operators';
@@ -65,6 +65,18 @@ export class TabbarComponent {
 
     for (const element of this.universityItemList) {
       console.log(element);
+      let toRemove = false;
+
+      let found = false;
+      for (const prog of element.programmes) {
+        if (searchForm.domain === prog.domain) {
+          found = true;
+          console.log('found ', element.universityName, searchForm.domain, prog.domain);
+        }
+      }
+      if (found === false && searchForm.domain !== 'All') {
+        toRemove = true;
+      }
 
       if (searchForm.degreeLevel === 'Undergraduate' && element.undergraduatePrograms === 0 ||
           searchForm.degreeLevel === 'Postgraduate' && element.postgraduatePrograms === 0 ||
@@ -76,6 +88,10 @@ export class TabbarComponent {
           searchForm.graduationRatesMin > element.graduationRates * 100 ||
           searchForm.graduationRatesMax < element.graduationRates * 100
       ) {
+        toRemove = true;
+      }
+
+      if (toRemove === true) {
         indexToRemove.push(this.universityItemList.indexOf(element));
       }
     }

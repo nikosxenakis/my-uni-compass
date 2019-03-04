@@ -1,12 +1,14 @@
-import { Component, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, Output, EventEmitter, AfterViewInit, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Http } from '@angular/http';
+import {map} from 'rxjs/operators';
 
 @Component({
   selector: 'searchbar',
   templateUrl: './searchbar.component.html',
   styleUrls: ['./searchbar.component.scss']
 })
-export class SearchbarComponent implements AfterViewInit {
+export class SearchbarComponent implements OnInit, AfterViewInit {
 
   @Output() searchEvent = new EventEmitter<any>();
 
@@ -30,10 +32,7 @@ export class SearchbarComponent implements AfterViewInit {
     '2015'
   ];
 
-  domainList = [
-    'All',
-    'Computer Science'
-  ];
+  domainList = [];
 
   form = new FormGroup({
     degreeLevel: new FormControl(this.degreeLevelList[0]),
@@ -66,8 +65,7 @@ export class SearchbarComponent implements AfterViewInit {
   ];
 
   elementsVisibility: any;
-
-  constructor() {
+  constructor(private http: Http) {
     this.elementsVisibility = {
       degreeLevel: true,
       country: true,
@@ -79,6 +77,11 @@ export class SearchbarComponent implements AfterViewInit {
       graduationRates: true
     };
   }
+
+  ngOnInit() {
+    this.getDomains();
+  }
+
   ngAfterViewInit() {
     this.moveElement('teachingExcellence', 'remove');
     this.moveElement('lifeQuality', 'remove');
@@ -139,5 +142,25 @@ export class SearchbarComponent implements AfterViewInit {
       this.form.controls.graduationRatesMin.setValue(0);
       this.form.controls.graduationRatesMax.setValue(100);
     }
+  }
+
+  getDomains() {
+    this.http.get('./assets/data/data.json')
+    .pipe(
+      map( response => {
+        return response.json();
+      })
+    )
+    .subscribe( data => {
+      this.domainList = ['All'];
+      for (const uniItem of data.universityList) {
+        for (const prog of uniItem.programmes) {
+          if (this.domainList.indexOf(prog.domain) === -1) {
+            this.domainList.push(prog.domain);
+          }
+        }
+      }
+      this.form.controls.domain.setValue(this.domainList[0]);
+    });
   }
 }
