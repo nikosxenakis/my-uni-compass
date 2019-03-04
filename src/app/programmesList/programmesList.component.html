@@ -4,7 +4,7 @@
 
       <div class="filter" id="domainDetails">
         <mat-form-field>
-          <mat-select placeholder="Domain" disableRipple>
+          <mat-select placeholder="Domain" disableRipple [(value)]="selectedDomain">
             <mat-option *ngFor="let domain of domainList" [value]="domain">{{ domain }}</mat-option>
           </mat-select>
         </mat-form-field>
@@ -16,7 +16,7 @@
         </mat-form-field>
       </div>
 
-      <button type="submit" mat-raised-button color="primary" matTooltip="Search for programmes">Search</button>
+      <button type="submit" mat-raised-button color="primary" matTooltip="Search for programmes" (click)="search()">Search</button>
 
     </mat-card>
 
@@ -35,7 +35,7 @@
     </mat-card>
 
     <mat-card class="programmesItem programmesRow" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start"
-    *ngFor="let programmeItem of programmesItemList" (click)="openProgramme(programmeItem)">
+    *ngFor="let programmeItem of programmesItemView2List" (click)="openProgramme(programmeItem)">
         <div fxFlex.lt-sm="{{programmesHeaderList[0].colspanSm}}%" fxFlex.md="{{programmesHeaderList[0].colspanMd}}%"
         fxFlex.lt-lg="{{programmesHeaderList[0].colspanLg}}%" fxFlex="{{programmesHeaderList[0].colspan}}%"
         fxShow.lt-sm="{{programmesHeaderList[0].showSm}}" fxShow.lt-md="{{programmesHeaderList[0].showMd}}"
@@ -67,5 +67,9 @@
             <h4 class="programmesRecord">{{programmeItem.tuitionFeesInternational}}</h4>
         </div>
     </mat-card>
+
+    <mat-paginator [length]="programmesItemViewList.length" [pageSize]="10" [pageSizeOptions]="pageSizeOptions"
+    (page)="updateView($event)" [showFirstLastButtons]="true">
+</mat-paginator>
 
 </mat-card>
