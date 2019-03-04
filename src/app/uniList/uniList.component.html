@@ -92,7 +92,7 @@
       </mat-card>
 
     <mat-paginator [length]="universityItemList.length" [pageSize]="10" [pageSizeOptions]="pageSizeOptions"
-              (page)="pageEvent = updateView($event)" [showFirstLastButtons]="true">
+              (page)="updateView($event)" [showFirstLastButtons]="true">
   </mat-paginator>
 
 </mat-card>
