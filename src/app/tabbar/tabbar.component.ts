@@ -87,7 +87,9 @@ export class TabbarComponent {
           searchForm.lifeQualityMin > element.lifeQuality * 100 ||
           searchForm.lifeQualityMax < element.lifeQuality * 100 ||
           searchForm.graduationRatesMin > element.graduationRates * 100 ||
-          searchForm.graduationRatesMax < element.graduationRates * 100
+          searchForm.graduationRatesMax < element.graduationRates * 100 ||
+          searchForm.employabilityMin > element.employability * 100 ||
+          searchForm.employabilityMax < element.employability * 100
       ) {
         toRemove = true;
       }
@@ -98,7 +100,7 @@ export class TabbarComponent {
     }
 
     for (let index = indexToRemove.length - 1; index >= 0 ; index--) {
-      this.universityItemList.splice(index, 1);
+      this.universityItemList.splice(indexToRemove[index], 1);
     }
 
   }
