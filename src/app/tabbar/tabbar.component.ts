@@ -80,7 +80,8 @@ export class TabbarComponent {
 
       if (searchForm.degreeLevel === 'Undergraduate' && element.undergraduatePrograms === 0 ||
           searchForm.degreeLevel === 'Postgraduate' && element.postgraduatePrograms === 0 ||
-          (searchForm.country !== element.city && searchForm.country !== 'All' ) ||
+          (searchForm.country !== 'United Kingdom' && searchForm.country !== 'All') ||
+          searchForm.year !== 2018 ||
           searchForm.teachingExcellenceMin > element.teachingExcellence ||
           searchForm.teachingExcellenceMax < element.teachingExcellence ||
           searchForm.lifeQualityMin > element.lifeQuality * 100 ||

@@ -21,15 +21,20 @@ export class SearchbarComponent implements OnInit, AfterViewInit {
 
   countryList = [
     'All',
-    'United Kingdom'
+    'United Kingdom',
+    'Greece',
+    'Germany',
+    'China',
+    'United States',
+    'Japan',
+    'Sweeden'
   ];
 
   yearList = [
-    'All',
-    '2018',
-    '2017',
-    '2016',
-    '2015'
+    2018,
+    2017,
+    2016,
+    2015
   ];
 
   domainList = [];
