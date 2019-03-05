@@ -26,7 +26,7 @@ export class UniListComponent implements OnInit, OnChanges {
       colspanSm: '100',
       colspanMd: '50',
       colspanLg: '50',
-      colspan: '17',
+      colspan: '12',
       showSm: 'true',
       showMd: 'true',
       showLg: 'true'
@@ -35,7 +35,7 @@ export class UniListComponent implements OnInit, OnChanges {
       colspanSm: '0',
       colspanMd: '30',
       colspanLg: '30',
-      colspan: '17',
+      colspan: '12',
       showSm: 'false',
       showMd: 'true',
       showLg: 'true'
