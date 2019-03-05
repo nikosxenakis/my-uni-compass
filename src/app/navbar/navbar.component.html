@@ -68,8 +68,8 @@
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
-      <tabbar *ngIf="!uniItem" (openUniversityEvent)="onOpenUniversity($event)"></tabbar>
-      <university-details *ngIf="uniItem" [(uniItem)]="uniItem"></university-details>
+      <tabbar [hidden]="uniItem" (openUniversityEvent)="onOpenUniversity($event)"></tabbar>
+      <university-details [hidden]="!uniItem" [(uniItem)]="uniItem"></university-details>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
