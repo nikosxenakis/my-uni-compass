@@ -35,20 +35,6 @@ export class TabbarComponent {
       this.universityItemSavedList = data.saved;
       console.log(this.universityItemList);
 
-      let underPrograms = 0;
-      let postPrograms = 0;
-      for (const uniItem of this.universityItemList) {
-        underPrograms += uniItem.undergraduatePrograms;
-        postPrograms += uniItem.postgraduatePrograms;
-      }
-
-      this.resultsString =
-        this.universityItemList.length +
-        ' Universities with ' +
-        underPrograms +
-        ' undergraduate and ' +
-        postPrograms +
-        ' postgraduate programs found';
     });
   }
 
@@ -103,6 +89,34 @@ export class TabbarComponent {
       this.universityItemList.splice(indexToRemove[index], 1);
     }
 
+    this.resultsString = this.universityItemList.length + ' Universities';
+
+    let underPrograms = 0;
+    let postPrograms = 0;
+    for (const uniItem of this.universityItemList) {
+      underPrograms += uniItem.undergraduatePrograms;
+      postPrograms += uniItem.postgraduatePrograms;
+    }
+
+    if (searchForm.degreeLevel === 'Undergraduate') {
+      this.resultsString += ' with ' +
+      underPrograms +
+      ' undergraduate programs ';
+    }
+    if (searchForm.degreeLevel === 'Postgraduate') {
+      this.resultsString += ' with ' +
+      postPrograms +
+      ' postgraduate programs ';
+    }
+    if (searchForm.degreeLevel === 'All') {
+      this.resultsString += ' with ' +
+      underPrograms +
+      ' undergraduate and ' +
+      postPrograms +
+      ' postgraduate programs ';
+    }
+
+    this.resultsString += 'found';
   }
 
 }
