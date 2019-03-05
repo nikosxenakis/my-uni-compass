@@ -14,7 +14,7 @@ export class TabbarComponent {
   universityItemList: Array<UniversityItem> = [];
   universityItemFavoritesList: Array<number> = [];
   universityItemSavedList: Array<number> = [];
-  resultsString = 'Apply critiria and press search to find universities';
+  resultsString = 'Apply criteria and press search to find universities';
   constructor(private http: Http) {}
   onOpenUniversity(uniItem: UniversityItem) {
     this.openUniversityEvent.emit(uniItem);

@@ -85,7 +85,7 @@ export class UniListComponent implements OnInit, OnChanges {
       showMd: 'false',
       showLg: 'false'
     }, {
-      name: 'Teaching Excelence',
+      name: 'Teaching Excellence',
       colspanSm: '0',
       colspanMd: '0',
       colspanLg: '0',

@@ -65,7 +65,7 @@ export class SearchbarComponent implements OnInit, AfterViewInit {
     'Graduation Rates',
     'Employability',
     'Life Quality',
-    'Teaching Excelence',
+    'Teaching Excellence',
     'Actions'
   ];
 
