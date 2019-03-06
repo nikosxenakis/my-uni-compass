@@ -2,6 +2,7 @@
 
     <div fxFlex="100%" fxFlex-lg="100%" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
         <div class="logoWrapper">
+            <h3>{{uniItem.universityName}}</h3>
             <img src="./assets/images/logoEdinburgh.png" class="logo">
         </div>
     </div>
@@ -22,27 +23,26 @@
         </div>
 
         <div fxFlex="50%" fxFlex-lg="50%" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
-                <mat-card>
-                    <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
-                    
-                        <h2 *ngIf="uniItem.monthlyLivingExpensesRecommended" fxFlex="100%" class="chartTitle">Living Expenses</h2>
-                        <div *ngIf="uniItem.monthlyLivingExpensesRecommended" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
-                                <pie-diagram [data]="uniItem.monthlyLivingExpensesRecommended" [title]="'Recommended Living Expenses'"></pie-diagram>
-                            </div>
-                        <div *ngIf="uniItem.monthlyLivingExpensesMinimum" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
-                                <pie-diagram [data]="uniItem.monthlyLivingExpensesMinimum" [title]="'Minimum Living Expenses'"></pie-diagram>
-                            </div>
-
-                        <h2 *ngIf="uniItem.ratios" fxFlex="100%" class="chartTitle">Ratios</h2>
+            <mat-card>
+                <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start">
+                
+                    <h2 *ngIf="uniItem.monthlyLivingExpensesRecommended" fxFlex="100%" class="chartTitle">Living Expenses</h2>
+                    <div *ngIf="uniItem.monthlyLivingExpensesRecommended" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
+                            <pie-diagram [data]="uniItem.monthlyLivingExpensesRecommended" [title]="'Recommended Living Expenses'"></pie-diagram>
+                        </div>
+                    <div *ngIf="uniItem.monthlyLivingExpensesMinimum" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
+                            <pie-diagram [data]="uniItem.monthlyLivingExpensesMinimum" [title]="'Minimum Living Expenses'"></pie-diagram>
+                        </div>
+                    <h2 *ngIf="uniItem.ratios" fxFlex="100%" class="chartTitle">Ratios</h2>
+                    <div *ngIf="uniItem.ratios" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
+                            <pie-diagram [data]="uniItem.ratios[0]" [title]="'Male/Female Ratio'"></pie-diagram> 
+                        </div>
                         <div *ngIf="uniItem.ratios" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
-                                <pie-diagram [data]="uniItem.ratios[0]" [title]="'Male/Female Ratio'"></pie-diagram> 
-                            </div>
-                            <div *ngIf="uniItem.ratios" fxFlex="50%" fxFlex.lt-lg="100%" fxFlex.lt-sm="100%">
-                                <pie-diagram [data]="uniItem.ratios[1]" [title]="'UG/PG Ratio'"></pie-diagram> 
-                            </div>
-                    </div>
-                </mat-card>
-            </div>
+                            <pie-diagram [data]="uniItem.ratios[1]" [title]="'UG/PG Ratio'"></pie-diagram> 
+                        </div>
+                </div>
+            </mat-card>
+        </div>
 
             <div *ngIf="uniItem.programmes" fxFlex="100%" fxFlex-lg="100%" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
                     <mat-card>

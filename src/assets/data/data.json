@@ -7,7 +7,7 @@
 			"postgraduatePrograms": 366,
 			"graduationRates": 0.985,
 			"employability": 0.85,
-			"lifeQuality": 0.8456756274,
+			"lifeQuality": 0.85,
 			"teachingExcellence": 86.5,
 			"programmes": [{
 					"name": "Business Administration",
@@ -1001,41 +1001,18 @@
 			"postgraduatePrograms": 356,
 			"graduationRates": 0.986,
 			"employability": 0.873,
-			"lifeQuality": 0.9050471948,
+			"lifeQuality": 0.905,
 			"teachingExcellence": 88.2,
 			"programmes": [{
 					"name": "Biology",
 					"domain": "Natural Sciences",
 					"type": "UG",
-					"tuitionFeesDomestic": 9100,
-					"tuitionFeesInternational": 16400,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Marine Biology",
-					"domain": "Natural Sciences",
-					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 15800,
+					"tuitionFeesDomestic": 9600,
+					"tuitionFeesInternational": 16200,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Mathematics",
-					"domain": "Natural Sciences",
-					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 15500,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Chemistry",
-					"domain": "Natural Sciences",
-					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 14900
-				},
-				{
-					"name": "Geography",
 					"domain": "Natural Sciences",
 					"type": "UG",
 					"tuitionFeesDomestic": 9800,
@@ -1043,81 +1020,96 @@
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
+					"name": "Chemistry",
+					"domain": "Natural Sciences",
+					"type": "UG",
+					"tuitionFeesDomestic": 8900,
+					"tuitionFeesInternational": 16900
+				},
+				{
+					"name": "Geography",
+					"domain": "Natural Sciences",
+					"type": "UG",
+					"tuitionFeesDomestic": 8200,
+					"tuitionFeesInternational": 18200,
+					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
+				},
+				{
 					"name": "Physics and Astronomy",
 					"domain": "Natural Sciences",
 					"type": "UG",
-					"tuitionFeesDomestic": 9300,
-					"tuitionFeesInternational": 16100,
+					"tuitionFeesDomestic": 8700,
+					"tuitionFeesInternational": 12100,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Chemical Engineering",
 					"domain": "Engineering and Technology",
 					"type": "UG",
-					"tuitionFeesDomestic": 9200,
-					"tuitionFeesInternational": 16400,
+					"tuitionFeesDomestic": 10200,
+					"tuitionFeesInternational": 18400,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Aeronautics",
 					"domain": "Engineering and Technology",
 					"type": "UG",
-					"tuitionFeesDomestic": 9600,
-					"tuitionFeesInternational": 16100,
+					"tuitionFeesDomestic": 7600,
+					"tuitionFeesInternational": 15100,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Bioengineering",
 					"domain": "Engineering and Technology",
 					"type": "UG",
-					"tuitionFeesDomestic": 9500,
-					"tuitionFeesInternational": 16800
+					"tuitionFeesDomestic": 9300,
+					"tuitionFeesInternational": 15700
 				},
 				{
 					"name": "Electronic Engineering",
 					"domain": "Engineering and Technology",
 					"type": "UG",
-					"tuitionFeesDomestic": 9100,
-					"tuitionFeesInternational": 16100,
+					"tuitionFeesDomestic": 8900,
+					"tuitionFeesInternational": 16600,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Mechanical Engineering",
 					"domain": "Engineering and Technology",
 					"type": "UG",
-					"tuitionFeesDomestic": 9500,
-					"tuitionFeesInternational": 15900,
+					"tuitionFeesDomestic": 7600,
+					"tuitionFeesInternational": 13200,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Information Technology",
 					"domain": "Engineering and Technology",
 					"type": "UG",
-					"tuitionFeesDomestic": 9300,
-					"tuitionFeesInternational": 16500,
+					"tuitionFeesDomestic": 9600,
+					"tuitionFeesInternational": 13500,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Surgery",
 					"domain": "Medicine",
 					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 16500,
+					"tuitionFeesDomestic": 8600,
+					"tuitionFeesInternational": 15300,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Dentistry",
 					"domain": "Medicine",
 					"type": "UG",
-					"tuitionFeesDomestic": 9100,
-					"tuitionFeesInternational": 16300,
+					"tuitionFeesDomestic": 12000,
+					"tuitionFeesInternational": 26300,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Psychotherapy",
 					"domain": "Medicine",
 					"type": "UG",
-					"tuitionFeesDomestic": 9500,
+					"tuitionFeesDomestic": 9900,
 					"tuitionFeesInternational": 16000,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
@@ -1125,31 +1117,23 @@
 					"name": "Pharmacy",
 					"domain": "Medicine",
 					"type": "UG",
-					"tuitionFeesDomestic": 9200,
-					"tuitionFeesInternational": 15100
+					"tuitionFeesDomestic": 7700,
+					"tuitionFeesInternational": 14100
 				},
 				{
 					"name": "Medical Biotechnology",
 					"domain": "Medicine",
 					"type": "UG",
-					"tuitionFeesDomestic": 9300,
-					"tuitionFeesInternational": 16100,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Veterinary Surgery",
-					"domain": "Medicine",
-					"type": "UG",
-					"tuitionFeesDomestic": 9200,
-					"tuitionFeesInternational": 16200,
+					"tuitionFeesDomestic": 9000,
+					"tuitionFeesInternational": 16000,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
 					"name": "Nursing",
 					"domain": "Medicine",
 					"type": "UG",
-					"tuitionFeesDomestic": 9000,
-					"tuitionFeesInternational": 15800,
+					"tuitionFeesDomestic": 8500,
+					"tuitionFeesInternational": 12800,
 
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
@@ -1157,8 +1141,8 @@
 					"name": "Criminology and Law",
 					"domain": "Law",
 					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 16700,
+					"tuitionFeesDomestic": 8700,
+					"tuitionFeesInternational": 14700,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
@@ -1882,34 +1866,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 210,
+				"transport": 260,
+				"food": 230,
+				"entertainment": 190
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 310,
+				"transport": 430,
+				"food": 360,
+				"entertainment": 330
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 29,
+					"female": 71
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 82,
+					"postgraduate": 18
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 49,
+					"internationalStudents": 51
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 12100,
+					"student": 27100
 				}
 			]
 		},
@@ -1921,7 +1905,7 @@
 			"postgraduatePrograms": 233,
 			"graduationRates": 0.966,
 			"employability": 0.905,
-			"lifeQuality": 0.849625886,
+			"lifeQuality": 0.850,
 			"teachingExcellence": 83.3,
 			"programmes": [{
 					"name": "Business Administration",
@@ -2876,34 +2860,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 190,
+				"transport": 130,
+				"food": 230,
+				"entertainment": 180
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 260,
+				"transport": 220,
+				"food": 390,
+				"entertainment": 290
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 24,
+					"female": 76
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 75,
+					"postgraduate": 25
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 43,
+					"internationalStudents": 57
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10000,
+					"student": 59700
 				}
 			]
 		},
@@ -2915,7 +2899,7 @@
 			"postgraduatePrograms": 1273,
 			"graduationRates": 0.94,
 			"employability": 0.82,
-			"lifeQuality": 0.8161388461,
+			"lifeQuality": 0.816,
 			"teachingExcellence": 78.1,
 			"programmes": [{
 					"name": "Business Administration",
@@ -3870,34 +3854,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 210,
+				"transport": 250,
+				"food": 230,
+				"entertainment": 200
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 310,
+				"transport": 330,
+				"food": 370,
+				"entertainment": 310
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 20,
+					"female": 80
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 66,
+					"postgraduate": 34
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 34,
+					"internationalStudents": 66
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 9100,
+					"student": 29200
 				}
 			]
 		},
@@ -3909,7 +3893,7 @@
 			"postgraduatePrograms": 292,
 			"graduationRates": 0.96,
 			"employability": 0.871,
-			"lifeQuality": 0.831358449,
+			"lifeQuality": 0.831,
 			"teachingExcellence": 69.8,
 			"programmes": [{
 					"name": "Business Administration",
@@ -4864,34 +4848,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 260,
+				"transport": 190,
+				"food": 260,
+				"entertainment": 190
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 340,
+				"transport": 250,
+				"food": 350,
+				"entertainment": 310
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 51,
+					"female": 49
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 81,
+					"postgraduate": 19
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 32,
+					"internationalStudents": 68
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 11900,
+					"student": 59300
 				}
 			]
 		},
@@ -4903,7 +4887,7 @@
 			"postgraduatePrograms": 1354,
 			"graduationRates": 0.92,
 			"employability": 0.749,
-			"lifeQuality": 0.792472267,
+			"lifeQuality": 0.792,
 			"teachingExcellence": 68.6,
 			"programmes": [{
 					"name": "Business Administration",
@@ -5858,34 +5842,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 240,
+				"transport": 240,
+				"food": 180,
+				"entertainment": 280
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 380,
+				"transport": 400,
+				"food": 330,
+				"entertainment": 380
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 83,
+					"female": 17
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 66,
+					"postgraduate": 34
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 47,
+					"internationalStudents": 53
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 11000,
+					"student": 16600
 				}
 			]
 		},
@@ -5897,7 +5881,7 @@
 			"postgraduatePrograms": 1073,
 			"graduationRates": 0.874,
 			"employability": 0.841,
-			"lifeQuality": 0.7356408177,
+			"lifeQuality": 0.736,
 			"teachingExcellence": 64.5,
 			"programmes": [{
 					"name": "Business Administration",
@@ -6852,34 +6836,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 190,
+				"transport": 150,
+				"food": 150,
+				"entertainment": 280
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 220,
+				"transport": 260,
+				"food": 280,
+				"entertainment": 350
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 71,
+					"female": 29
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 77,
+					"postgraduate": 23
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 39,
+					"internationalStudents": 61
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 8400,
+					"student": 41200
 				}
 			]
 		},
@@ -6891,7 +6875,7 @@
 			"postgraduatePrograms": 551,
 			"graduationRates": 0.931,
 			"employability": 0.824,
-			"lifeQuality": 0.7731872531,
+			"lifeQuality": 0.773,
 			"teachingExcellence": 58.4,
 			"programmes": [{
 					"name": "Business Administration",
@@ -7846,34 +7830,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 140,
+				"transport": 250,
+				"food": 140,
+				"entertainment": 200
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 240,
+				"transport": 340,
+				"food": 220,
+				"entertainment": 280
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 87,
+					"female": 13
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 90,
+					"postgraduate": 10
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 44,
+					"internationalStudents": 56
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 6400,
+					"student": 32000
 				}
 			]
 		},
@@ -7885,7 +7869,7 @@
 			"postgraduatePrograms": 477,
 			"graduationRates": 0.956,
 			"employability": 0.802,
-			"lifeQuality": 0.73048398,
+			"lifeQuality": 0.730,
 			"teachingExcellence": 47.6,
 			"programmes": [{
 					"name": "Business Administration",
@@ -8840,34 +8824,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 150,
+				"transport": 150,
+				"food": 230,
+				"entertainment": 180
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 280,
+				"transport": 310,
+				"food": 320,
+				"entertainment": 220
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 70,
+					"female": 30
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 82,
+					"postgraduate": 18
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 27,
+					"internationalStudents": 73
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 3800,
+					"student": 37600
 				}
 			]
 		},
@@ -8879,7 +8863,7 @@
 			"postgraduatePrograms": 276,
 			"graduationRates": 0.961,
 			"employability": 0.84,
-			"lifeQuality": 0.8336072441,
+			"lifeQuality": 0.834,
 			"teachingExcellence": 47.9,
 			"programmes": [{
 					"name": "Business Administration",
@@ -9834,34 +9818,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 240,
+				"transport": 230,
+				"food": 290,
+				"entertainment": 180
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 300,
+				"transport": 230,
+				"food": 420,
+				"entertainment": 230
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 73,
+					"female": 27
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 76,
+					"postgraduate": 24
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 31,
+					"internationalStudents": 69
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 12000,
+					"student": 44700
 				}
 			]
 		},
@@ -9873,7 +9857,7 @@
 			"postgraduatePrograms": 988,
 			"graduationRates": 0.886,
 			"employability": 0.833,
-			"lifeQuality": 0.7556032544,
+			"lifeQuality": 0.756,
 			"teachingExcellence": 41.6,
 			"programmes": [{
 					"name": "Business Administration",
@@ -10828,34 +10812,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 120,
+				"transport": 260,
+				"food": 270,
+				"entertainment": 240
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 230,
+				"transport": 380,
+				"food": 330,
+				"entertainment": 300
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 33,
+					"female": 67
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 72,
+					"postgraduate": 28
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 25,
+					"internationalStudents": 75
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 9900,
+					"student": 24900
 				}
 			]
 		},
@@ -10867,7 +10851,7 @@
 			"postgraduatePrograms": 174,
 			"graduationRates": 0.962,
 			"employability": 0.806,
-			"lifeQuality": 0.8936231433,
+			"lifeQuality": 0.894,
 			"teachingExcellence": 47.4,
 			"programmes": [{
 					"name": "Business Administration",
@@ -11822,34 +11806,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 160,
+				"transport": 190,
+				"food": 150,
+				"entertainment": 280
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 270,
+				"transport": 340,
+				"food": 240,
+				"entertainment": 350
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 85,
+					"female": 15
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 80,
+					"postgraduate": 20
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 35,
+					"internationalStudents": 65
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 9000,
+					"student": 34400
 				}
 			]
 		},
@@ -11861,7 +11845,7 @@
 			"postgraduatePrograms": 158,
 			"graduationRates": 0.96,
 			"employability": 0.816,
-			"lifeQuality": 0.70229034,
+			"lifeQuality": 0.703,
 			"teachingExcellence": 49.7,
 			"programmes": [{
 					"name": "Business Administration",
@@ -12816,34 +12800,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
+				"rent": 200,
+				"transport": 210,
+				"food": 150,
 				"entertainment": 100
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 270,
+				"transport": 300,
+				"food": 300,
+				"entertainment": 290
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 29,
+					"female": 71
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 80,
+					"postgraduate": 20
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 33,
+					"internationalStudents": 67
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10600,
+					"student": 42100
 				}
 			]
 		},
@@ -12855,7 +12839,7 @@
 			"postgraduatePrograms": 623,
 			"graduationRates": 0.955,
 			"employability": 0.841,
-			"lifeQuality": 0.9528182784,
+			"lifeQuality": 0.953,
 			"teachingExcellence": 39.4,
 			"programmes": [{
 					"name": "Business Administration",
@@ -13810,34 +13794,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 230,
+				"transport": 150,
+				"food": 230,
+				"entertainment": 130
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 310,
+				"transport": 260,
+				"food": 330,
+				"entertainment": 300
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 30,
+					"female": 70
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 83,
+					"postgraduate": 17
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 49,
+					"internationalStudents": 51
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 9300,
+					"student": 45400
 				}
 			]
 		},
@@ -13849,7 +13833,7 @@
 			"postgraduatePrograms": 344,
 			"graduationRates": 0.93,
 			"employability": 0.825,
-			"lifeQuality": 0.7989362771,
+			"lifeQuality": 0.799,
 			"teachingExcellence": 42.4,
 			"programmes": [{
 					"name": "Business Administration",
@@ -14804,34 +14788,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 180,
+				"transport": 300,
+				"food": 220,
+				"entertainment": 260
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 230,
+				"transport": 410,
+				"food": 320,
+				"entertainment": 310
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 99,
+					"female": 1
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 84,
+					"postgraduate": 16
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 24,
+					"internationalStudents": 76
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 9100,
+					"student": 22700
 				}
 			]
 		},
@@ -14843,7 +14827,7 @@
 			"postgraduatePrograms": 408,
 			"graduationRates": 0.92,
 			"employability": 0.737,
-			"lifeQuality": 0.7506452676,
+			"lifeQuality": 0.751,
 			"teachingExcellence": 34.1,
 			"programmes": [{
 					"name": "Business Administration",
@@ -15798,34 +15782,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 260,
+				"transport": 130,
+				"food": 270,
+				"entertainment": 230
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 330,
+				"transport": 230,
+				"food": 280,
+				"entertainment": 350
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 75,
+					"female": 25
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 63,
+					"postgraduate": 37
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 30,
+					"internationalStudents": 70
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 7200,
+					"student": 30400
 				}
 			]
 		},
@@ -15837,7 +15821,7 @@
 			"postgraduatePrograms": 435,
 			"graduationRates": 0.923,
 			"employability": 0.801,
-			"lifeQuality": 0.9505623121,
+			"lifeQuality": 0.951,
 			"teachingExcellence": 39.8,
 			"programmes": [{
 					"name": "Business Administration",
@@ -16792,34 +16776,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 190,
+				"transport": 170,
+				"food": 240,
+				"entertainment": 260
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 250,
+				"transport": 290,
+				"food": 370,
+				"entertainment": 320
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 95,
+					"female": 5
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 89,
+					"postgraduate": 11
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 21,
+					"internationalStudents": 79
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 12300,
+					"student": 51400
 				}
 			]
 		},
@@ -16831,7 +16815,7 @@
 			"postgraduatePrograms": 1128,
 			"graduationRates": 0.946,
 			"employability": 0.859,
-			"lifeQuality": 0.8735309407,
+			"lifeQuality": 0.874,
 			"teachingExcellence": 39.4,
 			"programmes": [{
 					"name": "Business Administration",
@@ -17786,34 +17770,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
-			},
-
-			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
+				"rent": 210,
+				"transport": 200,
+				"food": 190,
 				"entertainment": 170
 			},
 
+			"monthlyLivingExpensesRecommended": {
+				"rent": 360,
+				"transport": 350,
+				"food": 210,
+				"entertainment": 340
+			},
+
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 71,
+					"female": 29
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 70,
+					"postgraduate": 30
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 44,
+					"internationalStudents": 56
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 11700,
+					"student": 44300
 				}
 			]
 		},
@@ -17825,7 +17809,7 @@
 			"postgraduatePrograms": 167,
 			"graduationRates": 0.93,
 			"employability": 0.718,
-			"lifeQuality": 0.9822201722,
+			"lifeQuality": 0.982,
 			"teachingExcellence": 35.1,
 			"programmes": [{
 					"name": "Business Administration",
@@ -18780,34 +18764,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 310,
+				"transport": 240,
+				"food": 330,
+				"entertainment": 110
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 420,
+				"transport": 360,
+				"food": 410,
+				"entertainment": 310
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 62,
+					"female": 38
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 87,
+					"postgraduate": 13
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 23,
+					"internationalStudents": 77
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10200,
+					"student": 31900
 				}
 			]
 		},
@@ -18819,7 +18803,7 @@
 			"postgraduatePrograms": 347,
 			"graduationRates": 0.926,
 			"employability": 0.85,
-			"lifeQuality": 0.7393055612,
+			"lifeQuality": 0.739,
 			"teachingExcellence": 34,
 			"programmes": [{
 					"name": "Business Administration",
@@ -19774,34 +19758,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 130,
+				"transport": 240,
+				"food": 160,
+				"entertainment": 130
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 270,
+				"transport": 360,
+				"food": 210,
+				"entertainment": 140
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 75,
+					"female": 25
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 66,
+					"postgraduate": 34
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 41,
+					"internationalStudents": 59
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 16300,
+					"student": 52100
 				}
 			]
 		},
@@ -19813,7 +19797,7 @@
 			"postgraduatePrograms": 481,
 			"graduationRates": 0.925,
 			"employability": 0.811,
-			"lifeQuality": 0.942259537,
+			"lifeQuality": 0.942,
 			"teachingExcellence": 41.9,
 			"programmes": [{
 					"name": "Business Administration",
@@ -20768,34 +20752,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 260,
+				"transport": 280,
+				"food": 220,
+				"entertainment": 200
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 430,
+				"transport": 420,
+				"food": 360,
+				"entertainment": 330
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 53,
+					"female": 5470
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 80,
+					"postgraduate": 20
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 44,
+					"internationalStudents": 56
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 6000,
+					"student": 30800
 				}
 			]
 		},
@@ -20807,7 +20791,7 @@
 			"postgraduatePrograms": 533,
 			"graduationRates": 0.925,
 			"employability": 0.811,
-			"lifeQuality": 0.9436673675,
+			"lifeQuality": 0.944,
 			"teachingExcellence": 43.7,
 			"programmes": [{
 					"name": "Business Administration",
@@ -21762,34 +21746,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 180,
+				"transport": 220,
+				"food": 220,
+				"entertainment": 210
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 330,
+				"transport": 380,
+				"food": 260,
+				"entertainment": 340
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 35,
+					"female": 65
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 81,
+					"postgraduate": 19
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 35,
+					"internationalStudents": 65
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10000,
+					"student": 41700
 				}
 			]
 		},
@@ -21801,7 +21785,7 @@
 			"postgraduatePrograms": 478,
 			"graduationRates": 0.916,
 			"employability": 0.802,
-			"lifeQuality": 0.7704138481,
+			"lifeQuality": 0.770,
 			"teachingExcellence": 33.4,
 			"programmes": [{
 					"name": "Business Administration",
@@ -22756,34 +22740,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 190,
+				"transport": 260,
+				"food": 250,
+				"entertainment": 220
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 350,
+				"transport": 370,
+				"food": 320,
+				"entertainment": 270
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 27,
+					"female": 73
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 80,
+					"postgraduate": 20
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 36,
+					"internationalStudents": 64
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10400,
+					"student": 33200
 				}
 			]
 		},
@@ -22795,7 +22779,7 @@
 			"postgraduatePrograms": 726,
 			"graduationRates": 0.934,
 			"employability": 0.833,
-			"lifeQuality": 0.712780371,
+			"lifeQuality": 0.713,
 			"teachingExcellence": 40.3,
 			"programmes": [{
 					"name": "Business Administration",
@@ -23750,34 +23734,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 190,
+				"transport": 170,
+				"food": 150,
+				"entertainment": 240
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 300,
+				"transport": 320,
+				"food": 170,
+				"entertainment": 380
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 43,
+					"female": 57
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 63,
+					"postgraduate": 37
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 34,
+					"internationalStudents": 66
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10000,
+					"student": 40600
 				}
 			]
 		},
@@ -23789,7 +23773,7 @@
 			"postgraduatePrograms": 212,
 			"graduationRates": 0.905,
 			"employability": 0.774,
-			"lifeQuality": 0.9015451894,
+			"lifeQuality": 0.902,
 			"teachingExcellence": 31.9,
 			"programmes": [{
 					"name": "Business Administration",
@@ -24744,34 +24728,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 150,
+				"transport": 270,
+				"food": 150,
+				"entertainment": 270
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 240,
+				"transport": 430,
+				"food": 260,
+				"entertainment": 310
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 47,
+					"female": 53
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 69,
+					"postgraduate": 31
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 34,
+					"internationalStudents": 66
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 7600,
+					"student": 29100
 				}
 			]
 		},
@@ -24783,7 +24767,7 @@
 			"postgraduatePrograms": 663,
 			"graduationRates": 0.905,
 			"employability": 0.785,
-			"lifeQuality": 0.9032769053,
+			"lifeQuality": 0.903,
 			"teachingExcellence": 32.8,
 			"programmes": [{
 					"name": "Business Administration",
@@ -25738,34 +25722,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 210,
+				"transport": 190,
+				"food": 120,
+				"entertainment": 230
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 330,
+				"transport": 260,
+				"food": 220,
+				"entertainment": 340
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 45,
+					"female": 55
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 61,
+					"postgraduate": 39
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 45,
+					"internationalStudents": 55
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 9400,
+					"student": 42100
 				}
 			]
 		},
@@ -25777,7 +25761,7 @@
 			"postgraduatePrograms": 316,
 			"graduationRates": 0.921,
 			"employability": 0.752,
-			"lifeQuality": 0.7437754562,
+			"lifeQuality": 0.744,
 			"teachingExcellence": 39.3,
 			"programmes": [{
 					"name": "Business Administration",
@@ -26732,34 +26716,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 190,
+				"transport": 210,
+				"food": 130,
+				"entertainment": 160
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 300,
+				"transport": 420,
+				"food": 290,
+				"entertainment": 270
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 10,
+					"female": 90
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 62,
+					"postgraduate": 38
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 42,
+					"internationalStudents": 58
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 7900,
+					"student": 49800
 				}
 			]
 		},
@@ -26771,7 +26755,7 @@
 			"postgraduatePrograms": 214,
 			"graduationRates": 0.926,
 			"employability": 0.756,
-			"lifeQuality": 0.907049451,
+			"lifeQuality": 0.907,
 			"teachingExcellence": 32.1,
 			"programmes": [{
 					"name": "Business Administration",
@@ -27726,34 +27710,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 220,
+				"transport": 220,
+				"food": 160,
+				"entertainment": 140
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 270,
+				"transport": 250,
+				"food": 280,
+				"entertainment": 250
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 64,
+					"female": 36
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 79,
+					"postgraduate": 21
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 31,
+					"internationalStudents": 69
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 12800,
+					"student": 40900
 				}
 			]
 		},
@@ -27765,7 +27749,7 @@
 			"postgraduatePrograms": 446,
 			"graduationRates": 0.896,
 			"employability": 0.77,
-			"lifeQuality": 0.8106085067,
+			"lifeQuality": 0.811,
 			"teachingExcellence": 29.7,
 			"programmes": [{
 					"name": "Business Administration",
@@ -28720,34 +28704,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 200,
+				"transport": 240,
+				"food": 240,
+				"entertainment": 310
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 330,
+				"transport": 330,
+				"food": 280,
+				"entertainment": 370
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 20,
+					"female": 80
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 77,
+					"postgraduate": 23
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 47,
+					"internationalStudents": 53
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 5900,
+					"student": 32900
 				}
 			]
 		},
@@ -28759,7 +28743,7 @@
 			"postgraduatePrograms": 438,
 			"graduationRates": 0.923,
 			"employability": 0.792,
-			"lifeQuality": 0.7578581686,
+			"lifeQuality": 0.758,
 			"teachingExcellence": 30.9,
 			"programmes": [{
 					"name": "Business Administration",
@@ -29714,34 +29698,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 260,
+				"transport": 180,
+				"food": 270,
+				"entertainment": 190
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 420,
+				"transport": 250,
+				"food": 360,
+				"entertainment": 380
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 85,
+					"female": 15
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 80,
+					"postgraduate": 20
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 29,
+					"internationalStudents": 71
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 6900,
+					"student": 34100
 				}
 			]
 		},
@@ -29753,7 +29737,7 @@
 			"postgraduatePrograms": 251,
 			"graduationRates": 0.87,
 			"employability": 0.853,
-			"lifeQuality": 0.9324517931,
+			"lifeQuality": 0.932,
 			"teachingExcellence": 25.6,
 			"programmes": [{
 					"name": "Business Administration",
@@ -30708,34 +30692,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 160,
+				"transport": 220,
+				"food": 240,
+				"entertainment": 240
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 200,
+				"transport": 310,
+				"food": 360,
+				"entertainment": 370
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 48,
+					"female": 52
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 76,
+					"postgraduate": 24
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 20,
+					"internationalStudents": 80
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 7700,
+					"student": 39600
 				}
 			]
 		},
@@ -30747,7 +30731,7 @@
 			"postgraduatePrograms": 762,
 			"graduationRates": 0.948,
 			"employability": 0.815,
-			"lifeQuality": 0.9029787792,
+			"lifeQuality": 0.903,
 			"teachingExcellence": 30.9,
 			"programmes": [{
 					"name": "Business Administration",
@@ -31702,34 +31686,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 210,
+				"transport": 210,
+				"food": 160,
+				"entertainment": 220
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 350,
+				"transport": 370,
+				"food": 240,
+				"entertainment": 290
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 49,
+					"female": 51
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 86,
+					"postgraduate": 14
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 23,
+					"internationalStudents": 77
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 8700,
+					"student": 49200
 				}
 			]
 		},
@@ -31741,7 +31725,7 @@
 			"postgraduatePrograms": 31,
 			"graduationRates": 0.927,
 			"employability": 0.936,
-			"lifeQuality": 0.7915457428,
+			"lifeQuality": 0.792,
 			"teachingExcellence": 25.6,
 			"programmes": [{
 					"name": "Business Administration",
@@ -32696,34 +32680,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 280,
+				"transport": 200,
+				"food": 210,
+				"entertainment": 230
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 410,
+				"transport": 230,
+				"food": 350,
+				"entertainment": 260
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 31,
+					"female": 69
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 81,
+					"postgraduate": 19
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 46,
+					"internationalStudents": 54
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10500,
+					"student": 41000
 				}
 			]
 		},
@@ -32735,7 +32719,7 @@
 			"postgraduatePrograms": 316,
 			"graduationRates": 0.912,
 			"employability": 0.8,
-			"lifeQuality": 0.8723353665,
+			"lifeQuality": 0.872,
 			"teachingExcellence": 34.1,
 			"programmes": [{
 					"name": "Business Administration",
@@ -33690,34 +33674,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 140,
+				"transport": 300,
+				"food": 220,
+				"entertainment": 280
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 270,
+				"transport": 330,
+				"food": 310,
+				"entertainment": 340
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 67,
+					"female": 33
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 69,
+					"postgraduate": 31
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 39,
+					"internationalStudents": 61
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 16700,
+					"student": 29200
 				}
 			]
 		},
@@ -33729,7 +33713,7 @@
 			"postgraduatePrograms": 595,
 			"graduationRates": 0.642,
 			"employability": 0.724,
-			"lifeQuality": 0.8945147775,
+			"lifeQuality": 0.895,
 			"teachingExcellence": 33.5,
 			"programmes": [{
 					"name": "Business Administration",
@@ -34684,34 +34668,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 220,
+				"transport": 280,
+				"food": 90,
+				"entertainment": 220
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 400,
+				"transport": 460,
+				"food": 220,
+				"entertainment": 490
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 36,
+					"female": 64
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 79,
+					"postgraduate": 21
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 38,
+					"internationalStudents": 62
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 14500,
+					"student": 40500
 				}
 			]
 		},
@@ -34723,7 +34707,7 @@
 			"postgraduatePrograms": 13,
 			"graduationRates": 0.854,
 			"employability": 0.73,
-			"lifeQuality": 0.8747054071,
+			"lifeQuality": 0.875,
 			"teachingExcellence": 26,
 			"programmes": [{
 					"name": "Business Administration",
@@ -35678,34 +35662,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 190,
+				"transport": 160,
+				"food": 240,
+				"entertainment": 180
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 210,
+				"transport": 220,
+				"food": 310,
+				"entertainment": 260
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 40,
+					"female": 60
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 84,
+					"postgraduate": 16
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 29,
+					"internationalStudents": 71
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 8500,
+					"student": 49400
 				}
 			]
 		},
@@ -35717,7 +35701,7 @@
 			"postgraduatePrograms": 227,
 			"graduationRates": 0.951,
 			"employability": 0.852,
-			"lifeQuality": 0.8833101596,
+			"lifeQuality": 0.883,
 			"teachingExcellence": 28.9,
 			"programmes": [{
 					"name": "Business Administration",
@@ -36672,34 +36656,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 230,
+				"transport": 220,
+				"food": 200,
+				"entertainment": 250
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 360,
+				"transport": 360,
+				"food": 270,
+				"entertainment": 370
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 36,
+					"female": 64
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 75,
+					"postgraduate": 25
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 49,
+					"internationalStudents": 51
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10300,
+					"student": 35400
 				}
 			]
 		},
@@ -36711,7 +36695,7 @@
 			"postgraduatePrograms": 276,
 			"graduationRates": 0.905,
 			"employability": 0.764,
-			"lifeQuality": 0.9239913469,
+			"lifeQuality": 0.924,
 			"teachingExcellence": 31.7,
 			"programmes": [{
 					"name": "Business Administration",
@@ -37666,34 +37650,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 210,
+				"transport": 220,
+				"food": 190,
+				"entertainment": 250
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 220,
+				"transport": 390,
+				"food": 290,
+				"entertainment": 380
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 58,
+					"female": 42
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 62,
+					"postgraduate": 38
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 44,
+					"internationalStudents": 56
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 7100,
+					"student": 52800
 				}
 			]
 		},
@@ -37705,7 +37689,7 @@
 			"postgraduatePrograms": 137,
 			"graduationRates": 0.832,
 			"employability": 0.74,
-			"lifeQuality": 0.913906698,
+			"lifeQuality": 0.914,
 			"teachingExcellence": 21.6,
 			"programmes": [{
 					"name": "Business Administration",
@@ -38660,34 +38644,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 310,
+				"transport": 220,
+				"food": 150,
+				"entertainment": 250
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 420,
+				"transport": 350,
+				"food": 300,
+				"entertainment": 280
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 34,
+					"female": 66
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 20,
+					"postgraduate": 80
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 39,
+					"internationalStudents": 61
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 11600,
+					"student": 18500
 				}
 			]
 		},
@@ -38699,7 +38683,7 @@
 			"postgraduatePrograms": 427,
 			"graduationRates": 0.882,
 			"employability": 0.687,
-			"lifeQuality": 0.8950001043,
+			"lifeQuality": 0.895,
 			"teachingExcellence": 22.6,
 			"programmes": [{
 					"name": "Business Administration",
@@ -39654,17 +39638,17 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 170,
+				"transport": 180,
+				"food": 180,
+				"entertainment": 270
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 200,
+				"transport": 250,
+				"food": 340,
+				"entertainment": 320
 			},
 
 			"ratios": [{
@@ -39672,16 +39656,16 @@
 					"female": 50
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 90,
+					"postgraduate": 10
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 29,
+					"internationalStudents": 71
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10300,
+					"student": 41800
 				}
 			]
 		},
@@ -39693,7 +39677,7 @@
 			"postgraduatePrograms": 508,
 			"graduationRates": 0.861,
 			"employability": 0.793,
-			"lifeQuality": 0.9643627,
+			"lifeQuality": 0.964,
 			"teachingExcellence": 33.9,
 			"programmes": [{
 					"name": "Business Administration",
@@ -40648,34 +40632,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 310,
+				"transport": 250,
+				"food": 180,
+				"entertainment": 270
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 400,
+				"transport": 370,
+				"food": 220,
+				"entertainment": 400
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 85,
+					"female": 15
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 63,
+					"postgraduate": 37
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 23,
+					"internationalStudents": 77
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 12200,
+					"student": 39500
 				}
 			]
 		},
@@ -40687,7 +40671,7 @@
 			"postgraduatePrograms": 635,
 			"graduationRates": 0.883,
 			"employability": 0.824,
-			"lifeQuality": 0.7478750042,
+			"lifeQuality": 0.748,
 			"teachingExcellence": 24.6,
 			"programmes": [{
 					"name": "Business Administration",
@@ -41642,34 +41626,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 140,
+				"transport": 200,
+				"food": 130,
+				"entertainment": 210
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 210,
+				"transport": 200,
+				"food": 270,
+				"entertainment": 330
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 62,
+					"female": 38
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 74,
+					"postgraduate": 26
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 48,
+					"internationalStudents": 52
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 18800,
+					"student": 20400
 				}
 			]
 		},
@@ -41681,7 +41665,7 @@
 			"postgraduatePrograms": 163,
 			"graduationRates": 0.851,
 			"employability": 0.713,
-			"lifeQuality": 0.9423146592,
+			"lifeQuality": 0.942,
 			"teachingExcellence": 19.3,
 			"programmes": [{
 					"name": "Business Administration",
@@ -42636,34 +42620,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 200,
+				"transport": 190,
+				"food": 160,
+				"entertainment": 290
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 300,
+				"transport": 310,
+				"food": 330,
+				"entertainment": 350
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 68,
+					"female": 32
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 84,
+					"postgraduate": 16
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 36,
+					"internationalStudents": 64
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 8900,
+					"student": 36100
 				}
 			]
 		},
@@ -42675,7 +42659,7 @@
 			"postgraduatePrograms": 229,
 			"graduationRates": 0.923,
 			"employability": 0.822,
-			"lifeQuality": 0.7119357175,
+			"lifeQuality": 0.712,
 			"teachingExcellence": 31.2,
 			"programmes": [{
 					"name": "Business Administration",
@@ -43630,34 +43614,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 210,
+				"transport": 190,
+				"food": 190,
+				"entertainment": 180
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 320,
+				"transport": 430,
+				"food": 330,
+				"entertainment": 310
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 85,
+					"female": 15
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 64,
+					"postgraduate": 36
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 25,
+					"internationalStudents": 75
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 12300,
+					"student": 42500
 				}
 			]
 		},
@@ -43669,7 +43653,7 @@
 			"postgraduatePrograms": 150,
 			"graduationRates": 0.855,
 			"employability": 0.739,
-			"lifeQuality": 0.9051512852,
+			"lifeQuality": 0.905,
 			"teachingExcellence": 22.6,
 			"programmes": [{
 					"name": "Business Administration",
@@ -44624,34 +44608,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 210,
+				"transport": 300,
+				"food": 190,
+				"entertainment": 120
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 310,
+				"transport": 440,
+				"food": 340,
+				"entertainment": 130
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 86,
+					"female": 14
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 75,
+					"postgraduate": 25
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 36,
+					"internationalStudents": 64
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 12900,
+					"student": 52000
 				}
 			]
 		},
@@ -44663,7 +44647,7 @@
 			"postgraduatePrograms": 663,
 			"graduationRates": 0.901,
 			"employability": 0.822,
-			"lifeQuality": 0.7752901686,
+			"lifeQuality": 0.775,
 			"teachingExcellence": 22.2,
 			"programmes": [{
 					"name": "Business Administration",
@@ -45618,34 +45602,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 260,
+				"transport": 200,
+				"food": 190,
+				"entertainment": 140
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 400,
+				"transport": 350,
+				"food": 410,
+				"entertainment": 240
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 85,
+					"female": 15
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 66,
+					"postgraduate": 34
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 24,
+					"internationalStudents": 76
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 7000,
+					"student": 47700
 				}
 			]
 		},
@@ -45657,7 +45641,7 @@
 			"postgraduatePrograms": 256,
 			"graduationRates": 0.841,
 			"employability": 0.696,
-			"lifeQuality": 0.8034282124,
+			"lifeQuality": 0.803,
 			"teachingExcellence": 32,
 			"programmes": [{
 					"name": "Business Administration",
@@ -46356,7 +46340,7 @@
 					"domain": "Law",
 					"type": "PG",
 					"tuitionFeesDomestic": 11900,
-					"tuitionFeesInternational": 20000
+					"tuitionFeesInternational": 26000
 				},
 				{
 					"name": "International Human Rights Law",
@@ -46373,18 +46357,11 @@
 					"tuitionFeesInternational": 20300
 				},
 				{
-					"name": "Political Science",
-					"domain": "Social Sciences",
-					"type": "PG",
-					"tuitionFeesDomestic": 12000,
-					"tuitionFeesInternational": 20100
-				},
-				{
 					"name": "History",
 					"domain": "Social Sciences",
 					"type": "PG",
 					"tuitionFeesDomestic": 12100,
-					"tuitionFeesInternational": 20000
+					"tuitionFeesInternational": 22000
 				},
 				{
 					"name": "Linguistics",
@@ -46612,34 +46589,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 260,
+				"transport": 200,
+				"food": 200,
+				"entertainment": 220
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 280,
+				"transport": 280,
+				"food": 400,
+				"entertainment": 340
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 96,
+					"female": 4
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 82,
+					"postgraduate": 18
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 26,
+					"internationalStudents": 74
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10400,
+					"student": 47800
 				}
 			]
 		},
@@ -46651,7 +46628,7 @@
 			"postgraduatePrograms": 299,
 			"graduationRates": 0.871,
 			"employability": 0.728,
-			"lifeQuality": 0.7767166881,
+			"lifeQuality": 0.777,
 			"teachingExcellence": 24.8,
 			"programmes": [{
 					"name": "Business Administration",
@@ -46659,14 +46636,6 @@
 					"type": "UG",
 					"tuitionFeesDomestic": 9400,
 					"tuitionFeesInternational": 15700,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Economics",
-					"domain": "Business",
-					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 15600,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
@@ -47045,14 +47014,6 @@
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
 				},
 				{
-					"name": "Software Engineering",
-					"domain": "Computer Science",
-					"type": "UG",
-					"tuitionFeesDomestic": 9200,
-					"tuitionFeesInternational": 16700,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
 					"name": "Systems Analysis",
 					"domain": "Computer Science",
 					"type": "UG",
@@ -47339,13 +47300,6 @@
 					"tuitionFeesInternational": 20400
 				},
 				{
-					"name": "Criminal Justice",
-					"domain": "Law",
-					"type": "PG",
-					"tuitionFeesDomestic": 12200,
-					"tuitionFeesInternational": 19800
-				},
-				{
 					"name": "Law",
 					"domain": "Law",
 					"type": "PG",
@@ -47606,34 +47560,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 220,
+				"transport": 150,
+				"food": 170,
+				"entertainment": 280
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 240,
+				"transport": 260,
+				"food": 330,
+				"entertainment": 340
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 15,
+					"female": 85
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 88,
+					"postgraduate": 12
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 34,
+					"internationalStudents": 66
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 17100,
+					"student": 39700
 				}
 			]
 		},
@@ -47645,7 +47599,7 @@
 			"postgraduatePrograms": 230,
 			"graduationRates": 0.872,
 			"employability": 0.685,
-			"lifeQuality": 0.8649175391,
+			"lifeQuality": 0.865,
 			"teachingExcellence": 23.5,
 			"programmes": [{
 					"name": "Business Administration",
@@ -48600,34 +48554,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 150,
+				"transport": 180,
+				"food": 220,
+				"entertainment": 200
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 240,
+				"transport": 310,
+				"food": 310,
+				"entertainment": 280
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 68,
+					"female": 32
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 67,
+					"postgraduate": 33
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 32,
+					"internationalStudents": 68
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 10500,
+					"student": 36200
 				}
 			]
 		},
@@ -48639,7 +48593,7 @@
 			"postgraduatePrograms": 727,
 			"graduationRates": 0.846,
 			"employability": 0.766,
-			"lifeQuality": 0.7049382831,
+			"lifeQuality": 0.705,
 			"teachingExcellence": 23.4,
 			"programmes": [{
 					"name": "Business Administration",
@@ -48774,99 +48728,6 @@
 					"tuitionFeesDomestic": 9300,
 					"tuitionFeesInternational": 16500,
 					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Surgery",
-					"domain": "Medicine",
-					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 16500,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Dentistry",
-					"domain": "Medicine",
-					"type": "UG",
-					"tuitionFeesDomestic": 9100,
-					"tuitionFeesInternational": 16300,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Psychotherapy",
-					"domain": "Medicine",
-					"type": "UG",
-					"tuitionFeesDomestic": 9500,
-					"tuitionFeesInternational": 16000,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Pharmacy",
-					"domain": "Medicine",
-					"type": "UG",
-					"tuitionFeesDomestic": 9200,
-					"tuitionFeesInternational": 15100
-				},
-				{
-					"name": "Medical Biotechnology",
-					"domain": "Medicine",
-					"type": "UG",
-					"tuitionFeesDomestic": 9300,
-					"tuitionFeesInternational": 16100,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Veterinary Surgery",
-					"domain": "Medicine",
-					"type": "UG",
-					"tuitionFeesDomestic": 9200,
-					"tuitionFeesInternational": 16200,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Nursing",
-					"domain": "Medicine",
-					"type": "UG",
-					"tuitionFeesDomestic": 9000,
-					"tuitionFeesInternational": 15800,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Criminology and Law",
-					"domain": "Law",
-					"type": "UG",
-					"tuitionFeesDomestic": 9400,
-					"tuitionFeesInternational": 16700,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Civil Law",
-					"domain": "Law",
-					"type": "UG",
-					"tuitionFeesDomestic": 9200,
-					"tuitionFeesInternational": 16300,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Criminal Justice",
-					"domain": "Law",
-					"type": "UG",
-					"tuitionFeesDomestic": 9100,
-					"tuitionFeesInternational": 15600,
-					"url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2019&id=871"
-				},
-				{
-					"name": "Law",
-					"domain": "Law",
-					"type": "UG",
-					"tuitionFeesDomestic": 9100,
-					"tuitionFeesInternational": 15300
-				},
-				{
-					"name": "International Human Rights Law",
-					"domain": "Law",
-					"type": "UG",
-					"tuitionFeesDomestic": 8800,
-					"tuitionFeesInternational": 16800
 				},
 				{
 					"name": "Psychology",
@@ -49257,97 +49118,6 @@
 					"tuitionFeesInternational": 19500
 				},
 				{
-					"name": "Surgery",
-					"domain": "Medicine",
-					"type": "PG",
-					"tuitionFeesDomestic": 12400,
-					"tuitionFeesInternational": 20500
-				},
-				{
-					"name": "Dentistry",
-					"domain": "Medicine",
-					"type": "PG",
-					"tuitionFeesDomestic": 12100,
-					"tuitionFeesInternational": 19300
-				},
-				{
-					"name": "Psychotherapy",
-					"domain": "Medicine",
-					"type": "PG",
-					"tuitionFeesDomestic": 12200,
-					"tuitionFeesInternational": 18900
-				},
-				{
-					"name": "Pharmacy",
-					"domain": "Medicine",
-					"type": "PG",
-					"tuitionFeesDomestic": 11800,
-					"tuitionFeesInternational": 19900
-				},
-				{
-					"name": "Medical Biotechnology",
-					"domain": "Medicine",
-					"type": "PG",
-					"tuitionFeesDomestic": 12300,
-					"tuitionFeesInternational": 19900
-				},
-				{
-					"name": "Molecular Medicine",
-					"domain": "Medicine",
-					"type": "PG",
-					"tuitionFeesDomestic": 11800,
-					"tuitionFeesInternational": 20400
-				},
-				{
-					"name": "Veterinary Surgery",
-					"domain": "Medicine",
-					"type": "PG",
-					"tuitionFeesDomestic": 12000,
-					"tuitionFeesInternational": 20900
-				},
-				{
-					"name": "Nursing",
-					"domain": "Medicine",
-					"type": "PG",
-					"tuitionFeesDomestic": 12200,
-					"tuitionFeesInternational": 20100
-				},
-				{
-					"name": "Criminology and Law",
-					"domain": "Law",
-					"type": "PG",
-					"tuitionFeesDomestic": 12000,
-					"tuitionFeesInternational": 20000
-				},
-				{
-					"name": "Civil Law",
-					"domain": "Law",
-					"type": "PG",
-					"tuitionFeesDomestic": 12400,
-					"tuitionFeesInternational": 20400
-				},
-				{
-					"name": "Criminal Justice",
-					"domain": "Law",
-					"type": "PG",
-					"tuitionFeesDomestic": 12200,
-					"tuitionFeesInternational": 19800
-				},
-				{
-					"name": "Law",
-					"domain": "Law",
-					"type": "PG",
-					"tuitionFeesDomestic": 11900,
-					"tuitionFeesInternational": 20000
-				},
-				{
-					"name": "International Human Rights Law",
-					"domain": "Law",
-					"type": "PG",
-					"tuitionFeesDomestic": 12300,
-					"tuitionFeesInternational": 20200
-				},
-				{
 					"name": "Psychology",
 					"domain": "Social Sciences",
 					"type": "PG",
@@ -49594,34 +49364,34 @@
 				}
 			],
 			"monthlyLivingExpensesMinimum": {
-				"rent": 500,
-				"transport": 100,
-				"food": 100,
-				"entertainment": 100
+				"rent": 230,
+				"transport": 180,
+				"food": 140,
+				"entertainment": 130
 			},
 
 			"monthlyLivingExpensesRecommended": {
-				"rent": 600,
-				"transport": 100,
-				"food": 150,
-				"entertainment": 170
+				"rent": 240,
+				"transport": 280,
+				"food": 210,
+				"entertainment": 190
 			},
 
 			"ratios": [{
-					"male": 50,
-					"female": 50
+					"male": 42,
+					"female": 58
 				},
 				{
-					"undergraduate": 60,
-					"postgraduate": 40
+					"undergraduate": 71,
+					"postgraduate": 29
 				},
 				{
-					"homeStudents": 70,
-					"internationalStudents": 30
+					"homeStudents": 29,
+					"internationalStudents": 71
 				},
 				{
-					"staff": 400,
-					"student": 4000
+					"staff": 11900,
+					"student": 49200
 				}
 			]
 		}

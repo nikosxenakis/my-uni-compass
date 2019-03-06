@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output, Input  } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input, OnChanges } from '@angular/core';
 import { Http } from '@angular/http';
 
 @Component({
@@ -7,7 +7,7 @@ import { Http } from '@angular/http';
     styleUrls: ['./piediagram.component.scss']
 })
 
-export class PieDiagramComponent implements OnInit {
+export class PieDiagramComponent implements OnInit, OnChanges {
 
     @Input() data: any;
     @Input() title: string;
@@ -36,9 +36,17 @@ export class PieDiagramComponent implements OnInit {
             data: []
         }
     ];
+    onChartClick(event) {
+        console.log(this.title);
+    }
 
     ngOnInit() {
+        this.refreshData();
+    }
+
+    refreshData() {
         var temp = [];
+        this.pieChartLabels = [];
         for(var key in this.data) {
             temp.push(this.data[key]);
             this.pieChartLabels.push(key);
@@ -51,8 +59,8 @@ export class PieDiagramComponent implements OnInit {
         ];
     }
 
-    onChartClick(event) {
-        console.log(this.title);
-    }
 
+    ngOnChanges() {
+        this.refreshData();
+    }
 }
