@@ -26,7 +26,7 @@
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
-      <a href="/">
+      <a (click)="goBack()">
         <img height="60" src="./assets/images/favicon.png">
       </a>
       <span class="menu-spacer"></span>
