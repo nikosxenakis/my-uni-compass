@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, AfterViewInit } from '@angular/core';
 import { UniversityItem } from 'src/classes/UniversityItem';
 
 @Component({
@@ -6,9 +6,9 @@ import { UniversityItem } from 'src/classes/UniversityItem';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   title = 'my-uni-compass';
-
+  mobile;
   @Input() uniItem: UniversityItem;
 
   languageList = [{
@@ -31,6 +31,15 @@ export class NavbarComponent {
 
   onCloseUniversity() {
     this.uniItem = null;
+  }
+
+  ngOnInit() {
+    if (window.screen.width >= 500) { // 768px portrait
+      this.mobile = true;
+    }
+    if (window.screen.width < 500) { // 768px portrait
+      this.mobile = false;
+    }
   }
 
 }
